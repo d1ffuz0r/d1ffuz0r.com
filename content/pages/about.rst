@@ -1,7 +1,7 @@
 About
 #####
 
-Python, Erlang and Emacs addict. Also sometimes I do JavaScript, Emacs Lisp. Originally from Russia. I was living in Saransk (Russia), Moscow (Russia), Hua Hin (Thailand) and
+Python, Erlang and Emacs fan. Also sometimes I do JavaScript (CoffeeScript), Emacs Lisp. Originally from Russia. I was living in Saransk (Russia), Moscow (Russia), Hua Hin (Thailand) and
 finally I will move to California soon. Ex fan of Lineage 2 (played for 3 years). Permanent visitor Punk Rock gigs.
 
 
@@ -32,6 +32,34 @@ Contributions
 * https://github.com/getsentry/sentry
 * https://github.com/futurecolors/django-future-url
 * More_
+
+
+::
+
+      ,'._,`.
+     (-.___.-)
+     (-.___.-)
+     `-.___.-'
+      ((  @ @|              .            __
+       \   ` |         ,\   |`.    @|   |  |      _.-._
+      __`.`=-=mm===mm:: |   | |`.   |   |  |    ,'=` '=`.
+     (    `-'|:/  /:/  `/  @| | |   |, @| @|   /---)W(---\
+      \ \   / /  / /         @| |   '         (----| |----) ,~
+      |\ \ / /| / /            @|              \---| |---/  |
+      | \ V /||/ /                              `.-| |-,'   |
+      |  `-' |V /                                 \| |/    @'
+      |    , |-'                                 __| |__
+      |    .;: _,-.                         ,--""..| |..""--.
+      ;;:::' "    )                        (`--::__|_|__::--')
+    ,-"      _,  /                          \`--...___...--'/
+   (    -:--'/  /                           /`--...___...--'\
+    "-._  `"'._/                           /`---...___...---'\
+        "-._   "---.                      (`---....___....---')
+         .' ",._ ,' )                     |`---....___....---'|
+         /`._|  `|  |                     (`---....___....---')
+        (   \    |  /                      \`---...___...---'/
+         `.  `,  ^""                        `:--...___...--;'
+           `.,'                               `-._______.-'
 
 
 .. _PYTHON@DASH: http://python-dashapp.tk
