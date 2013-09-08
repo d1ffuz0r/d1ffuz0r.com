@@ -9,7 +9,7 @@ Projects
 --------
 
 * `PYTHON@DASH`_
-
+* `Python, Erlang, Lambda!`_
 
 Open Source
 -----------
@@ -63,5 +63,6 @@ Contributions
 
 
 .. _PYTHON@DASH: http://python-dashapp.tk
+.. _Python, Erlang, Lambda!: http://crazy-lambda.blogspot.com/
 .. _More: http://github.com/d1ffuz0r
 .. _Masha.js: http://mashajs.com/index_eng.html
