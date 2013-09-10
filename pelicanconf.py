@@ -16,7 +16,7 @@ THEME_STATIC_DIR = 'theme'
 TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = u'en'
-DEFAULT_DATE = datetime.datetime.now()
+DEFAULT_DATE = [2013, 9, 10, 23, 10, 2, 1]
 # Feed generation is usually not desired when developing
 FEED_ALL_RSS = 'rss.xml'
 FEED_ALL_ATOM = False
