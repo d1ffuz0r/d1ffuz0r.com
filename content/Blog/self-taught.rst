@@ -5,7 +5,7 @@ Self-taught
 :tags: education, dev
 
 
-I'm don't believe that stars on stackoverflow could help you get a job, they can give you attention of recruiters, not more. Same and Github.
+I don't believe that stars on stackoverflow could help you get a job, they can give you attention of recruiters, not more. Same and Github.
 Before a large count of the interviews in soon, now is a good time to refresh knowledge.
 My check list to read&watch&learn for the next 1 - 2 months:
 
