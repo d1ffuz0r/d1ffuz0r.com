@@ -2,6 +2,7 @@ Thailand summary. Spring - Autumn 2013
 ######################################
 
 :date: 2013-09-10 23:01
+:tags: Thailand, life
 
 
 Let's try, it is my first big post after starting learning English in classes with the native speaker and using in real life.
