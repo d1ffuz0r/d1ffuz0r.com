@@ -8,6 +8,7 @@ finally I will move to California soon. Ex fan of Lineage 2 (played for 3 years)
 Projects
 --------
 
+* `CrashKeeper`_
 * `PYTHON@DASH`_
 * `Python, Erlang, Lambda!`_
 
@@ -63,6 +64,7 @@ Contributions
 
 
 .. _PYTHON@DASH: http://python-dashapp.tk
+.. _crashkeeper: http://crashkeeper.com
 .. _Python, Erlang, Lambda!: http://crazy-lambda.blogspot.com/
 .. _More: http://github.com/d1ffuz0r
 .. _Masha.js: http://mashajs.com/index_eng.html
