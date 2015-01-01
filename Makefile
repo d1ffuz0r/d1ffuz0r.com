@@ -12,9 +12,9 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=172.245.59.18
-SSH_PORT=6666
-SSH_USER=root
+SSH_HOST=192.3.163.36
+SSH_PORT=22
+SSH_USER=ck
 SSH_TARGET_DIR=/var/www/d1ffuz0r.com
 
 S3_BUCKET=my_s3_bucket

@@ -1,14 +1,13 @@
 About
 #####
 
-Python, Erlang and Emacs fan. Also sometimes I do JavaScript (CoffeeScript), Emacs Lisp. Originally from Russia. I was living in Saransk (Russia), Moscow (Russia), Hua Hin (Thailand) and
-finally I will move to California soon. Ex fan of Lineage 2 (played for 3 years). Permanent visitor Punk Rock gigs.
+Python, Erlang and Emacs fan. Also sometimes I do JavaScript (CoffeeScript), Emacs Lisp. Originally from Russia. I has been living in Saransk (Russia), Moscow (Russia), Hua Hin (Thailand), Mountain View (CA, USA). Fan of Lineage 2 (I had been playing for 5 years). Permanent visitor of Punk Rock gigs.
 
 
 Projects
 --------
 
-* `CrashKeeper`_
+* `CrashDump`_
 * `PYTHON@DASH`_
 * `Python, Erlang, Lambda!`_
 
@@ -27,6 +26,7 @@ Open Source
 Contributions
 =============
 
+* https://github.com/synrc/n2o
 * https://github.com/django/django
 * https://github.com/mitsuhiko/flask
 * https://github.com/pydanny/django-admin2
@@ -64,7 +64,7 @@ Contributions
 
 
 .. _PYTHON@DASH: http://python-dashapp.tk
-.. _crashkeeper: http://crashkeeper.com
+.. _CrashDump: http://crashdump.io
 .. _Python, Erlang, Lambda!: http://crazy-lambda.blogspot.com/
 .. _More: http://github.com/d1ffuz0r
 .. _Masha.js: http://mashajs.com/index_eng.html

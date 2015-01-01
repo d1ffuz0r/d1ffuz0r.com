@@ -9,7 +9,7 @@ SITEURL = 'http://d1ffuz0r.com'
 
 FEED_DOMAIN = SITEURL
 #FEED_ALL_RSS = '/feeds/rss/'
-GOOGLE_ANALYTICS = 'UA-43030036-2'
+#GOOGLE_ANALYTICS = 'UA-43030036-2'
 THEME = 'themes/mytheme'
 THEME_STATIC_DIR = 'theme'
 

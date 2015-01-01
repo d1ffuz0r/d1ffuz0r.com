@@ -1,0 +1,36 @@
+2014-2015
+#########
+
+:date: 2015-1-1 13:30
+
+2014 Summary
+------------
+
+* 1st year in the USA. Life here feels simple and sometimes boring
+* Silicon Valley is a cold place
+* Marketing is hard
+* Sales is hard
+* Mustang is awesome
+* Walking to the work is better than driving. Daily driving is boring
+* Work in the office > Remote work
+* Los Angeles is a fun place
+* Montreal (Canada) is a fun place
+* Miami is boring, like Thailand
+* "Walking Dead" is awesome. Will watch
+* "Breakind Bad" is interesting during only first 2 seasons
+* Erlang is a very productive language
+* CoffeScript need better tools
+
+2015 Plans
+----------
+
+* Keep working on English
+* Go to gym again
+* Decide the career growth direction
+* Keep working on https://crashdump.io. Get more users and get user who are paying
+* Start one more side-project
+* Visit Russia
+* Visit Mexico
+* Visit Seattle
+* Visit US Pycon
+* Learn marketing
