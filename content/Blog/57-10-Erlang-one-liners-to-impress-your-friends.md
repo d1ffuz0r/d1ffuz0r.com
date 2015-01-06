@@ -79,3 +79,12 @@ lists:max(lists:seq(1, 10)).
 N = 50.
 [X || X <- lists:usort(lists:seq(2, N + 1)), not lists:member(X, lists:usort([(P * F) || P <- lists:seq(2, round(math:pow(N, 0.5)) + 2), F <- lists:seq(2, round(N / P))]))].
 ```
+Bonus
+
+11. Error Logging with [CrashDump.io](https://crashdump.io)
+-----------------------------------------------------------
+
+```erlang
+fink:add_sasl_backend().        % Enable logging
+error_logger:error_msg("HELP"). % Send notification
+```
