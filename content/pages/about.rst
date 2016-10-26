@@ -1,15 +1,16 @@
 About
 #####
 
-Python, Erlang and Emacs fan. Also sometimes I do JavaScript (CoffeeScript), Emacs Lisp. Originally from Russia. I has been living in Saransk (Russia), Moscow (Russia), Hua Hin (Thailand), Mountain View (CA, USA). Fan of Lineage 2 (I had been playing for 5 years). Permanent visitor of Punk Rock gigs.
+Python, Erlang and Emacs fan. Emacs Lisp. Originally from Russia. Lived in Saransk, Moscow (Russia), Bangkok, Hua Hin (Thailand), San Francisco, Mountain View, Oakland (CA, USA). Fan of Lineage 2 (I had been playing for 5 years). Permanent visitor of Punk Rock and Hip-Hop/Rap gigs.
 
 
 Projects
 --------
 
-* `CrashDump`_
-* `PYTHON@DASH`_
-* `Python, Erlang, Lambda!`_
+* `CrashDump`_ (2013-2016)
+* `PYTHON@DASH`_ (2013-2015)
+* `Python, Erlang, Lambda!`_ (2011~)
+* `AIPromo`_ (2015~)
 
 Open Source
 -----------
@@ -65,6 +66,7 @@ Contributions
 
 .. _PYTHON@DASH: http://python-dashapp.tk
 .. _CrashDump: http://crashdump.io
+.. _AIPromo: https://aipromo.online?d1ffuz0r
 .. _Python, Erlang, Lambda!: http://crazy-lambda.blogspot.com/
 .. _More: http://github.com/d1ffuz0r
 .. _Masha.js: http://mashajs.com/index_eng.html
