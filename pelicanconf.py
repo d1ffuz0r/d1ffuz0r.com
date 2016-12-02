@@ -44,7 +44,7 @@ TWITTER_USERNAME = 'd1ffuz0r'
 
 # Social widget
 SOCIAL = (('GitHub', GITHUB_URL),
-          ('Twitter', 'http://twitter.com/d1ffuz0r'),
+          ('Twitter', 'http://twitter.com/inablackcar'),
           ('LinkedIn', 'http://www.linkedin.com/in/romangladkov'),)
 DEFAULT_PAGINATION = 10
 
