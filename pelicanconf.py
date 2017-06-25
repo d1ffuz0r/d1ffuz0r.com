@@ -39,7 +39,7 @@ MENUITEMS = (('Home', '/'),
              ('Archive', '/archives.html'))
 
 GITHUB_URL = 'http://github.com/d1ffuz0r'
-TWITTER_USERNAME = 'd1ffuz0r'
+TWITTER_USERNAME = 'inablackcar'
 #DISQUS_SITENAME = "d1ffuz0rhomesite"
 
 # Social widget
