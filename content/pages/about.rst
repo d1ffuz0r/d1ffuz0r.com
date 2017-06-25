@@ -11,6 +11,7 @@ Projects
 * `PYTHON@DASH`_ (2013-2015)
 * `Python, Erlang, Lambda!`_ (2011~)
 * `AIPromo`_ (2015~)
+* `PG Budnle`_ (2017~)
 
 Open Source
 -----------
@@ -70,3 +71,4 @@ Contributions
 .. _Python, Erlang, Lambda!: http://crazy-lambda.blogspot.com/
 .. _More: http://github.com/d1ffuz0r
 .. _Masha.js: http://mashajs.com/index_eng.html
+.. _PG Bundle: http://postgresql.d1ffuz0r.com
