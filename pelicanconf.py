@@ -5,11 +5,10 @@ import datetime
 
 AUTHOR = u'Roman Gladkov'
 SITENAME = u'd1ffuz0r - python, erlang, l1f3'
-SITEURL = 'http://d1ffuz0r.com'
+SITEURL = 'https://d1ffuz0r.com'
 
 FEED_DOMAIN = SITEURL
 #FEED_ALL_RSS = '/feeds/rss/'
-#GOOGLE_ANALYTICS = 'UA-43030036-2'
 THEME = 'themes/mytheme'
 THEME_STATIC_DIR = 'theme'
 
@@ -39,12 +38,10 @@ MENUITEMS = (('Home', '/'),
              ('Archive', '/archives.html'))
 
 GITHUB_URL = 'http://github.com/d1ffuz0r'
-TWITTER_USERNAME = 'inablackcar'
 #DISQUS_SITENAME = "d1ffuz0rhomesite"
 
 # Social widget
 SOCIAL = (('GitHub', GITHUB_URL),
-          ('Twitter', 'http://twitter.com/inablackcar'),
           ('LinkedIn', 'http://www.linkedin.com/in/romangladkov'),)
 DEFAULT_PAGINATION = 10
 

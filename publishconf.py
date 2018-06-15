@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://d1ffuz0r.com'
+SITEURL = 'https://d1ffuz0r.com'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = False
@@ -21,7 +21,6 @@ CATEGORY_FEED_ATOM = False
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
-
-#DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = 'UA-43030036-2'
 DISQUS_SITENAME = "d1ffuz0rhomesite"
+YANDEX_METRIKA = "49239889"
+
