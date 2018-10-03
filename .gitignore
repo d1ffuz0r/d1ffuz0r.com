@@ -1,3 +1,6 @@
 output/
+cache
+.idea
+.DS_Store
 *.py[co]
 *.pid

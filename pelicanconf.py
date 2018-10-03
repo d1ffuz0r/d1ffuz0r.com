@@ -37,7 +37,7 @@ MENUITEMS = (('Home', '/'),
              ('Erlang', '/tag/erlang.html'),
              ('Archive', '/archives.html'))
 
-GITHUB_URL = 'http://github.com/d1ffuz0r'
+GITHUB_URL = 'https://github.com/d1ffuz0r'
 #DISQUS_SITENAME = "d1ffuz0rhomesite"
 
 # Social widget
