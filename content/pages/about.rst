@@ -1,7 +1,7 @@
 About
 #####
 
-Python, Erlang and Emacs fan. Emacs Lisp. Originally from Russia. Lived in Saransk, Moscow (Russia), Bangkok, Hua Hin (Thailand), San Francisco, Mountain View, Oakland (CA, USA). Fan of Lineage 2 (I had been playing for 5 years). Permanent visitor of Punk Rock and Hip-Hop/Rap gigs.
+Python, Erlang and Emacs fan. Emacs Lisp. Originally from Russia. Lived in Saransk, Moscow (Russia), Bangkok, Hua Hin (Thailand), San Francisco, Mountain View, Oakland (CA, USA). Fan of Lineage 2 (I had been playing for 5 years).
 
 
 Projects
@@ -18,7 +18,7 @@ Open Source
 
 * https://github.com/d1ffuz0r/pycharm-themes Collection of color schemes for PyCharm ported from TextMate and some new
 
-* https://github.com/d1ffuz0r/sqlalchemy-manager Realization query managers for SQLAlchemy
+* https://github.com/d1ffuz0r/sqlalchemy-manager Implementation of query managers for SQLAlchemy
 
 * https://github.com/d1ffuz0r/django-masha Easy intergration Masha.js_ into Django project
 
