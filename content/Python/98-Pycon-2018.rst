@@ -1,0 +1,237 @@
+PyCon US 2017
+#############
+
+:date: 2019-03-15 12:28
+:tags: python, pycon
+
+Keynote Day 1
+-------------
+
+Video https://www.youtube.com/watch?v=ZyjCqQEUa8o
+
+Introduction.
+PyCon is changing. Over years the conference has changed from all mostly web-focused it to a very diverse conference. Now there’s a lot of scientists (numpy, scipy), devops (ansible, redhat), web (django, flask), data engineering (spark, dask), IOT (micropython)
+Now you can meet there anyone - professionals, students, scientists, hobbysts, teachers, analysts. People use Python differently, don’t be aggressive. What works for you - doesn’t work for others. Same with the code, code style, use, etc.
+
+Funny: PyCon has dinner that you can attend for a payment, every year there were 100 ppl less than planned. They paid but didn’t show up
+
+
+Experiment Assignment on the Web
+--------------------------------
+
+Video https://www.youtube.com/watch?v=B5DqPOfQxGo
+
+A/B testing has a very high risk of having BIASed results.
+
+Rules:
+
+    - Create and follow the rules
+    - Create metrics! Have clear goals
+    - Divide and rule, avoid testing many features on the same group of people at a time. Split into groups, test different feature on different groups
+    - Have a timed results. E.g. 1 week experiment with A and 1 weeb with B, then compare and repeat
+
+Big picture software testing unit testing, Lean Startup, and everything in between
+----------------------------------------------------------------------------------
+
+Video https://www.youtube.com/watch?v=Vaq_e7qUA-4
+
+How to test your software, common mistakes.
+100% code coverage - often waste of time, often useless and doesn’t guarantee quality
+Testing strategy depends on the project, situation, stage of project, goals
+
+Example (startup):
+
+    - Have an idea
+    - Test the idea (build a mvp)
+    - Learn users (define requirements - collect specific requirements)
+    - a/b
+    - Logs
+    - Analytics (kissmetrics)
+    - Build product based on learned
+    - Test correctness
+    - Automated tests - often doesn’t prove correctness
+    - Manual testing - proves correctness
+    - Scaling and getting users
+    - Test changes (preventing unexpected changes)
+    - Automated test - effective for testing changes. Why it’s important? Once the product is proved to be correct, you need to prevent changes. Manual testing is not effective
+    - Don’t try to automate testing of places that change often - waste of time, humans can do it better
+    - After getting users - it’s time to do load testing, collect usage metrics (cpu, network, memory)
+
+Next Level Testing
+------------------
+
+Video https://www.youtube.com/watch?v=jmsk1QZQEvQ
+
+Exploring different types of testing
+
+Property Based testing
+
+    - Don’t return invalid results in case of error, raise an exception instead!
+
+Passing all possible values to functions
+
+    - Trying to send random values and expecting valid results
+
+Fuzz Testing
+
+    - Good for catching unhandled exceptions
+
+Mutation Testing
+
+    - Changing the code and trying to run. Very long, can be running days or weeks.
+
+
+Dask A Pythonic Distributed Data Science Framework
+--------------------------------------------------
+
+Video https://www.youtube.com/watch?v=RA_2qdipVng
+
+
+Dask is a flexible parallel computing library for analytic computing - http://dask.pydata.org/en/latest/
+
+Dask is composed of two components:
+
+    - Dynamic task scheduling optimized for computation. This is similar to Airflow, Luigi, Celery, or Make, but optimized for interactive computational workloads.
+    - "Big Data" collections like parallel arrays, dataframes, and lists that extend common interfaces like NumPy, Pandas, or Python iterators to larger-than-memory or distributed environments. These parallel collections run on top of the dynamic task schedulers.
+
+Has multiple interfaces, can be used in Pandas, Asyncio, scikit-learn style. Allows to make any code distribtued
+
+Keynote Day 2
+-------------
+
+Video https://www.youtube.com/watch?v=66XoCk79kjM
+
+How Instagram upgraded to Python 3.6 and how they scale django. It took 1 year to upgrade
+
+How they upgraded their code:
+
+    - Upgraded 3rd party libraries first to make sure they support python3, don’t allow new dependencies that don’t support python 3
+    - Make the code python 2 and 3 compatible
+    - Making 1 change at a time. E.g. fix all print statements, fix all imports, fix all iterators, fix all strings
+    - Switched to Python 3 in preprod and kept Python 2 in prod
+    - Long testing in preprod
+    - Upgrading prod to Python 3
+
+Common issues:
+
+    - pickle. output not compatible between Python 2 and 3
+    - Iterators! They lose items while iterating
+    - Json.dumps produces different keys order. Use sort_keys=True
+    - String! Binary, unicode, etc
+
+They push straight to master (production)
+
+Debugging in Python 3 6 Better, Faster, Stronger
+------------------------------------------------
+
+Video https://www.youtube.com/watch?v=NdObDUbLjdg
+
+Why running code in Python 2 with debugger is slow: tracing function is being executed for every line
+Python 3.6 has new API for tracing that allows to dynamically turn on/off tracing in the code during execution!
+
+Readability Counts
+------------------
+
+Video https://www.youtube.com/watch?v=knMg6G9_XCg
+
+How to make the code better to read. Write code for humans, not for machines.
+Line length - short line is not the goal, readability is
+Regular expressions - avoid writing long oneline expressions, use re.VERBOSE more that allows your to use comments in regexp
+Function arguments - always move to new line, it’s easier to read
+Re-read PEP8 every 6 months
+
+Code Structure:
+
+    - Use descriptive names, long but descriptive
+    - Use tuple unpacking in loops
+    - How to make sure that the code is readable: read your code out loud
+    - Variables should describe what they’re doing
+    - Write documentation for blocks of the code, describe what it does
+    - Context managers - good way to hide exception handling (contextlib)
+    - Replace loops on list comprehensions
+    - Do not reimplement standard magic class methods like. Instead of `.has_item()` implement `.__contains__`
+    - If you notice patterns that you pass same arguments in a set of functions, create class
+
+How to make a good library API
+------------------------------
+
+Video https://www.youtube.com/watch?v=4mkFfce46zE
+
+Checklist: http://python.apichecklist.com
+
+Good Values:
+
+    - Simplicity
+    - Focus on 90% of cases. Documentation, examples (simple, easy to read)
+    - Let use library internals (inheritance, import) for implementing other 10%
+    - Use "good" default parameters that will work for 90%
+    - Consistency
+    - Keep code Pythonic
+    - Safety
+    - Flexibility
+
+Too abstract API  are far away from reality, but it depends on the case. Celery, Pillow, BeautifulSoup
+Complex is better than complicated
+Side effects - bad, try to write clean functions. E.g. print_formatted(‘a b c’) - bad, print(format(‘a b c’)) - good
+Design Patterns - caused by bad language design. Can be replaced by better solutions from Python. Learn different languages to find better solutions
+
+Library UX Using abstraction towards friendlier APIs
+----------------------------------------------------
+
+Video https://www.youtube.com/watch?v=W8Rxd9OPblI
+
+Good interface
+
+    - Reduces number of errors
+    - Makes complex tasks simple
+    - Helps to adapt technology
+
+Python is in between low and high level languages
+Hide implementations in controlled environment
+Duplications is better than bad abstraction
+Top level should allow access to 2nd level. It will help to make library flexible
+Level of abstraction depends on users
+
+No More Sad Pandas Optimizing Pandas Code for Speed and Efficiency
+------------------------------------------------------------------
+
+Video https://www.youtube.com/watch?v=HN5d490_KKk
+
+How to make Pandas fast
+
+%timeit function - execution timing
+%load_ext line_profiler
+%lprun -f function - profile line by line
+
+Apply in pandas 2 times faster than iterrows
+Numpy arrays faster than pandas (ndarray)
+Cython helps to speed up loops
+Don’t optimize things that should not be optimized. Aka don’t do premature optimization
+
+Tracing, Fast and Slow Digging into and improving your web service’s performance
+--------------------------------------------------------------------------------
+
+Video https://www.youtube.com/watch?v=lu0F-psmBzc
+
+TLDR: use distributed tracing for microservices or project with many parts
+
+Why:
+    - Understanding performance
+    - Understanding how systems affect each other
+
+Setup nginx to send x-request-id
+Standartize log structure
+It depends on the goal what to track
+Use request id as id
+Tracing can and will make your system slower. But it’s not required to track all parts of the system
+Don’t always required
+
+One Data Pipeline to Rule Them All
+----------------------------------
+
+Video https://www.youtube.com/watch?v=N6riK1Xtyng
+
+How to use Kafka efficiently and plan your data pipelines
+You need schema, without schema everything will be bad
+Schema changes within topic should be backwards compatible
+Migration to new schema: create new schema and switch from old one
