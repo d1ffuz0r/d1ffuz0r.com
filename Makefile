@@ -12,9 +12,9 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=192.227.166.24
+SSH_HOST=82.146.45.153
 SSH_PORT=22
-SSH_USER=ck
+SSH_USER=cyberkolhoz
 SSH_TARGET_DIR=/var/www/d1ffuz0r.com
 
 S3_BUCKET=my_s3_bucket

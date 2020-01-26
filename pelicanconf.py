@@ -8,7 +8,7 @@ SITENAME = u'd1ffuz0r - python, erlang, l1f3'
 SITEURL = 'https://d1ffuz0r.com'
 
 FEED_DOMAIN = SITEURL
-#FEED_ALL_RSS = '/feeds/rss/'
+# FEED_ALL_RSS = '/feeds/rss/'
 THEME = 'themes/mytheme'
 THEME_STATIC_DIR = 'theme'
 
@@ -38,7 +38,7 @@ MENUITEMS = (('Home', '/'),
              ('Archive', '/archives.html'))
 
 GITHUB_URL = 'https://github.com/d1ffuz0r'
-#DISQUS_SITENAME = "d1ffuz0rhomesite"
+# DISQUS_SITENAME = "d1ffuz0rhomesite"
 
 # Social widget
 SOCIAL = (('GitHub', GITHUB_URL),
