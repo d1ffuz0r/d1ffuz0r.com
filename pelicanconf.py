@@ -11,6 +11,7 @@ FEED_DOMAIN = SITEURL
 # FEED_ALL_RSS = '/feeds/rss/'
 THEME = 'themes/mytheme'
 THEME_STATIC_DIR = 'theme'
+STATIC_PATHS = ["images"]
 
 TIMEZONE = 'Europe/Moscow'
 
