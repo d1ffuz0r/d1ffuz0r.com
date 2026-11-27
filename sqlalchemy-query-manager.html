@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SQLALchemy Query Manager</title>
+        <link rel="stylesheet" href="https://d1ffuz0r.com/theme/css/main.css">
+        <link href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate" title="d1ffuz0r - python, erlang, l1f3 RSS Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+    </head>
+
+    <body id="index" class="home">
+<a href="https://github.com/d1ffuz0r">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+            <h1><a href="https://d1ffuz0r.com/">d1ffuz0r - python, erlang, l1f3 </a></h1>
+            <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/links.html">Links</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/tag/erlang.html">Erlang</a></li>
+                    <li><a href="/archives.html">Archive</a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://d1ffuz0r.com/sqlalchemy-query-manager.html" rel="bookmark"
+           title="Permalink to SQLALchemy Query Manager">SQLALchemy Query Manager</a></h1>
+    </header>
+
+    <div class="entry-content">
+<p>        <abbr class="published" title="2018-10-23T12:12:00+03:00">
+            Tue 23 October 2018,
+        </abbr>
+
+
+        
+</p><!-- /.post-info -->      <p>So, Django has &quot;manager&quot; for the queries <a class="reference external" href="https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager">https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager</a>, that is good for creating DSL.</p>
+<p>For example, if you want get all users from database for chosen date, you can write some query:</p>
+<pre class="literal-block">
+User.objects.filter(birth_date &gt; (date - timedelta(1)),
+                    birth_date &lt; date).order_by('-birth_date').all()
+</pre>
+<p>It looks informative, but hard for testing and reading, so better to write the same code with other way use Manager (in internet you can find how to prepare manager for call with many methods):</p>
+<pre class="literal-block">
+User.objects.get_for_date(date).is_index().has_published()
+</pre>
+<p>That better! Managers makes our live easiest. But, come back to SQLAlchemy.
+In SQLAlchemy, previous query you can write through few methods:</p>
+<pre class="literal-block">
+session.query(User).filter(User.birth_date &gt;= (date - timedelta(1)),
+                           User.birth_date &lt;= date).order_by(User.birth_date.desc()).all()
+</pre>
+<p>Or</p>
+<pre class="literal-block">
+session.query(User).filter_by(birth_date &gt; (date - timedelta(1)),
+                              birth_date &lt; date).order_by(User.birth_date.desc()).all()
+</pre>
+<p>That more informative than query on Django, code repeats SQL query,  complex queries write easy.
+But, let's try make it short, like example with Manager in Django. SQLAlchemy do not have that functionality.
+Exist few ways to do query is more short:</p>
+<p>First: classmethod. People already asked on Stackoverflow about it:
+<a class="reference external" href="http://stackoverflow.com/questions/6606745/equivalent-of-models-manager-for-sqlalchemy">http://stackoverflow.com/questions/6606745/equivalent-of-models-manager-for-sqlalchemy</a>
+<a class="reference external" href="http://stackoverflow.com/questions/4866489/is-there-something-equivalent-to-djangos-managers-in-sqlalchemy">http://stackoverflow.com/questions/4866489/is-there-something-equivalent-to-djangos-managers-in-sqlalchemy</a></p>
+<pre class="literal-block">
+class User(Base):
+    birth_date = Column(DateTime)
+
+    &#64;classmethod
+    def get_for_date(cls, session, date):
+        return session.query(cls).filter(
+            cls.birth_date &gt;= (date - timedelta(1)),
+            cls.birth_date &lt;= date
+        ).order_by(cls.birth_date.desc()).all()
+
+# use it
+users = User.get_for_date(session, date)
+</pre>
+<p>Okay, looks better than raw query, but what if we are want use more filter, or use few methods in query.
+We can to do few methods for each case or pass query in method and return new query, but it's not &quot;DRY&quot; way.</p>
+<p>Two: functions</p>
+<pre class="literal-block">
+def get_for_date(query, date):
+    return query.filter(
+              cls.birth_date &gt;= (date - timedelta(1)),
+              cls.birth_date &lt;= date
+          ).order_by(cls.birth_date.desc())
+
+users = get_for_date(session.query(User))
+</pre>
+<p>Functional guys probably must to love it. But again, more filters (e.g. we want to get only published entries and who marked for showing at home page):</p>
+<pre class="literal-block">
+query = is_index(has_published(get_for_date(session.query(User)))).all()
+</pre>
+<p>Oh, no. We want Python, but no LISP.</p>
+<p>Three: Inherite a <cite>Query</cite> or <cite>DBSession</cite> classes, something like a manager!
+For example, recipie for prefiltered queries <a class="reference external" href="http://www.sqlalchemy.org/trac/wiki/UsageRecipes/PreFilteredQuery">http://www.sqlalchemy.org/trac/wiki/UsageRecipes/PreFilteredQuery</a>.</p>
+<p>You can see, method defined in FilteredQuery, will to avaible in query:</p>
+<pre class="literal-block">
+assert session.query(Address).private
+</pre>
+<p>So, may we must to add methods in runtime? Let's try:</p>
+<p>Make &quot;Manager&quot; with staticmethods, what added to our queries new expressions, methods must to get query, add our expression and return new query.</p>
+<pre class="literal-block">
+class MainManager:
+
+    &#64;staticmethod
+    def is_index(self):
+        return self.filter_by(is_index=True)
+
+    &#64;staticmethod
+    def is_public(self):
+        return self.filter_by(is_public=True)
+</pre>
+<p>And define attribute to model, for manager. Manager will get class with methods and set their to query</p>
+<pre class="literal-block">
+class User(Base):
+    __tablename__ = 'main'
+    id = Column(Integer, primary_key=True)
+    birth_date = Column(DateTime)
+    is_index = Column(Boolean, default=False)
+    is_public = Column(Boolean, default=False)
+
+    __manager__ = MainManager
+</pre>
+<p>Then create new session with the <cite>ManagerQuery</cite>. Now, query each time will receive attributes of the model what passed to query, and set methods of  the class with methods to a new query:</p>
+<pre class="literal-block">
+...
+from alchmanager import ManagedQuery
+
+engine = create_engine('sqlite:///:memory:')
+session = sessionmaker(query_cls=ManagedQuery, bind=engine)()
+</pre>
+<p>Now, this session will add methods from manager each time for in time of creating query if in model which passed to query, have a manager</p>
+<p><cite>__manager__</cite> attribute:</p>
+<pre class="literal-block">
+&gt;&gt;&gt;print(session.query(User).is_index)
+&lt;bound method ManagedQuery.is_index of &lt;alchmanager.ManagedQuery object at 0x102853e10&gt;&gt;
+</pre>
+<p>Or, if not exists</p>
+<pre class="literal-block">
+&gt;&gt;&gt;print(session.query(User).other_method)
+...
+AttributeError: 'ManagedQuery' object has no attribute 'other_method'
+</pre>
+<p>But, what if we want have managers not only for few classes? We can make base class and to inherite from him, that good idea for few classes, or who have little differences. What if we want make manager not only for query, and for all session.
+We also can to inherit <cite>DBSession</cite> class and do small hack, to get query class from <cite>DBSession._query_cls</cite> and define methods for all session, to add methods in Query class. That method is not pretty, because I wrote the small decorator, what in starting project loaded and adds methods to query class. See example</p>
+<pre class="literal-block">
+...
+from alchmanager import ManagedSession
+
+engine = create_engine('sqlite:///:memory:')
+session = sessionmaker(class_=ManagedSession, bind=engine)()
+
+&#64;session.load_manager()
+class SessionManager:
+
+    &#64;staticmethod
+    def published(self):
+         return self.filter_by(is_public=True)
+
+    &#64;staticmethod
+    def has_index(self):
+        return self.filter_by(is_index=True)
+
+
+class Test(Base):
+    id = Column(Integer)
+
+
+&gt;&gt;&gt;print(session.query(TestModel).published)
+&lt;bound method Query.published of &lt;sqlalchemy.orm.query.Query object at 0x109ac5750&gt;&gt;
+</pre>
+<p>We have manager for session, all queries have methods defined in <cite>SessionManager</cite>, query manager can to replace session methods in query instance.</p>
+<p>So now, we have managers for SQLAlchemy for making simple DSL. Get the source code you can at [sqlalchemy-manager](<a class="reference external" href="https://github.com/d1ffuz0r/sqlalchemy-manager">https://github.com/d1ffuz0r/sqlalchemy-manager</a>)</p>
+
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "sqlalchemy-query-manager.html";
+        var disqus_url = "https://d1ffuz0r.com/sqlalchemy-query-manager.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://d1ffuz0rhomesite.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+            <div class="social">
+                <h2>social</h2>
+                <ul>
+                    <li><a href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                    <li><a href="https://github.com/d1ffuz0r">GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/romangladkov">LinkedIn</a></li>
+                </ul>
+            </div><!-- /.social -->
+        </section><!-- /#extras -->
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+
+                The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+            </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'd1ffuz0rhomesite';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49239889 = new Ya.Metrika2({
+                    id: 49239889,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49239889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>10 Erlang one liners to impress your friends</title>
+        <link rel="stylesheet" href="https://d1ffuz0r.com/theme/css/main.css">
+        <link href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate" title="d1ffuz0r - python, erlang, l1f3 RSS Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+    </head>
+
+    <body id="index" class="home">
+<a href="https://github.com/d1ffuz0r">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+            <h1><a href="https://d1ffuz0r.com/">d1ffuz0r - python, erlang, l1f3 </a></h1>
+            <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/links.html">Links</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/tag/erlang.html">Erlang</a></li>
+                    <li><a href="/archives.html">Archive</a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://d1ffuz0r.com/10-erlang-one-liners-to-impress-your-friends.html" rel="bookmark"
+           title="Permalink to 10 Erlang one liners to impress your friends">10 Erlang one liners to impress your friends</a></h1>
+    </header>
+
+    <div class="entry-content">
+<p>        <abbr class="published" title="2012-05-28T21:20:00+04:00">
+            Mon 28 May 2012,
+        </abbr>
+
+
+tags: <a href="https://d1ffuz0r.com/tag/erlang.html">erlang</a></p>        
+</p><!-- /.post-info -->      <div class="section" id="multiple-each-item-in-a-list-by-2">
+<h2>1. Multiple Each Item in a List by 2</h2>
+<pre class="literal-block">
+[X * 2 || X &lt;- lists:seq(1, 11)].
+</pre>
+</div>
+<div class="section" id="sum-a-list-of-numbers">
+<h2>2. Sum a List of Numbers</h2>
+<pre class="literal-block">
+lists:sum(lists:seq(1, 1001)).
+</pre>
+</div>
+<div class="section" id="verify-if-exists-in-a-string">
+<h2>3.Verify if Exists in a String</h2>
+<pre class="literal-block">
+Wordslist = [&quot;scala&quot;, &quot;akka&quot;, &quot;play framework&quot;, &quot;sbt&quot;, &quot;typesafe&quot;].
+Tweet = &quot;This is an example tweet talking about scala and sbt&quot;.
+[lists:member(S, Wordslist) || S &lt;- string:tokens(Tweet, &quot; &quot;)].
+</pre>
+</div>
+<div class="section" id="read-in-a-file">
+<h2>4. Read in a File</h2>
+<pre class="literal-block">
+file:read_file(&quot;ten_one_liners.erl&quot;).
+</pre>
+</div>
+<div class="section" id="happy-birthday-to-you">
+<h2>5. Happy Birthday to You</h2>
+<pre class="literal-block">
+[&quot;Happy Birthday &quot; ++ case X of 2 -&gt; &quot;dear Robert&quot;; _ -&gt; &quot;You&quot; end || X &lt;- lists:seq(1, 4)].
+</pre>
+</div>
+<div class="section" id="filter-list-of-nubmers">
+<h2>6. Filter list of nubmers</h2>
+<pre class="literal-block">
+[X || X &lt;- lists:seq(40, 60), X &gt;= 50].
+</pre>
+</div>
+<div class="section" id="fetch-and-parse-an-xml-web-service">
+<h2>7. Fetch and Parse an XML web service</h2>
+<pre class="literal-block">
+inets:start().
+xmerl_scan:string(element(3, element(2, httpc:request(&quot;http://search.twitter.com/search.atom?&amp;q=erlang&quot;)))).
+</pre>
+</div>
+<div class="section" id="find-minimum-or-maximum-in-a-list">
+<h2>8. Find minimum (or maximum) in a List</h2>
+<pre class="literal-block">
+lists:min(lists:seq(1, 10)).
+lists:max(lists:seq(1, 10)).
+</pre>
+</div>
+<div class="section" id="parralel-processing">
+<h2>9. Parralel Processing</h2>
+<pre class="literal-block">
+[spawn(fun() -&gt; io:format(&quot;~w~n&quot;, [X * 2]) end) || X &lt;- lists:seq(1, 10)].
+</pre>
+</div>
+<div class="section" id="sieve-of-eratosthenes">
+<h2>10. Sieve of Eratosthenes</h2>
+<pre class="literal-block">
+N = 50.
+[X || X &lt;- lists:usort(lists:seq(2, N + 1)), not lists:member(X, lists:usort([(P * F) || P &lt;- lists:seq(2, round(math:pow(N, 0.5)) + 2), F &lt;- lists:seq(2, round(N / P))]))].
+</pre>
+<p>Bonus</p>
+</div>
+<div class="section" id="error-logging-with-crashdump-io-https-crashdump-io">
+<h2>11. Error Logging with [CrashDump.io](<a class="reference external" href="https://crashdump.io">https://crashdump.io</a>)</h2>
+<pre class="literal-block">
+fink:add_sasl_backend().        % Enable logging
+error_logger:error_msg(&quot;HELP&quot;). % Send notification
+</pre>
+</div>
+
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "10-erlang-one-liners-to-impress-your-friends.html";
+        var disqus_url = "https://d1ffuz0r.com/10-erlang-one-liners-to-impress-your-friends.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://d1ffuz0rhomesite.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+            <div class="social">
+                <h2>social</h2>
+                <ul>
+                    <li><a href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                    <li><a href="https://github.com/d1ffuz0r">GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/romangladkov">LinkedIn</a></li>
+                </ul>
+            </div><!-- /.social -->
+        </section><!-- /#extras -->
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+
+                The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+            </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'd1ffuz0rhomesite';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49239889 = new Ya.Metrika2({
+                    id: 49239889,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49239889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    </body>
+</html>

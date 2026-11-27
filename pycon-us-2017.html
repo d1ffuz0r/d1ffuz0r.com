@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PyCon US 2017</title>
+        <link rel="stylesheet" href="https://d1ffuz0r.com/theme/css/main.css">
+        <link href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate" title="d1ffuz0r - python, erlang, l1f3 RSS Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+    </head>
+
+    <body id="index" class="home">
+<a href="https://github.com/d1ffuz0r">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+            <h1><a href="https://d1ffuz0r.com/">d1ffuz0r - python, erlang, l1f3 </a></h1>
+            <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/links.html">Links</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/tag/erlang.html">Erlang</a></li>
+                    <li><a href="/archives.html">Archive</a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://d1ffuz0r.com/pycon-us-2017.html" rel="bookmark"
+           title="Permalink to PyCon US 2017">PyCon US 2017</a></h1>
+    </header>
+
+    <div class="entry-content">
+<p>        <abbr class="published" title="2019-03-15T12:28:00+03:00">
+            Fri 15 March 2019,
+        </abbr>
+
+
+tags: <a href="https://d1ffuz0r.com/tag/python.html">python</a><a href="https://d1ffuz0r.com/tag/pycon.html">pycon</a></p>        
+</p><!-- /.post-info -->      <div class="section" id="keynote-day-1">
+<h2>Keynote Day 1</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=ZyjCqQEUa8o">https://www.youtube.com/watch?v=ZyjCqQEUa8o</a></p>
+<p>Introduction.
+PyCon is changing. Over years the conference has changed from all mostly web-focused it to a very diverse conference. Now there’s a lot of scientists (numpy, scipy), devops (ansible, redhat), web (django, flask), data engineering (spark, dask), IOT (micropython)
+Now you can meet there anyone - professionals, students, scientists, hobbysts, teachers, analysts. People use Python differently, don’t be aggressive. What works for you - doesn’t work for others. Same with the code, code style, use, etc.</p>
+<p>Funny: PyCon has dinner that you can attend for a payment, every year there were 100 ppl less than planned. They paid but didn’t show up</p>
+</div>
+<div class="section" id="experiment-assignment-on-the-web">
+<h2>Experiment Assignment on the Web</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=B5DqPOfQxGo">https://www.youtube.com/watch?v=B5DqPOfQxGo</a></p>
+<p>A/B testing has a very high risk of having BIASed results.</p>
+<p>Rules:</p>
+<blockquote>
+<ul class="simple">
+<li>Create and follow the rules</li>
+<li>Create metrics! Have clear goals</li>
+<li>Divide and rule, avoid testing many features on the same group of people at a time. Split into groups, test different feature on different groups</li>
+<li>Have a timed results. E.g. 1 week experiment with A and 1 weeb with B, then compare and repeat</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="big-picture-software-testing-unit-testing-lean-startup-and-everything-in-between">
+<h2>Big picture software testing unit testing, Lean Startup, and everything in between</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=Vaq_e7qUA-4">https://www.youtube.com/watch?v=Vaq_e7qUA-4</a></p>
+<p>How to test your software, common mistakes.
+100% code coverage - often waste of time, often useless and doesn’t guarantee quality
+Testing strategy depends on the project, situation, stage of project, goals</p>
+<p>Example (startup):</p>
+<blockquote>
+<ul class="simple">
+<li>Have an idea</li>
+<li>Test the idea (build a mvp)</li>
+<li>Learn users (define requirements - collect specific requirements)</li>
+<li>a/b</li>
+<li>Logs</li>
+<li>Analytics (kissmetrics)</li>
+<li>Build product based on learned</li>
+<li>Test correctness</li>
+<li>Automated tests - often doesn’t prove correctness</li>
+<li>Manual testing - proves correctness</li>
+<li>Scaling and getting users</li>
+<li>Test changes (preventing unexpected changes)</li>
+<li>Automated test - effective for testing changes. Why it’s important? Once the product is proved to be correct, you need to prevent changes. Manual testing is not effective</li>
+<li>Don’t try to automate testing of places that change often - waste of time, humans can do it better</li>
+<li>After getting users - it’s time to do load testing, collect usage metrics (cpu, network, memory)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="next-level-testing">
+<h2>Next Level Testing</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=jmsk1QZQEvQ">https://www.youtube.com/watch?v=jmsk1QZQEvQ</a></p>
+<p>Exploring different types of testing</p>
+<p>Property Based testing</p>
+<blockquote>
+<ul class="simple">
+<li>Don’t return invalid results in case of error, raise an exception instead!</li>
+</ul>
+</blockquote>
+<p>Passing all possible values to functions</p>
+<blockquote>
+<ul class="simple">
+<li>Trying to send random values and expecting valid results</li>
+</ul>
+</blockquote>
+<p>Fuzz Testing</p>
+<blockquote>
+<ul class="simple">
+<li>Good for catching unhandled exceptions</li>
+</ul>
+</blockquote>
+<p>Mutation Testing</p>
+<blockquote>
+<ul class="simple">
+<li>Changing the code and trying to run. Very long, can be running days or weeks.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="dask-a-pythonic-distributed-data-science-framework">
+<h2>Dask A Pythonic Distributed Data Science Framework</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=RA_2qdipVng">https://www.youtube.com/watch?v=RA_2qdipVng</a></p>
+<p>Dask is a flexible parallel computing library for analytic computing - <a class="reference external" href="http://dask.pydata.org/en/latest/">http://dask.pydata.org/en/latest/</a></p>
+<p>Dask is composed of two components:</p>
+<blockquote>
+<ul class="simple">
+<li>Dynamic task scheduling optimized for computation. This is similar to Airflow, Luigi, Celery, or Make, but optimized for interactive computational workloads.</li>
+<li>&quot;Big Data&quot; collections like parallel arrays, dataframes, and lists that extend common interfaces like NumPy, Pandas, or Python iterators to larger-than-memory or distributed environments. These parallel collections run on top of the dynamic task schedulers.</li>
+</ul>
+</blockquote>
+<p>Has multiple interfaces, can be used in Pandas, Asyncio, scikit-learn style. Allows to make any code distribtued</p>
+</div>
+<div class="section" id="keynote-day-2">
+<h2>Keynote Day 2</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=66XoCk79kjM">https://www.youtube.com/watch?v=66XoCk79kjM</a></p>
+<p>How Instagram upgraded to Python 3.6 and how they scale django. It took 1 year to upgrade</p>
+<p>How they upgraded their code:</p>
+<blockquote>
+<ul class="simple">
+<li>Upgraded 3rd party libraries first to make sure they support python3, don’t allow new dependencies that don’t support python 3</li>
+<li>Make the code python 2 and 3 compatible</li>
+<li>Making 1 change at a time. E.g. fix all print statements, fix all imports, fix all iterators, fix all strings</li>
+<li>Switched to Python 3 in preprod and kept Python 2 in prod</li>
+<li>Long testing in preprod</li>
+<li>Upgrading prod to Python 3</li>
+</ul>
+</blockquote>
+<p>Common issues:</p>
+<blockquote>
+<ul class="simple">
+<li>pickle. output not compatible between Python 2 and 3</li>
+<li>Iterators! They lose items while iterating</li>
+<li>Json.dumps produces different keys order. Use sort_keys=True</li>
+<li>String! Binary, unicode, etc</li>
+</ul>
+</blockquote>
+<p>They push straight to master (production)</p>
+</div>
+<div class="section" id="debugging-in-python-3-6-better-faster-stronger">
+<h2>Debugging in Python 3 6 Better, Faster, Stronger</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=NdObDUbLjdg">https://www.youtube.com/watch?v=NdObDUbLjdg</a></p>
+<p>Why running code in Python 2 with debugger is slow: tracing function is being executed for every line
+Python 3.6 has new API for tracing that allows to dynamically turn on/off tracing in the code during execution!</p>
+</div>
+<div class="section" id="readability-counts">
+<h2>Readability Counts</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=knMg6G9_XCg">https://www.youtube.com/watch?v=knMg6G9_XCg</a></p>
+<p>How to make the code better to read. Write code for humans, not for machines.
+Line length - short line is not the goal, readability is
+Regular expressions - avoid writing long oneline expressions, use re.VERBOSE more that allows your to use comments in regexp
+Function arguments - always move to new line, it’s easier to read
+Re-read PEP8 every 6 months</p>
+<p>Code Structure:</p>
+<blockquote>
+<ul class="simple">
+<li>Use descriptive names, long but descriptive</li>
+<li>Use tuple unpacking in loops</li>
+<li>How to make sure that the code is readable: read your code out loud</li>
+<li>Variables should describe what they’re doing</li>
+<li>Write documentation for blocks of the code, describe what it does</li>
+<li>Context managers - good way to hide exception handling (contextlib)</li>
+<li>Replace loops on list comprehensions</li>
+<li>Do not reimplement standard magic class methods like. Instead of <cite>.has_item()</cite> implement <cite>.__contains__</cite></li>
+<li>If you notice patterns that you pass same arguments in a set of functions, create class</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="how-to-make-a-good-library-api">
+<h2>How to make a good library API</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=4mkFfce46zE">https://www.youtube.com/watch?v=4mkFfce46zE</a></p>
+<p>Checklist: <a class="reference external" href="http://python.apichecklist.com">http://python.apichecklist.com</a></p>
+<p>Good Values:</p>
+<blockquote>
+<ul class="simple">
+<li>Simplicity</li>
+<li>Focus on 90% of cases. Documentation, examples (simple, easy to read)</li>
+<li>Let use library internals (inheritance, import) for implementing other 10%</li>
+<li>Use &quot;good&quot; default parameters that will work for 90%</li>
+<li>Consistency</li>
+<li>Keep code Pythonic</li>
+<li>Safety</li>
+<li>Flexibility</li>
+</ul>
+</blockquote>
+<p>Too abstract API  are far away from reality, but it depends on the case. Celery, Pillow, BeautifulSoup
+Complex is better than complicated
+Side effects - bad, try to write clean functions. E.g. print_formatted(‘a b c’) - bad, print(format(‘a b c’)) - good
+Design Patterns - caused by bad language design. Can be replaced by better solutions from Python. Learn different languages to find better solutions</p>
+</div>
+<div class="section" id="library-ux-using-abstraction-towards-friendlier-apis">
+<h2>Library UX Using abstraction towards friendlier APIs</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=W8Rxd9OPblI">https://www.youtube.com/watch?v=W8Rxd9OPblI</a></p>
+<p>Good interface</p>
+<blockquote>
+<ul class="simple">
+<li>Reduces number of errors</li>
+<li>Makes complex tasks simple</li>
+<li>Helps to adapt technology</li>
+</ul>
+</blockquote>
+<p>Python is in between low and high level languages
+Hide implementations in controlled environment
+Duplications is better than bad abstraction
+Top level should allow access to 2nd level. It will help to make library flexible
+Level of abstraction depends on users</p>
+</div>
+<div class="section" id="no-more-sad-pandas-optimizing-pandas-code-for-speed-and-efficiency">
+<h2>No More Sad Pandas Optimizing Pandas Code for Speed and Efficiency</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=HN5d490_KKk">https://www.youtube.com/watch?v=HN5d490_KKk</a></p>
+<p>How to make Pandas fast</p>
+<p>%timeit function - execution timing
+%load_ext line_profiler
+%lprun -f function - profile line by line</p>
+<p>Apply in pandas 2 times faster than iterrows
+Numpy arrays faster than pandas (ndarray)
+Cython helps to speed up loops
+Don’t optimize things that should not be optimized. Aka don’t do premature optimization</p>
+</div>
+<div class="section" id="tracing-fast-and-slow-digging-into-and-improving-your-web-services-performance">
+<h2>Tracing, Fast and Slow Digging into and improving your web service’s performance</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=lu0F-psmBzc">https://www.youtube.com/watch?v=lu0F-psmBzc</a></p>
+<p>TLDR: use distributed tracing for microservices or project with many parts</p>
+<dl class="docutils">
+<dt>Why:</dt>
+<dd><ul class="first last simple">
+<li>Understanding performance</li>
+<li>Understanding how systems affect each other</li>
+</ul>
+</dd>
+</dl>
+<p>Setup nginx to send x-request-id
+Standartize log structure
+It depends on the goal what to track
+Use request id as id
+Tracing can and will make your system slower. But it’s not required to track all parts of the system
+Don’t always required</p>
+</div>
+<div class="section" id="one-data-pipeline-to-rule-them-all">
+<h2>One Data Pipeline to Rule Them All</h2>
+<p>Video <a class="reference external" href="https://www.youtube.com/watch?v=N6riK1Xtyng">https://www.youtube.com/watch?v=N6riK1Xtyng</a></p>
+<p>How to use Kafka efficiently and plan your data pipelines
+You need schema, without schema everything will be bad
+Schema changes within topic should be backwards compatible
+Migration to new schema: create new schema and switch from old one</p>
+</div>
+
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "pycon-us-2017.html";
+        var disqus_url = "https://d1ffuz0r.com/pycon-us-2017.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://d1ffuz0rhomesite.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+            <div class="social">
+                <h2>social</h2>
+                <ul>
+                    <li><a href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                    <li><a href="https://github.com/d1ffuz0r">GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/romangladkov">LinkedIn</a></li>
+                </ul>
+            </div><!-- /.social -->
+        </section><!-- /#extras -->
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+
+                The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+            </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'd1ffuz0rhomesite';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49239889 = new Ya.Metrika2({
+                    id: 49239889,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49239889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    </body>
+</html>

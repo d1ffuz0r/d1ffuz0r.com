@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>d1ffuz0r - python, erlang, l1f3 - Roman Gladkov</title><link href="https://d1ffuz0r.com/" rel="alternate"/><link href="https://d1ffuz0r.com/feeds/roman-gladkov.atom.xml" rel="self"/><id>https://d1ffuz0r.com/</id><updated>2021-02-28T12:56:00+03:00</updated><entry><title>Software Development Experiences</title><link href="https://d1ffuz0r.com/software-development-experiences.html" rel="alternate"/><published>2021-02-28T12:56:00+03:00</published><updated>2021-02-28T12:56:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2021-02-28:/software-development-experiences.html</id><content type="html">&lt;p&gt;I've came around the cool article where author gives his opinion on various software development topics after being 6 years in the industry:
+&lt;a class="reference external" href="https://chriskiehl.com/article/thoughts-after-6-years"&gt;https://chriskiehl.com/article/thoughts-after-6-years&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;100% agree with him.&lt;/p&gt;
+&lt;p&gt;Happy 2021!&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Erlang Logging Libraries</title><link href="https://d1ffuz0r.com/erlang-logging-libraries.html" rel="alternate"/><published>2020-05-07T00:00:00+03:00</published><updated>2020-05-07T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-07:/erlang-logging-libraries.html</id><summary type="html">&lt;p&gt;Re-posting from 2015-01-07&lt;/p&gt;
+&lt;p&gt;Erlang has many logging libraries for any taste. We want to collect all of them to a single list and help you select the best one for your next or current project.&lt;/p&gt;
+&lt;div class="section" id="error-logger"&gt;
+&lt;h2&gt;error_logger&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;error_logger&lt;/strong&gt; is a built in Erlang/OTP event manager which is can be used …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2015-01-07&lt;/p&gt;
+&lt;p&gt;Erlang has many logging libraries for any taste. We want to collect all of them to a single list and help you select the best one for your next or current project.&lt;/p&gt;
+&lt;div class="section" id="error-logger"&gt;
+&lt;h2&gt;error_logger&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;error_logger&lt;/strong&gt; is a built in Erlang/OTP event manager which is can be used for error and warning logging. This is a great solution for simple logs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; Mit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="http://erlang.org/doc/man/error_logger.html"&gt;http://erlang.org/doc/man/error_logger.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lager"&gt;
+&lt;h2&gt;Lager&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Lager&lt;/strong&gt; is a great logging framework, built by company &lt;a class="reference external" href="http://basho.com"&gt;Basho&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lager now is de-facto a standard library for logging logging  in the Erlang world. There are many custom backends and extensions for Lager you can find on GitHub.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; Apache&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt; Yes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="https://github.com/basho/lager"&gt;https://github.com/basho/lager&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="log4erl"&gt;
+&lt;h2&gt;Log4erl&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Log4erl&lt;/strong&gt; is another great logging framework for Erlang. Has simple and clean API.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; MOZILLA PUBLIC&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt; Yes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="https://github.com/ahmednawras/log4erl"&gt;https://github.com/ahmednawras/log4erl&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="alogger"&gt;
+&lt;h2&gt;alogger&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;alogger&lt;/strong&gt; is positioning itself as an &amp;quot;Abstract Logger Interface&amp;quot; which allows you implement you own logger. It also has a few built in interfaces which coveres basic use cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; Apache&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt; Yes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="https://github.com/siberian-fast-food/alogger"&gt;https://github.com/siberian-fast-food/alogger&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="twig"&gt;
+&lt;h2&gt;Twig&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Twig&lt;/strong&gt; is a &amp;quot;SASL-compliant Erlang/OTP logger&amp;quot;. Provides a bridge between the &amp;quot;error_logger&amp;quot; and &amp;quot;syslog&amp;quot; server over UDP protocol.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; Unknown&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt; No&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="https://github.com/cloudant/twig"&gt;https://github.com/cloudant/twig&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="elogger"&gt;
+&lt;h2&gt;elogger&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;elogger&lt;/strong&gt; is a logging library extracted from the &lt;a class="reference external" href="http://jungerl.sourceforge.net/"&gt;jungerl&lt;/a&gt; project. Unfortunately has almost no documentation except basic configuration examples.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; Unknown&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt; No&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="https://github.com/etnt/elogger"&gt;https://github.com/etnt/elogger&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="elog"&gt;
+&lt;h2&gt;elog&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;elog&lt;/strong&gt; is a last but not least logging library for Erlang. Unfortunately project is not supported anymore. Authors are suggesting to use Lager instead.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;License:&lt;/strong&gt; Mit&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebar compatible:&lt;/strong&gt; Yes&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="reference external" href="https://github.com/inaka/elog"&gt;https://github.com/inaka/elog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="Logging"/><category term="Libraries"/></entry><entry><title>N2O Logging. Custom backend</title><link href="https://d1ffuz0r.com/n2o-logging-custom-backend.html" rel="alternate"/><published>2020-05-07T00:00:00+03:00</published><updated>2020-05-07T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-07:/n2o-logging-custom-backend.html</id><summary type="html">&lt;p&gt;Re-posting from 2014-10-17&lt;/p&gt;
+&lt;p&gt;In this tutorial we will show you how to create a custom logging backend for N2O. We will use &lt;a class="reference external" href="https://github.com/basho/lager"&gt;Lager&lt;/a&gt; as a logging library.&lt;/p&gt;
+&lt;p&gt;As we described in the previous (&lt;a class="reference external" href="/n2o-logging.html"&gt;N2O Logging&lt;/a&gt;) tutorial, the logging backend should be implementing 3 methods:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;warning/3&lt;/li&gt;
+&lt;li&gt;info/3&lt;/li&gt;
+&lt;li&gt;error/3 …&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2014-10-17&lt;/p&gt;
+&lt;p&gt;In this tutorial we will show you how to create a custom logging backend for N2O. We will use &lt;a class="reference external" href="https://github.com/basho/lager"&gt;Lager&lt;/a&gt; as a logging library.&lt;/p&gt;
+&lt;p&gt;As we described in the previous (&lt;a class="reference external" href="/n2o-logging.html"&gt;N2O Logging&lt;/a&gt;) tutorial, the logging backend should be implementing 3 methods:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;warning/3&lt;/li&gt;
+&lt;li&gt;info/3&lt;/li&gt;
+&lt;li&gt;error/3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, let's get started.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; For this example, we will use code from (&lt;a class="reference external" href="/n2o-logging.html"&gt;N2O Logging&lt;/a&gt;) tutorial.&lt;/p&gt;
+&lt;p&gt;As a first step we should add &lt;tt class="docutils literal"&gt;lager&lt;/tt&gt; to the dependencies list in &lt;tt class="docutils literal"&gt;rebar.config&lt;/tt&gt;.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim rebar.config
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+{deps, [
+  {n2o, &amp;quot;.*&amp;quot;, {git, &amp;quot;git://github.com/5HT/n2o.git&amp;quot;, {tag, &amp;quot;HEAD&amp;quot;}}},
+  {lager, &amp;quot;.*&amp;quot;, {git, &amp;quot;git://github.com/basho/lager&amp;quot;, {tag, &amp;quot;2.0.3&amp;quot;}}}  % added lager
+]}.
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_lager/logb_rebar.png" style="width: 750px;" /&gt;
+&lt;p&gt;And add to the applications list in &lt;tt class="docutils literal"&gt;web.app.src&lt;/tt&gt; for an automatic &lt;a class="reference external" href="https://github.com/basho/lager"&gt;lager&lt;/a&gt; starting&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim apps/web/src/web.app.src
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+{application, web,
+ [
+  {description, &amp;quot;&amp;quot;},
+  {vsn, &amp;quot;1&amp;quot;},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  n2o,
+                  lager   % added lager
+                 ]},
+  {mod, { web_app, []}},
+  {env, []}
+ ]}.
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_lager/logb_cfg.png" /&gt;
+&lt;p&gt;Next, create a new file where we will implement the required functions.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+cd apps/web/src      % go to the app directory
+touch n2o_lager.erl  % create an empty file
+&lt;/pre&gt;
+&lt;p&gt;Open &lt;tt class="docutils literal"&gt;n2o_lager.erl&lt;/tt&gt; file&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim n2o_lager.erl
+&lt;/pre&gt;
+&lt;p&gt;And write the implementation. The code is pretty straight forward. You can extend this code also. How? I we will show you later.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+-module(n2o_lager).
+-export([info/3, warning/3, error/3]).
+-compile([{parse_transform, lager_transform}]).            % force compile
+
+format_message(Module, String) -&amp;gt;                          % log formatter &amp;quot;module:message&amp;quot;
+    wf:to_list([Module, &amp;quot;:&amp;quot;, String]).
+
+info(Module, String, Args) -&amp;gt;
+    lager:info(format_message(Module, String), Args).
+
+warning(Module, String, Args) -&amp;gt;
+    lager:warning(format_message(Module, String), Args).
+
+error(Module, String, Args) -&amp;gt;
+    lager:error(format_message(Module, String), Args).
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_lager/logb_code.png" /&gt;
+&lt;p&gt;Now, when the implementation is ready, let's configure N2O for using our module.&lt;/p&gt;
+&lt;p&gt;Open &lt;tt class="docutils literal"&gt;web_app.erl&lt;/tt&gt; and edit &lt;tt class="docutils literal"&gt;start/0&lt;/tt&gt; function. We should set up out module as the N2O logging backend.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim web_app.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+start() -&amp;gt;
+   application:ensure_all_started(web),
+   application:set_env(n2o, route, routes),
+   application:set_env(n2o, log_modules, web_sup),
+   application:set_env(n2o, log_backend, n2o_lager),  % setup a backend for logging
+   application:start(web).
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_lager/logb_app.png" /&gt;
+&lt;p&gt;The backend is ready. Let's add some logs to the view files.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+cd ../../../      % go to rood directory
+./rebar get-deps  % get dependencies
+./run.sh          % start app
+&lt;/pre&gt;
+&lt;p&gt;And make a call&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+curl localhost:9002
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_lager/logb_example.png" style="width: 750px;" /&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Source code: &lt;a class="reference external" href="https://github.com/d1ffuz0r/n2o_tutorials/tree/master/6_n2o_logging"&gt;https://github.com/d1ffuz0r/n2o_tutorials/tree/master/6_n2o_logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Custom N2O logging backends: &lt;a class="reference external" href="https://github.com/d1ffuz0r/n2o.logging"&gt;https://github.com/d1ffuz0r/n2o.logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="/n2o-logging.html"&gt;N2O Logging&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="Lager"/><category term="N2O"/><category term="logging"/></entry><entry><title>N2O Logging</title><link href="https://d1ffuz0r.com/n2o-logging.html" rel="alternate"/><published>2020-05-05T00:00:00+03:00</published><updated>2020-05-05T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-05:/n2o-logging.html</id><summary type="html">&lt;p&gt;Re-posting from 2014-10-08&lt;/p&gt;
+&lt;p&gt;Logging and Error tracking are very important things for every project. Let's learn how to write logs in N2O.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; For this example, we will use the code we created in previous articles about templates.&lt;/p&gt;
+&lt;div class="section" id="implementation"&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;N2O provides a basic interface for writing logs:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;wf:warning/1 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2014-10-08&lt;/p&gt;
+&lt;p&gt;Logging and Error tracking are very important things for every project. Let's learn how to write logs in N2O.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; For this example, we will use the code we created in previous articles about templates.&lt;/p&gt;
+&lt;div class="section" id="implementation"&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;N2O provides a basic interface for writing logs:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;wf:warning/1,2,3&lt;/li&gt;
+&lt;li&gt;wf:info/1,2,3&lt;/li&gt;
+&lt;li&gt;wf:error/1,2,3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find details in &lt;a class="reference external" href="https://github.com/5HT/n2o/blob/master/src/wf.erl#L173-L183"&gt;Source code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;N2O logging backend can be configured. By default N2O is providing 2 implementations:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;n2o_io - output to a terminal&lt;/li&gt;
+&lt;li&gt;n2o_log - logging using &lt;tt class="docutils literal"&gt;error_logger&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can also create a custom backend, which should be implementing 3 methods:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;info(Module, String, Args)&lt;/li&gt;
+&lt;li&gt;warning(Module, String, Args)&lt;/li&gt;
+&lt;li&gt;error(Module, String, Args)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Module :: atom - a module name from what the message is coming&lt;/li&gt;
+&lt;li&gt;String :: term - a term with message&lt;/li&gt;
+&lt;li&gt;Args :: list - an arguments list for using with &lt;tt class="docutils literal"&gt;String&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Logging is also required some basic configuration needs to be done before using. We should define what modules can write logs. Below we will show how to do it on example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="logging-in-action"&gt;
+&lt;h2&gt;Logging in action&lt;/h2&gt;
+&lt;p&gt;Let's see how logging works in the wild.&lt;/p&gt;
+&lt;p&gt;From the previous (&lt;a class="reference external" href="/n2o-templates-erlydtl.html"&gt;N2O templates. Erlydtl&lt;/a&gt;) tutorial we have files in source directory&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+apps/web/src ⇒ tree
+├── erlydtl_page.erl
+├── index.erl
+├── n2o_page.erl
+├── routes.erl
+├── web.app.src
+├── web_app.erl
+└── web_sup.erl
+&lt;/pre&gt;
+&lt;p&gt;As a first step, we will configure N2O. We should set an environment variable with a module name which will have &lt;tt class="docutils literal"&gt;log_modules/0&lt;/tt&gt; function with a list of modules.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim web_app.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+start() -&amp;gt;
+   application:ensure_all_started(web),
+   application:set_env(n2o, route, routes),
+   application:set_env(n2o, log_modules, web_sup), % module with log_modules/0 function
+   application:start(web).
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_logs/log_config.png" style="width: 750px;" /&gt;
+&lt;p&gt;Now let's write a &lt;tt class="docutils literal"&gt;log_module&lt;/tt&gt; function implementation in &lt;tt class="docutils literal"&gt;web_sup.erl&lt;/tt&gt; file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You can use any module for that reason. Our recommendation is to create a &lt;tt class="docutils literal"&gt;config.erl&lt;/tt&gt; file where keep functions like this.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim web_sup.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+-export([log_modules/0]). % add log_modules function to an export list
+
+log_modules() -&amp;gt;
+    [index].          % allow logs only from the &amp;quot;index&amp;quot; module
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_logs/log_config1.png" style="width: 750px;" /&gt;
+&lt;p&gt;Configuration is ready. Now we will add logs to the &lt;tt class="docutils literal"&gt;index.erl&lt;/tt&gt; file and every time when we call &amp;quot;/&amp;quot; url, N2O will write in console &amp;quot;True highload&amp;quot;.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim index.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+main() -&amp;gt;
+    wf:info(?MODULE, &amp;quot;True highload&amp;quot;, []),
+    &amp;lt;&amp;lt;&amp;quot;Hello N2O!&amp;quot;&amp;gt;&amp;gt;.
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_logs/log_code.png" style="width: 750px;" /&gt;
+&lt;p&gt;Here we go! Run the code&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+./run.sh
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_logs/log_example.png" style="width: 750px;" /&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="N2O"/><category term="Tutorial"/><category term="logging"/><category term="erlang logging"/></entry><entry><title>N2O templates. Erlydtl</title><link href="https://d1ffuz0r.com/n2o-templates-erlydtl.html" rel="alternate"/><published>2020-05-04T00:00:00+03:00</published><updated>2020-05-04T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-04:/n2o-templates-erlydtl.html</id><summary type="html">&lt;p&gt;Re-posting from 2014-09-26&lt;/p&gt;
+&lt;p&gt;If you do use Django, ROR or any other modern framework, you should be familiar with templates. In N2O you can use &lt;a class="reference external" href="https://github.com/erlydtl/erlydtl"&gt;Erlydtl&lt;/a&gt; templates. In this part we will show how to create a view that will be rendering a simple Erlydtl template.&lt;/p&gt;
+&lt;p&gt;For this step we …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2014-09-26&lt;/p&gt;
+&lt;p&gt;If you do use Django, ROR or any other modern framework, you should be familiar with templates. In N2O you can use &lt;a class="reference external" href="https://github.com/erlydtl/erlydtl"&gt;Erlydtl&lt;/a&gt; templates. In this part we will show how to create a view that will be rendering a simple Erlydtl template.&lt;/p&gt;
+&lt;p&gt;For this step we should follow these steps&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Create a view&lt;/li&gt;
+&lt;li&gt;Create a Erlydtl template&lt;/li&gt;
+&lt;li&gt;Add a route to the routes.erl file&lt;/li&gt;
+&lt;li&gt;Create a new rebar.config in &lt;cite&gt;web&lt;/cite&gt; directory for the proper template compilation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="code literal-block"&gt;
+$ touch apps/web/src/erlydtl_page.erl       # create a view
+$ touch apps/web/src/rebar.config           # create rebar config
+$ mkdir apps/web/priv/templates             # create templates directory
+$ touch apps/web/priv/templates/example.dtl # create dtl template file
+&lt;/pre&gt;
+&lt;p&gt;Let's start from a route&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ vim apps/web/src/routes.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+route(&amp;lt;&amp;lt;&amp;quot;/erlydtl_page&amp;quot;&amp;gt;&amp;gt;) -&amp;gt; erlydtl_page;   % erlydtl page mapping
+route(&amp;lt;&amp;lt;&amp;quot;/n2o_page&amp;quot;&amp;gt;&amp;gt;)     -&amp;gt; n2o_page;
+route(_)                   -&amp;gt; index.
+&lt;/pre&gt;
+&lt;p&gt;Next we will add a content to the dtl template. Basic template with a single variable&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ echo &amp;quot;Hello Erlydtl. I am {{name}}!&amp;quot; &amp;gt; apps/web/priv/templates/example.dtl
+&lt;/pre&gt;
+&lt;p&gt;Now when template is ready, let's configure rebar.&lt;/p&gt;
+&lt;p&gt;Open rebar.config in the web directory&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ vim apps/web/rebar.config
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+{erlydtl_opts, [
+    {doc_root, &amp;quot;priv/templates&amp;quot;},                     % directory with templates
+    {out_dir, &amp;quot;ebin&amp;quot;},                                % output directory
+    {compiler_options, [report, return, debug_info]}, % compiler options
+    {source_ext, &amp;quot;.dtl&amp;quot;},                             % templates extension
+    {module_ext, &amp;quot;_view&amp;quot;}                             % module extension
+]}.
+&lt;/pre&gt;
+&lt;p&gt;After that, during compilation you should see messages about template compilation&lt;/p&gt;
+&lt;img alt="" src="images/n2o_pages/erlydtl-compilation.png" style="width: 750px;" /&gt;
+&lt;p&gt;And finally, edit the view&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ vim apps/web/src/erlydtl_page.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+-module(erlydtl_page).
+-export([main/0]).
+-include_lib(&amp;quot;n2o/include/wf.hrl&amp;quot;).
+
+main() -&amp;gt;
+  [
+    #dtl{file=&amp;quot;example&amp;quot;,     % filename
+         ext=&amp;quot;dtl&amp;quot;,          % extension
+         bindings=[
+           {name, &amp;lt;&amp;lt;&amp;quot;N2O&amp;quot;&amp;gt;&amp;gt;} % template bindings
+         ]}
+  ].
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_pages/erlydtl-view.png" style="width: 750px;" /&gt;
+&lt;p&gt;Now we can compile, run our project and check it out in browser by  &lt;a class="reference external" href="http://localhost:8002/erlydtl_page"&gt;http://localhost:8002/erlydtl_page&lt;/a&gt; url.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ ./rebar compile
+$ erl -name &amp;quot;web&amp;#64;$(hostname)&amp;quot; -pa deps/*/ebin -pa apps/*/ebin -boot start_sasl -s web_app start
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_pages/erlydtl-example.png" style="width: 750px;" /&gt;
+&lt;div class="section" id="source-code"&gt;
+&lt;h2&gt;Source code&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages"&gt;https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;How to create a page using Nitrogen templates read in the previous part: &lt;a class="reference external" href="/n2o-templates-nitrogen.html"&gt;N2O templates. Nitrogen&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="N2O"/><category term="Tutorial"/></entry><entry><title>N2O templates. Nitrogen</title><link href="https://d1ffuz0r.com/n2o-templates-nitrogen.html" rel="alternate"/><published>2020-05-03T00:00:00+03:00</published><updated>2020-05-03T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-03:/n2o-templates-nitrogen.html</id><summary type="html">&lt;p&gt;Re-posting from 2014-09-25&lt;/p&gt;
+&lt;p&gt;N2O template (Nitrogen) basically is a bunch of Erlang records compiled into HTML code. You can read more about templates at &lt;a class="reference external" href="https://synrc.com/apps/n2o/doc/web/"&gt;https://synrc.com/apps/n2o/doc/web/&lt;/a&gt; page. Here we want to show how all steps of the page creation. It will be done in several …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2014-09-25&lt;/p&gt;
+&lt;p&gt;N2O template (Nitrogen) basically is a bunch of Erlang records compiled into HTML code. You can read more about templates at &lt;a class="reference external" href="https://synrc.com/apps/n2o/doc/web/"&gt;https://synrc.com/apps/n2o/doc/web/&lt;/a&gt; page. Here we want to show how all steps of the page creation. It will be done in several steps:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Create a view&lt;/li&gt;
+&lt;li&gt;Add a route to the routes.erl file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let's create a view&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ touch apps/web/src/n2o_page.erl
+&lt;/pre&gt;
+&lt;p&gt;Open file in an editor and add required functions&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ vim apps/web/src/n2o_page.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+-module(n2o_page).                       % module name
+-export([main/0]).                       % function extraction
+-include_lib(&amp;quot;n2o/include/wf.hrl&amp;quot;).      % include wf.hrl header file
+
+main() -&amp;gt;                                % definition of default called function
+  #panel{body = &amp;lt;&amp;lt;&amp;quot;Hello records template!&amp;quot;&amp;gt;&amp;gt;}.
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_pages/page-view.png" style="width: 750px;" /&gt;
+&lt;p&gt;Our first simplest view is ready. On the next step we should add the view to the routes.&lt;/p&gt;
+&lt;p&gt;Open routes.erl file and map path to the view&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ vim apps/web/src/routes.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+route(&amp;lt;&amp;lt;&amp;quot;/n2o_page&amp;quot;&amp;gt;&amp;gt;) -&amp;gt; n2o_page;  % n2o_page view will be rendered by /n2o_page url
+route(_)               -&amp;gt; index.     % default view. '_' is matching any url
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_pages/page-route.png" style="width: 750px;" /&gt;
+&lt;p&gt;Ready. Let's compile the project and open in browser  &lt;a class="reference external" href="http://localhost:8002/n2o_page"&gt;http://localhost:8002/n2o_page&lt;/a&gt; url.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ ./rebar compile
+$ erl -name &amp;quot;web&amp;#64;$(hostname)&amp;quot; -pa deps/*/ebin -pa apps/*/ebin -boot start_sasl -s web_app start
+&lt;/pre&gt;
+&lt;img alt="" src="images/n2o_pages/page-example.png" style="width: 750px;" /&gt;
+&lt;div class="section" id="source-code"&gt;
+&lt;h2&gt;Source code&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages"&gt;https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;How to use Erlydtl templates read in the next part: &lt;a class="reference external" href="/n2o-templates-erlydtl.html"&gt;N2O templates. Erlydtl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to create a view with a static HTML page read in a previous article: &lt;a class="reference external" href="/n2o-templates-static-html.html"&gt;N2O templates. Static HTML&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="N2O"/><category term="Tutorial"/></entry><entry><title>N2O templates. Static HTML</title><link href="https://d1ffuz0r.com/n2o-templates-static-html.html" rel="alternate"/><published>2020-05-02T00:00:00+03:00</published><updated>2020-05-02T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-02:/n2o-templates-static-html.html</id><summary type="html">&lt;p&gt;Re-posting from 2014-09-24&lt;/p&gt;
+&lt;p&gt;It's a time to learn more N2O. In this article we will show how to render templates using different techniques:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Static html template&lt;/li&gt;
+&lt;li&gt;N2O record-based templates&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/erlydtl/erlydtl"&gt;Erlydtl&lt;/a&gt; templates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="environment"&gt;
+&lt;h2&gt;Environment&lt;/h2&gt;
+&lt;p&gt;For this example, we will use a project we have created in the previous &lt;a class="reference external" href="/hello-n2o.html"&gt;tutorial&lt;/a&gt;.
+A directory structure …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2014-09-24&lt;/p&gt;
+&lt;p&gt;It's a time to learn more N2O. In this article we will show how to render templates using different techniques:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Static html template&lt;/li&gt;
+&lt;li&gt;N2O record-based templates&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/erlydtl/erlydtl"&gt;Erlydtl&lt;/a&gt; templates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="environment"&gt;
+&lt;h2&gt;Environment&lt;/h2&gt;
+&lt;p&gt;For this example, we will use a project we have created in the previous &lt;a class="reference external" href="/hello-n2o.html"&gt;tutorial&lt;/a&gt;.
+A directory structure will be like that:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+example|master⚡ ⇒ tree .
+.
+├── apps
+│&amp;nbsp;&amp;nbsp; └── web
+│&amp;nbsp;&amp;nbsp;     ├── ebin
+│&amp;nbsp;&amp;nbsp;     └── src
+│&amp;nbsp;&amp;nbsp;         ├── index.erl
+│&amp;nbsp;&amp;nbsp;         ├── routes.erl
+│&amp;nbsp;&amp;nbsp;         ├── web.app.src
+│&amp;nbsp;&amp;nbsp;         ├── web_app.erl
+│&amp;nbsp;&amp;nbsp;         └── web_sup.erl
+├── deps
+├── rebar
+└── rebar.config
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="static-html"&gt;
+&lt;h2&gt;Static html&lt;/h2&gt;
+&lt;p&gt;This method will be useful in case if you want to have some static files, but do not want to run a web-server on the development machine.&lt;/p&gt;
+&lt;p&gt;For routing and handling requests N2O is using the &lt;a class="reference external" href="https://github.com/ninenines/cowboy"&gt;cowboy&lt;/a&gt; web server, so rendering a static html file basically will be through configuring a cowboy handler. For this step we should create an HTML file in the &lt;cite&gt;priv&lt;/cite&gt; directory of our &lt;cite&gt;web&lt;/cite&gt; app and add route to the routes map.&lt;/p&gt;
+&lt;p&gt;Create a directory and file:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ mkdir apps/web/priv                 # create a 'priv' directory
+$ touch apps/web/priv/example.html    # create an HTML file
+$ echo &amp;quot;&amp;lt;h1&amp;gt;Example page&amp;lt;/h1&amp;gt;&amp;quot; &amp;gt; apps/web/priv/example.html # insert content
+&lt;/pre&gt;
+&lt;p&gt;As you remember we defined routes in &lt;cite&gt;web_sup:rules/0&lt;/cite&gt; function.
+So let's go and add our example page to the routes map.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ vim apps/web/src/web_sup.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+rules() -&amp;gt;
+  cowboy_router:compile(
+    [{'_', [
+       {&amp;quot;/example&amp;quot;,                                    % handling url
+         cowboy_static,                                % cowboy handler
+         {priv_file, web, &amp;quot;example.html&amp;quot;,              % a place where the file is saved
+           [
+             {mimetypes, {&amp;lt;&amp;lt;&amp;quot;text&amp;quot;&amp;gt;&amp;gt;, &amp;lt;&amp;lt;&amp;quot;html&amp;quot;&amp;gt;&amp;gt;, []}} % mime type
+           ]
+         }
+       },
+       {'_', n2o_cowboy, []}
+     ]}]
+  ).
+&lt;/pre&gt;
+&lt;p&gt;A 'cowboy_router:compile/1' is accepting a list of tuples with domain + routes definitions.&lt;/p&gt;
+&lt;img alt="" src="images/n2o_pages/static-routes.png" style="width: 750px;" /&gt;
+&lt;p&gt;Well, it's done. Let's compile our project, run and check it out in browser by  &lt;a class="reference external" href="http://localhost:8002/example"&gt;http://localhost:8002/example&lt;/a&gt; url.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ ./rebar compile
+$ erl -name &amp;quot;web&amp;#64;$(hostname)&amp;quot; -pa deps/*/ebin -pa apps/*/ebin -boot start_sasl -s web_app start
+&lt;/pre&gt;
+&lt;img alt="" src="/images/n2o_pages/static-example.png" style="width: 750px;" /&gt;
+&lt;div class="section" id="source-code"&gt;
+&lt;h3&gt;Source code&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages"&gt;https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h3&gt;Links&lt;/h3&gt;
+&lt;p&gt;How to create a page using Nitrogen templates read in the next part: &lt;a class="reference external" href="/n2o-templates-nitrogen.html"&gt;N2O templates. Nitrogen&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="N2O"/><category term="Tutorial"/></entry><entry><title>Hello N2O!</title><link href="https://d1ffuz0r.com/hello-n2o.html" rel="alternate"/><published>2020-05-01T00:00:00+03:00</published><updated>2020-05-01T00:00:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2020-05-01:/hello-n2o.html</id><summary type="html">&lt;p&gt;Re-posting from 2014-09-16&lt;/p&gt;
+&lt;p&gt;&amp;quot;N2O — The Most Powerful Erlang Web Framework&amp;quot;&lt;/p&gt;
+&lt;p&gt;As a first step, we will show how to install N2O and create a simple application.&lt;/p&gt;
+&lt;div class="section" id="environment"&gt;
+&lt;h2&gt;Environment&lt;/h2&gt;
+&lt;p&gt;N2O is an Erlang framework so let's install Erlang first (if you haven't done it yet).&lt;/p&gt;
+&lt;p&gt;In Linux, we will use Erlang Solutions …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Re-posting from 2014-09-16&lt;/p&gt;
+&lt;p&gt;&amp;quot;N2O — The Most Powerful Erlang Web Framework&amp;quot;&lt;/p&gt;
+&lt;p&gt;As a first step, we will show how to install N2O and create a simple application.&lt;/p&gt;
+&lt;div class="section" id="environment"&gt;
+&lt;h2&gt;Environment&lt;/h2&gt;
+&lt;p&gt;N2O is an Erlang framework so let's install Erlang first (if you haven't done it yet).&lt;/p&gt;
+&lt;p&gt;In Linux, we will use Erlang Solutions repository to get the latest Erlang version.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+wget http://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+sudo dpkg -i erlang-solutions_1.0_all.deb
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+$ sudo apt-get install erlang-base erlang-dev
+&lt;/pre&gt;
+&lt;p&gt;Or in Mac OS X&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+$ sudo port install erlang
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/1-first1.png" style="width: 750px;" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="application"&gt;
+&lt;h2&gt;Application&lt;/h2&gt;
+&lt;p&gt;Once Erlang installed, let's start building our first N2O application!
+On this step we will prepare the environment.&lt;/p&gt;
+&lt;p&gt;The way how we are going to run and deploy that you could probably have seen in the official documentation is slightly different - instead generation Erlang releases we will just run the app from the terminal for faster and easier development/testing process.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+mkdir example        # create directory for project
+
+cd example
+
+mkdir apps           # apps directory will contain our applications
+
+mkdir apps/web       # 'web' is the name of our application
+
+mkdir deps           # deps directory will be used for saving dependent libraries
+
+touch rebar.config   # rebar config
+
+curl -O https://raw.githubusercontent.com/wiki/rebar/rebar/rebar   # download rebar
+
+chmod a+x rebar     # make rebar executable
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/2-setup.png" style="width: 750px;" /&gt;
+&lt;p&gt;Then configure rebar.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim rebar.config
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+{deps_dir, [&amp;quot;deps&amp;quot;]}.
+{lib_dirs, [&amp;quot;apps&amp;quot;, &amp;quot;deps&amp;quot;]}.
+{sub_dirs, [&amp;quot;apps&amp;quot;,
+            &amp;quot;deps&amp;quot;,
+            &amp;quot;apps/web&amp;quot;]}.
+
+{deps, [
+  {n2o, &amp;quot;.*&amp;quot;, {git, &amp;quot;git://github.com/5HT/n2o.git&amp;quot;, {tag, &amp;quot;1.9.0&amp;quot;}}}
+]}.
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/2-setup1.png" style="width: 750px;" /&gt;
+&lt;p&gt;Well, rebar is configured. Let's pull dependencies and compile them&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+./rebar get-deps compile
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/2-setup2.png" style="width: 750px;" /&gt;
+&lt;p&gt;Done. Now let's use some rebar magic and generate our first Erlang/OTP application in 'apps/web' directory.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+cd apps/web
+
+../../rebar create-app appid=web
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/3-prepare1.png" style="width: 750px;" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="code"&gt;
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;p&gt;A standard N2O app contains a set of OTP application files like *.app.src, *_app.erl and _sup.erl.
+These files will be generated using rebar. For our example, we have to create 2 additional files:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;routes.erl - routes list&lt;/li&gt;
+&lt;li&gt;index.erl - actual view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As the first step, we will update &lt;tt class="docutils literal"&gt;web.app.src&lt;/tt&gt; file and add 'n2o' to the applications list.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim web.app.src
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+{application, web,
+ [
+  {description, &amp;quot;&amp;quot;},
+  {vsn, &amp;quot;1&amp;quot;},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  n2o
+                 ]},
+  {mod, { web_app, []}},
+  {env, []}
+ ]}.
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/4-code2.png" style="width: 750px;" /&gt;
+&lt;p&gt;After that let's change the &lt;tt class="docutils literal"&gt;web_app.erl&lt;/tt&gt; file and add start/0 function for easier application from console which is useful in the development process&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim web_app.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+-module(web_app).
+
+-behaviour(application).
+
+%% Application callbacks
+-export([start/2, stop/1, start/0]).
+
+%% ===================================================================
+%% Application callbacks
+%% ===================================================================
+
+start() -&amp;gt;
+  application:ensure_all_started(web),     % start all dependent applications
+  application:set_env(n2o, route, routes), % setup router module
+  application:start(web).                  % start application
+
+start(_StartType, _StartArgs) -&amp;gt;
+    web_sup:start_link().
+
+stop(_State) -&amp;gt;
+    ok.
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/4-code3.png" style="width: 750px;" /&gt;
+&lt;p&gt;Then go to the &lt;cite&gt;web_sup.erl&lt;/cite&gt; file and change init/1 function. We will add &lt;cite&gt;cowboy&lt;/cite&gt; server initialization and define handlers in &lt;cite&gt;rules&lt;/cite&gt; function.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim web_sup.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+init([]) -&amp;gt;
+  {ok, _} = cowboy:start_http(http, 3, [{port, 9002}],
+                                       [{env, [{dispatch, rules()}]}]),
+  {ok, { {one_for_one, 5, 10}, []} }.
+
+rules() -&amp;gt;
+  cowboy_router:compile([
+    {'_', [                  %% handle all domains
+       {'_', n2o_cowboy, []}  %% handle all urls
+     ]}
+  ]).
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/4-code.png" style="width: 750px;" /&gt;
+&lt;p&gt;As a next step we should create the &lt;cite&gt;routes.erl&lt;/cite&gt; file where we will configure routes&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim routes.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+-module(routes).
+-include_lib(&amp;quot;n2o/include/wf.hrl&amp;quot;).
+-export([init/2, finish/2]).
+
+finish(State, Ctx) -&amp;gt;
+    {ok, State, Ctx}.
+
+init(State, Ctx) -&amp;gt;
+    Path = wf:path(Ctx#cx.req),
+    {ok, State, Ctx#cx{path=Path,module=route_prefix(Path)}}.
+
+route_prefix(P) -&amp;gt; route(P).
+
+route(_) -&amp;gt; index.     % always return `index` handler for any url.
+&lt;/pre&gt;
+&lt;p&gt;Now when our app is almost ready. We should create last and the most important view file - for our case, so let's create a simple view that will render &amp;quot;Hello N2O!&amp;quot; into the browser.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+vim index.erl
+&lt;/pre&gt;
+&lt;pre class="code literal-block"&gt;
+-module(index).
+-compile(export_all).
+-include_lib(&amp;quot;n2o/include/wf.hrl&amp;quot;).
+
+main() -&amp;gt; &amp;lt;&amp;lt;&amp;quot;Hello N2O!&amp;quot;&amp;gt;&amp;gt;.   % main/0 is default function that N2O is calling
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/4-code1.png" style="width: 750px;" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="production"&gt;
+&lt;h2&gt;Production&lt;/h2&gt;
+&lt;p&gt;That's it! Let's start the app&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;
+cd ../../../      % return into root of our project
+./rebar compile   % compile apps
+erl -name &amp;quot;web&amp;#64;$(hostname)&amp;quot; -pa deps/*/ebin -pa apps/*/ebin -boot start_sasl -s web_app start
+&lt;/pre&gt;
+&lt;img alt="" src="images/hello_n2o/5-compile.png" style="width: 750px;" /&gt;
+&lt;img alt="" src="images/hello_n2o/6-run.png" style="width: 750px;" /&gt;
+&lt;p&gt;Open in browser&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;blockquote&gt;
+&lt;a class="reference external" href="http://localhost:9002"&gt;http://localhost:9002&lt;/a&gt;&lt;/blockquote&gt;
+&lt;img alt="" src="images/hello_n2o/7-finish.png" style="width: 750px;" /&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Source code: &lt;a class="reference external" href="https://github.com/d1ffuz0r/n2o_tutorials/tree/master/1_hello_n2o"&gt;https://github.com/d1ffuz0r/n2o_tutorials/tree/master/1_hello_n2o&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;N2O: &lt;a class="reference external" href="https://github.com/5HT/n2o"&gt;https://github.com/5HT/n2o&lt;/a&gt; &lt;a class="reference external" href="http://synrc.com"&gt;http://synrc.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="Erlang"/><category term="Erlang"/><category term="N2O"/><category term="Tutorial"/></entry><entry><title>PyCon US 2017</title><link href="https://d1ffuz0r.com/pycon-us-2017.html" rel="alternate"/><published>2019-03-15T12:28:00+03:00</published><updated>2019-03-15T12:28:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2019-03-15:/pycon-us-2017.html</id><summary type="html">&lt;div class="section" id="keynote-day-1"&gt;
+&lt;h2&gt;Keynote Day 1&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=ZyjCqQEUa8o"&gt;https://www.youtube.com/watch?v=ZyjCqQEUa8o&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Introduction.
+PyCon is changing. Over years the conference has changed from all mostly web-focused it to a very diverse conference. Now there’s a lot of scientists (numpy, scipy), devops (ansible, redhat), web (django, flask), data engineering (spark, dask …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="keynote-day-1"&gt;
+&lt;h2&gt;Keynote Day 1&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=ZyjCqQEUa8o"&gt;https://www.youtube.com/watch?v=ZyjCqQEUa8o&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Introduction.
+PyCon is changing. Over years the conference has changed from all mostly web-focused it to a very diverse conference. Now there’s a lot of scientists (numpy, scipy), devops (ansible, redhat), web (django, flask), data engineering (spark, dask), IOT (micropython)
+Now you can meet there anyone - professionals, students, scientists, hobbysts, teachers, analysts. People use Python differently, don’t be aggressive. What works for you - doesn’t work for others. Same with the code, code style, use, etc.&lt;/p&gt;
+&lt;p&gt;Funny: PyCon has dinner that you can attend for a payment, every year there were 100 ppl less than planned. They paid but didn’t show up&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="experiment-assignment-on-the-web"&gt;
+&lt;h2&gt;Experiment Assignment on the Web&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=B5DqPOfQxGo"&gt;https://www.youtube.com/watch?v=B5DqPOfQxGo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A/B testing has a very high risk of having BIASed results.&lt;/p&gt;
+&lt;p&gt;Rules:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Create and follow the rules&lt;/li&gt;
+&lt;li&gt;Create metrics! Have clear goals&lt;/li&gt;
+&lt;li&gt;Divide and rule, avoid testing many features on the same group of people at a time. Split into groups, test different feature on different groups&lt;/li&gt;
+&lt;li&gt;Have a timed results. E.g. 1 week experiment with A and 1 weeb with B, then compare and repeat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="big-picture-software-testing-unit-testing-lean-startup-and-everything-in-between"&gt;
+&lt;h2&gt;Big picture software testing unit testing, Lean Startup, and everything in between&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=Vaq_e7qUA-4"&gt;https://www.youtube.com/watch?v=Vaq_e7qUA-4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to test your software, common mistakes.
+100% code coverage - often waste of time, often useless and doesn’t guarantee quality
+Testing strategy depends on the project, situation, stage of project, goals&lt;/p&gt;
+&lt;p&gt;Example (startup):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Have an idea&lt;/li&gt;
+&lt;li&gt;Test the idea (build a mvp)&lt;/li&gt;
+&lt;li&gt;Learn users (define requirements - collect specific requirements)&lt;/li&gt;
+&lt;li&gt;a/b&lt;/li&gt;
+&lt;li&gt;Logs&lt;/li&gt;
+&lt;li&gt;Analytics (kissmetrics)&lt;/li&gt;
+&lt;li&gt;Build product based on learned&lt;/li&gt;
+&lt;li&gt;Test correctness&lt;/li&gt;
+&lt;li&gt;Automated tests - often doesn’t prove correctness&lt;/li&gt;
+&lt;li&gt;Manual testing - proves correctness&lt;/li&gt;
+&lt;li&gt;Scaling and getting users&lt;/li&gt;
+&lt;li&gt;Test changes (preventing unexpected changes)&lt;/li&gt;
+&lt;li&gt;Automated test - effective for testing changes. Why it’s important? Once the product is proved to be correct, you need to prevent changes. Manual testing is not effective&lt;/li&gt;
+&lt;li&gt;Don’t try to automate testing of places that change often - waste of time, humans can do it better&lt;/li&gt;
+&lt;li&gt;After getting users - it’s time to do load testing, collect usage metrics (cpu, network, memory)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="next-level-testing"&gt;
+&lt;h2&gt;Next Level Testing&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=jmsk1QZQEvQ"&gt;https://www.youtube.com/watch?v=jmsk1QZQEvQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exploring different types of testing&lt;/p&gt;
+&lt;p&gt;Property Based testing&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Don’t return invalid results in case of error, raise an exception instead!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Passing all possible values to functions&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Trying to send random values and expecting valid results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Fuzz Testing&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Good for catching unhandled exceptions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mutation Testing&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Changing the code and trying to run. Very long, can be running days or weeks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dask-a-pythonic-distributed-data-science-framework"&gt;
+&lt;h2&gt;Dask A Pythonic Distributed Data Science Framework&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=RA_2qdipVng"&gt;https://www.youtube.com/watch?v=RA_2qdipVng&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dask is a flexible parallel computing library for analytic computing - &lt;a class="reference external" href="http://dask.pydata.org/en/latest/"&gt;http://dask.pydata.org/en/latest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dask is composed of two components:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Dynamic task scheduling optimized for computation. This is similar to Airflow, Luigi, Celery, or Make, but optimized for interactive computational workloads.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Big Data&amp;quot; collections like parallel arrays, dataframes, and lists that extend common interfaces like NumPy, Pandas, or Python iterators to larger-than-memory or distributed environments. These parallel collections run on top of the dynamic task schedulers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Has multiple interfaces, can be used in Pandas, Asyncio, scikit-learn style. Allows to make any code distribtued&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="keynote-day-2"&gt;
+&lt;h2&gt;Keynote Day 2&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=66XoCk79kjM"&gt;https://www.youtube.com/watch?v=66XoCk79kjM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How Instagram upgraded to Python 3.6 and how they scale django. It took 1 year to upgrade&lt;/p&gt;
+&lt;p&gt;How they upgraded their code:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Upgraded 3rd party libraries first to make sure they support python3, don’t allow new dependencies that don’t support python 3&lt;/li&gt;
+&lt;li&gt;Make the code python 2 and 3 compatible&lt;/li&gt;
+&lt;li&gt;Making 1 change at a time. E.g. fix all print statements, fix all imports, fix all iterators, fix all strings&lt;/li&gt;
+&lt;li&gt;Switched to Python 3 in preprod and kept Python 2 in prod&lt;/li&gt;
+&lt;li&gt;Long testing in preprod&lt;/li&gt;
+&lt;li&gt;Upgrading prod to Python 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Common issues:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;pickle. output not compatible between Python 2 and 3&lt;/li&gt;
+&lt;li&gt;Iterators! They lose items while iterating&lt;/li&gt;
+&lt;li&gt;Json.dumps produces different keys order. Use sort_keys=True&lt;/li&gt;
+&lt;li&gt;String! Binary, unicode, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;They push straight to master (production)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="debugging-in-python-3-6-better-faster-stronger"&gt;
+&lt;h2&gt;Debugging in Python 3 6 Better, Faster, Stronger&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=NdObDUbLjdg"&gt;https://www.youtube.com/watch?v=NdObDUbLjdg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Why running code in Python 2 with debugger is slow: tracing function is being executed for every line
+Python 3.6 has new API for tracing that allows to dynamically turn on/off tracing in the code during execution!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="readability-counts"&gt;
+&lt;h2&gt;Readability Counts&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=knMg6G9_XCg"&gt;https://www.youtube.com/watch?v=knMg6G9_XCg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to make the code better to read. Write code for humans, not for machines.
+Line length - short line is not the goal, readability is
+Regular expressions - avoid writing long oneline expressions, use re.VERBOSE more that allows your to use comments in regexp
+Function arguments - always move to new line, it’s easier to read
+Re-read PEP8 every 6 months&lt;/p&gt;
+&lt;p&gt;Code Structure:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Use descriptive names, long but descriptive&lt;/li&gt;
+&lt;li&gt;Use tuple unpacking in loops&lt;/li&gt;
+&lt;li&gt;How to make sure that the code is readable: read your code out loud&lt;/li&gt;
+&lt;li&gt;Variables should describe what they’re doing&lt;/li&gt;
+&lt;li&gt;Write documentation for blocks of the code, describe what it does&lt;/li&gt;
+&lt;li&gt;Context managers - good way to hide exception handling (contextlib)&lt;/li&gt;
+&lt;li&gt;Replace loops on list comprehensions&lt;/li&gt;
+&lt;li&gt;Do not reimplement standard magic class methods like. Instead of &lt;cite&gt;.has_item()&lt;/cite&gt; implement &lt;cite&gt;.__contains__&lt;/cite&gt;&lt;/li&gt;
+&lt;li&gt;If you notice patterns that you pass same arguments in a set of functions, create class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-make-a-good-library-api"&gt;
+&lt;h2&gt;How to make a good library API&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=4mkFfce46zE"&gt;https://www.youtube.com/watch?v=4mkFfce46zE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Checklist: &lt;a class="reference external" href="http://python.apichecklist.com"&gt;http://python.apichecklist.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good Values:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Simplicity&lt;/li&gt;
+&lt;li&gt;Focus on 90% of cases. Documentation, examples (simple, easy to read)&lt;/li&gt;
+&lt;li&gt;Let use library internals (inheritance, import) for implementing other 10%&lt;/li&gt;
+&lt;li&gt;Use &amp;quot;good&amp;quot; default parameters that will work for 90%&lt;/li&gt;
+&lt;li&gt;Consistency&lt;/li&gt;
+&lt;li&gt;Keep code Pythonic&lt;/li&gt;
+&lt;li&gt;Safety&lt;/li&gt;
+&lt;li&gt;Flexibility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Too abstract API  are far away from reality, but it depends on the case. Celery, Pillow, BeautifulSoup
+Complex is better than complicated
+Side effects - bad, try to write clean functions. E.g. print_formatted(‘a b c’) - bad, print(format(‘a b c’)) - good
+Design Patterns - caused by bad language design. Can be replaced by better solutions from Python. Learn different languages to find better solutions&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="library-ux-using-abstraction-towards-friendlier-apis"&gt;
+&lt;h2&gt;Library UX Using abstraction towards friendlier APIs&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=W8Rxd9OPblI"&gt;https://www.youtube.com/watch?v=W8Rxd9OPblI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good interface&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Reduces number of errors&lt;/li&gt;
+&lt;li&gt;Makes complex tasks simple&lt;/li&gt;
+&lt;li&gt;Helps to adapt technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Python is in between low and high level languages
+Hide implementations in controlled environment
+Duplications is better than bad abstraction
+Top level should allow access to 2nd level. It will help to make library flexible
+Level of abstraction depends on users&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="no-more-sad-pandas-optimizing-pandas-code-for-speed-and-efficiency"&gt;
+&lt;h2&gt;No More Sad Pandas Optimizing Pandas Code for Speed and Efficiency&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=HN5d490_KKk"&gt;https://www.youtube.com/watch?v=HN5d490_KKk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to make Pandas fast&lt;/p&gt;
+&lt;p&gt;%timeit function - execution timing
+%load_ext line_profiler
+%lprun -f function - profile line by line&lt;/p&gt;
+&lt;p&gt;Apply in pandas 2 times faster than iterrows
+Numpy arrays faster than pandas (ndarray)
+Cython helps to speed up loops
+Don’t optimize things that should not be optimized. Aka don’t do premature optimization&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tracing-fast-and-slow-digging-into-and-improving-your-web-services-performance"&gt;
+&lt;h2&gt;Tracing, Fast and Slow Digging into and improving your web service’s performance&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=lu0F-psmBzc"&gt;https://www.youtube.com/watch?v=lu0F-psmBzc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TLDR: use distributed tracing for microservices or project with many parts&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;Why:&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last simple"&gt;
+&lt;li&gt;Understanding performance&lt;/li&gt;
+&lt;li&gt;Understanding how systems affect each other&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Setup nginx to send x-request-id
+Standartize log structure
+It depends on the goal what to track
+Use request id as id
+Tracing can and will make your system slower. But it’s not required to track all parts of the system
+Don’t always required&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="one-data-pipeline-to-rule-them-all"&gt;
+&lt;h2&gt;One Data Pipeline to Rule Them All&lt;/h2&gt;
+&lt;p&gt;Video &lt;a class="reference external" href="https://www.youtube.com/watch?v=N6riK1Xtyng"&gt;https://www.youtube.com/watch?v=N6riK1Xtyng&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to use Kafka efficiently and plan your data pipelines
+You need schema, without schema everything will be bad
+Schema changes within topic should be backwards compatible
+Migration to new schema: create new schema and switch from old one&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Python"/><category term="python"/><category term="pycon"/></entry><entry><title>Erlang vs Scala</title><link href="https://d1ffuz0r.com/erlang-vs-scala.html" rel="alternate"/><published>2018-10-24T21:22:00+03:00</published><updated>2018-10-24T21:22:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2018-10-24:/erlang-vs-scala.html</id><summary type="html">&lt;pre class="literal-block"&gt;
+[10:59] z-b&amp;gt;
+http://highscalability.com/blog/2014/1/6/how-hipchat-stores-and-indexes-billions-of-messages-using-el.html
+[10:59] z-b&amp;gt; :)))))))))))))))))
+[11:00] z-b&amp;gt; хайлод уровня бэ
+[11:05] Чубака&amp;gt; z-b: umeshu na 1 shared hosting  na erlange
+[11:06] z-b&amp;gt; Чубака: v 0.7 na scale
+[11:06] Чубака&amp;gt; skala tam daje ne zapustitsya
+[11 …&lt;/pre&gt;</summary><content type="html">&lt;pre class="literal-block"&gt;
+[10:59] z-b&amp;gt;
+http://highscalability.com/blog/2014/1/6/how-hipchat-stores-and-indexes-billions-of-messages-using-el.html
+[10:59] z-b&amp;gt; :)))))))))))))))))
+[11:00] z-b&amp;gt; хайлод уровня бэ
+[11:05] Чубака&amp;gt; z-b: umeshu na 1 shared hosting  na erlange
+[11:06] z-b&amp;gt; Чубака: v 0.7 na scale
+[11:06] Чубака&amp;gt; skala tam daje ne zapustitsya
+[11:07] Чубака&amp;gt; a erlang zapuskaetsya daje na chasah
+[11:07] Чубака&amp;gt; mehanicheskih
+[11:07] z-b&amp;gt; lelka chtole, scala zdelana special for kofivarok i
+porchej mechaniki
+[11:08] Чубака&amp;gt; &amp;gt;kofivarok
+[11:08] Чубака&amp;gt; &amp;gt;2014
+[11:08] Чубака&amp;gt; &amp;gt;ot rozetki
+[11:08] z-b&amp;gt; popizdi tut
+[11:09] z-b&amp;gt; scala daje na negrah zapuskaecca
+[11:09] Чубака&amp;gt; erlang mojet na sile vetra rabotat'
+[11:09] Чубака&amp;gt; ya odin raz zapustil erlang na taburetke
+[11:10] z-b&amp;gt; scala mojet v vakuume rabotat gde vashe nichego net toko
+jvm
+[11:10] Чубака&amp;gt; jvm potratit ves' tvoi vakuum, i ei mesta ne hvatit
+zapustitsya
+[11:11] Чубака&amp;gt; KERNAL PAINIC NOT ENOUGH MEMORY IN VACUUM
+[11:11] bf&amp;gt; ахахахаха
+[11:11] z-b&amp;gt; daje tesla zapuskal jvm v vakuume
+[11:11] z-b&amp;gt; i ja zapuskal
+[11:11] z-b&amp;gt; i na javaOne 2013 zapuskali online v vakuume
+[11:12] Чубака&amp;gt; erlang mojet vacuum generirovat' vnutri sebya
+[11:14] z-b&amp;gt; na scale napisan joe, joe napisal erlnang, znachit scala
+napisala erlang. shat i mat
+[11:15] Чубака&amp;gt; wat. skalisty brali idei iz erlanga, nachit toya
+teoriya ravna nulyu
+[11:16] z-b&amp;gt; lelka chtole, eto erlangisty brali idei iz scaly, prosto
+jvm dolgo startovala, vot vse i dumaut kak ty
+[11:16] bf&amp;gt; ирлонг написали на си
+[11:16] bf&amp;gt; на ирлонг нельзя написать ирлонг
+[11:16] bf&amp;gt; ирлонг соснул
+[11:18] Чубака&amp;gt; na erlang nado 1 chasovoi mehanizm, dlya skala nado
+anronnyi kollaider dlya zapuska vm
+[11:18] z-b&amp;gt; zato letaet
+[11:18] z-b&amp;gt; a erlang prosedaet kak divan pod tvoej mamkoj
+[11:18] Чубака&amp;gt; i padaet ot nedostatka memory
+[11:18] Чубака&amp;gt; NUJNO BOLSHE MEMORI
+[11:19] z-b&amp;gt; ne padaet v prodakshene
+[11:19] Чубака&amp;gt; nu vse ti ogrebaesh
+&lt;/pre&gt;
+</content><category term="Blog"/></entry><entry><title>SQLALchemy Query Manager</title><link href="https://d1ffuz0r.com/sqlalchemy-query-manager.html" rel="alternate"/><published>2018-10-23T12:12:00+03:00</published><updated>2018-10-23T12:12:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2018-10-23:/sqlalchemy-query-manager.html</id><summary type="html">&lt;p&gt;So, Django has &amp;quot;manager&amp;quot; for the queries &lt;a class="reference external" href="https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager"&gt;https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager&lt;/a&gt;, that is good for creating DSL.&lt;/p&gt;
+&lt;p&gt;For example, if you want get all users from database for chosen date, you can write some query:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+User.objects.filter(birth_date &amp;gt; (date …&lt;/pre&gt;</summary><content type="html">&lt;p&gt;So, Django has &amp;quot;manager&amp;quot; for the queries &lt;a class="reference external" href="https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager"&gt;https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager&lt;/a&gt;, that is good for creating DSL.&lt;/p&gt;
+&lt;p&gt;For example, if you want get all users from database for chosen date, you can write some query:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+User.objects.filter(birth_date &amp;gt; (date - timedelta(1)),
+                    birth_date &amp;lt; date).order_by('-birth_date').all()
+&lt;/pre&gt;
+&lt;p&gt;It looks informative, but hard for testing and reading, so better to write the same code with other way use Manager (in internet you can find how to prepare manager for call with many methods):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+User.objects.get_for_date(date).is_index().has_published()
+&lt;/pre&gt;
+&lt;p&gt;That better! Managers makes our live easiest. But, come back to SQLAlchemy.
+In SQLAlchemy, previous query you can write through few methods:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+session.query(User).filter(User.birth_date &amp;gt;= (date - timedelta(1)),
+                           User.birth_date &amp;lt;= date).order_by(User.birth_date.desc()).all()
+&lt;/pre&gt;
+&lt;p&gt;Or&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+session.query(User).filter_by(birth_date &amp;gt; (date - timedelta(1)),
+                              birth_date &amp;lt; date).order_by(User.birth_date.desc()).all()
+&lt;/pre&gt;
+&lt;p&gt;That more informative than query on Django, code repeats SQL query,  complex queries write easy.
+But, let's try make it short, like example with Manager in Django. SQLAlchemy do not have that functionality.
+Exist few ways to do query is more short:&lt;/p&gt;
+&lt;p&gt;First: classmethod. People already asked on Stackoverflow about it:
+&lt;a class="reference external" href="http://stackoverflow.com/questions/6606745/equivalent-of-models-manager-for-sqlalchemy"&gt;http://stackoverflow.com/questions/6606745/equivalent-of-models-manager-for-sqlalchemy&lt;/a&gt;
+&lt;a class="reference external" href="http://stackoverflow.com/questions/4866489/is-there-something-equivalent-to-djangos-managers-in-sqlalchemy"&gt;http://stackoverflow.com/questions/4866489/is-there-something-equivalent-to-djangos-managers-in-sqlalchemy&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+class User(Base):
+    birth_date = Column(DateTime)
+
+    &amp;#64;classmethod
+    def get_for_date(cls, session, date):
+        return session.query(cls).filter(
+            cls.birth_date &amp;gt;= (date - timedelta(1)),
+            cls.birth_date &amp;lt;= date
+        ).order_by(cls.birth_date.desc()).all()
+
+# use it
+users = User.get_for_date(session, date)
+&lt;/pre&gt;
+&lt;p&gt;Okay, looks better than raw query, but what if we are want use more filter, or use few methods in query.
+We can to do few methods for each case or pass query in method and return new query, but it's not &amp;quot;DRY&amp;quot; way.&lt;/p&gt;
+&lt;p&gt;Two: functions&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+def get_for_date(query, date):
+    return query.filter(
+              cls.birth_date &amp;gt;= (date - timedelta(1)),
+              cls.birth_date &amp;lt;= date
+          ).order_by(cls.birth_date.desc())
+
+users = get_for_date(session.query(User))
+&lt;/pre&gt;
+&lt;p&gt;Functional guys probably must to love it. But again, more filters (e.g. we want to get only published entries and who marked for showing at home page):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+query = is_index(has_published(get_for_date(session.query(User)))).all()
+&lt;/pre&gt;
+&lt;p&gt;Oh, no. We want Python, but no LISP.&lt;/p&gt;
+&lt;p&gt;Three: Inherite a &lt;cite&gt;Query&lt;/cite&gt; or &lt;cite&gt;DBSession&lt;/cite&gt; classes, something like a manager!
+For example, recipie for prefiltered queries &lt;a class="reference external" href="http://www.sqlalchemy.org/trac/wiki/UsageRecipes/PreFilteredQuery"&gt;http://www.sqlalchemy.org/trac/wiki/UsageRecipes/PreFilteredQuery&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can see, method defined in FilteredQuery, will to avaible in query:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+assert session.query(Address).private
+&lt;/pre&gt;
+&lt;p&gt;So, may we must to add methods in runtime? Let's try:&lt;/p&gt;
+&lt;p&gt;Make &amp;quot;Manager&amp;quot; with staticmethods, what added to our queries new expressions, methods must to get query, add our expression and return new query.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+class MainManager:
+
+    &amp;#64;staticmethod
+    def is_index(self):
+        return self.filter_by(is_index=True)
+
+    &amp;#64;staticmethod
+    def is_public(self):
+        return self.filter_by(is_public=True)
+&lt;/pre&gt;
+&lt;p&gt;And define attribute to model, for manager. Manager will get class with methods and set their to query&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+class User(Base):
+    __tablename__ = 'main'
+    id = Column(Integer, primary_key=True)
+    birth_date = Column(DateTime)
+    is_index = Column(Boolean, default=False)
+    is_public = Column(Boolean, default=False)
+
+    __manager__ = MainManager
+&lt;/pre&gt;
+&lt;p&gt;Then create new session with the &lt;cite&gt;ManagerQuery&lt;/cite&gt;. Now, query each time will receive attributes of the model what passed to query, and set methods of  the class with methods to a new query:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+...
+from alchmanager import ManagedQuery
+
+engine = create_engine('sqlite:///:memory:')
+session = sessionmaker(query_cls=ManagedQuery, bind=engine)()
+&lt;/pre&gt;
+&lt;p&gt;Now, this session will add methods from manager each time for in time of creating query if in model which passed to query, have a manager&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;__manager__&lt;/cite&gt; attribute:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt;print(session.query(User).is_index)
+&amp;lt;bound method ManagedQuery.is_index of &amp;lt;alchmanager.ManagedQuery object at 0x102853e10&amp;gt;&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Or, if not exists&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt;print(session.query(User).other_method)
+...
+AttributeError: 'ManagedQuery' object has no attribute 'other_method'
+&lt;/pre&gt;
+&lt;p&gt;But, what if we want have managers not only for few classes? We can make base class and to inherite from him, that good idea for few classes, or who have little differences. What if we want make manager not only for query, and for all session.
+We also can to inherit &lt;cite&gt;DBSession&lt;/cite&gt; class and do small hack, to get query class from &lt;cite&gt;DBSession._query_cls&lt;/cite&gt; and define methods for all session, to add methods in Query class. That method is not pretty, because I wrote the small decorator, what in starting project loaded and adds methods to query class. See example&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+...
+from alchmanager import ManagedSession
+
+engine = create_engine('sqlite:///:memory:')
+session = sessionmaker(class_=ManagedSession, bind=engine)()
+
+&amp;#64;session.load_manager()
+class SessionManager:
+
+    &amp;#64;staticmethod
+    def published(self):
+         return self.filter_by(is_public=True)
+
+    &amp;#64;staticmethod
+    def has_index(self):
+        return self.filter_by(is_index=True)
+
+
+class Test(Base):
+    id = Column(Integer)
+
+
+&amp;gt;&amp;gt;&amp;gt;print(session.query(TestModel).published)
+&amp;lt;bound method Query.published of &amp;lt;sqlalchemy.orm.query.Query object at 0x109ac5750&amp;gt;&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;We have manager for session, all queries have methods defined in &lt;cite&gt;SessionManager&lt;/cite&gt;, query manager can to replace session methods in query instance.&lt;/p&gt;
+&lt;p&gt;So now, we have managers for SQLAlchemy for making simple DSL. Get the source code you can at [sqlalchemy-manager](&lt;a class="reference external" href="https://github.com/d1ffuz0r/sqlalchemy-manager"&gt;https://github.com/d1ffuz0r/sqlalchemy-manager&lt;/a&gt;)&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Python, Erlang, PostgreSQL, Clojure</title><link href="https://d1ffuz0r.com/python-erlang-postgresql-clojure.html" rel="alternate"/><published>2017-09-24T17:17:00+03:00</published><updated>2017-09-24T17:17:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2017-09-24:/python-erlang-postgresql-clojure.html</id><summary type="html">&lt;p&gt;Ealier this year I had a goal to up my knowledge and become an expert in some technical areas. There's a bunch of links I found very interesting&lt;/p&gt;
+&lt;div class="section" id="clojure"&gt;
+&lt;h2&gt;Clojure&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=sp2Zv7KFQQ0"&gt;https://www.youtube.com/watch?v=sp2Zv7KFQQ0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://en.wikibooks.org/wiki/Learning_Clojure"&gt;https://en.wikibooks.org/wiki/Learning_Clojure&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;http://www.braveclojure.com/clojure-for-the-brave-and-true/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;clojuredocs.org/clojure …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Ealier this year I had a goal to up my knowledge and become an expert in some technical areas. There's a bunch of links I found very interesting&lt;/p&gt;
+&lt;div class="section" id="clojure"&gt;
+&lt;h2&gt;Clojure&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.youtube.com/watch?v=sp2Zv7KFQQ0"&gt;https://www.youtube.com/watch?v=sp2Zv7KFQQ0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://en.wikibooks.org/wiki/Learning_Clojure"&gt;https://en.wikibooks.org/wiki/Learning_Clojure&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.braveclojure.com/clojure-for-the-brave-and-true/"&gt;http://www.braveclojure.com/clojure-for-the-brave-and-true/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;clojuredocs.org/clojure.core/deftype&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="postgresql"&gt;
+&lt;h2&gt;PostgreSQL&lt;/h2&gt;
+&lt;p&gt;Setup replication&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.postgresql.org/docs/9.4/static/datatype.html"&gt;https://www.postgresql.org/docs/9.4/static/datatype.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.techonthenet.com/postgresql/datatypes.php"&gt;https://www.techonthenet.com/postgresql/datatypes.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.tutorialspoint.com/postgresql/postgresql_data_types.htm"&gt;https://www.tutorialspoint.com/postgresql/postgresql_data_types.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.postgresql.org/docs/9.2/static/indexes-types.html"&gt;https://www.postgresql.org/docs/9.2/static/indexes-types.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://devcenter.heroku.com/articles/postgresql-indexes"&gt;https://devcenter.heroku.com/articles/postgresql-indexes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://leopard.in.ua/2015/04/13/postgresql-indexes"&gt;http://leopard.in.ua/2015/04/13/postgresql-indexes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://patshaughnessy.net/2014/11/11/discovering-the-computer-science-behind-postgres-indexes"&gt;http://patshaughnessy.net/2014/11/11/discovering-the-computer-science-behind-postgres-indexes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://blog.andrebarbosa.co/hash-indexes-on-postgres/"&gt;http://blog.andrebarbosa.co/hash-indexes-on-postgres/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://hashrocket.com/blog/posts/exploring-postgres-gin-index"&gt;https://hashrocket.com/blog/posts/exploring-postgres-gin-index&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://blog.heapanalytics.com/speeding-up-postgresql-queries-with-partial-indexes/"&gt;http://blog.heapanalytics.com/speeding-up-postgresql-queries-with-partial-indexes/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="erlang"&gt;
+&lt;h2&gt;Erlang&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://erlang.org/doc/reference_manual/data_types.html"&gt;http://erlang.org/doc/reference_manual/data_types.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://learnyousomeerlang.com/content"&gt;http://learnyousomeerlang.com/content&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Designing scalability with erlang/otp &lt;a class="reference external" href="http://dl.finebook.ir/book/86/13143.pdf"&gt;http://dl.finebook.ir/book/86/13143.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="python"&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.python.org/dev/peps/"&gt;https://www.python.org/dev/peps/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;types in depth &lt;a class="reference external" href="https://docs.python.org/2/library/stdtypes.html"&gt;https://docs.python.org/2/library/stdtypes.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;patterns &lt;a class="reference external" href="https://www.toptal.com/python/python-design-patterns"&gt;https://www.toptal.com/python/python-design-patterns&lt;/a&gt; &lt;a class="reference external" href="https://github.com/faif/python-patterns"&gt;https://github.com/faif/python-patterns&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;operator &lt;a class="reference external" href="https://docs.python.org/2/library/operator.html"&gt;https://docs.python.org/2/library/operator.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;functools &lt;a class="reference external" href="https://docs.python.org/2/library/functools.html"&gt;https://docs.python.org/2/library/functools.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;asyncio python 3.6 &lt;a class="reference external" href="https://docs.python.org/3/library/asyncio.html"&gt;https://docs.python.org/3/library/asyncio.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;style &lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0008/"&gt;https://www.python.org/dev/peps/pep-0008/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Blog"/></entry><entry><title>PG Bundle - All you need is Postgres</title><link href="https://d1ffuz0r.com/pg-bundle-all-you-need-is-postgres.html" rel="alternate"/><published>2017-06-25T15:15:00+03:00</published><updated>2017-06-25T15:15:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2017-06-25:/pg-bundle-all-you-need-is-postgres.html</id><summary type="html">&lt;p&gt;I'm a huge fan of PostgreSQL. It's an open source RDBMS that makes MongoDB obsolete.
+But lack of information for new people who are in the beginning of their career makes it hard to get started with PostgreSQL and let MongoDB take that big slice of users.&lt;/p&gt;
+&lt;p&gt;I decided to …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'm a huge fan of PostgreSQL. It's an open source RDBMS that makes MongoDB obsolete.
+But lack of information for new people who are in the beginning of their career makes it hard to get started with PostgreSQL and let MongoDB take that big slice of users.&lt;/p&gt;
+&lt;p&gt;I decided to start a small project called &lt;a class="reference external" href="http://postgresql.d1ffuz0r.com"&gt;PG Bundle&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What is PG Bundle? It's a single page that you can share with friends or coworkers to let them get started with PostgreSQL.
+It's going to have a human mantained page with links to all necessary infromation for beginners, as well as professionals who are looking for efficient tools for work with PostgreSQL.&lt;/p&gt;
+&lt;p&gt;You can find me on Twitter: &lt;a class="reference external" href="https://twitter.com/inablackcar"&gt;https://twitter.com/inablackcar&lt;/a&gt; if you want to share any information, or help with the project.&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>What it takes to be productive?</title><link href="https://d1ffuz0r.com/what-it-takes-to-be-productive.html" rel="alternate"/><published>2016-12-08T23:30:00+03:00</published><updated>2016-12-08T23:30:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2016-12-08:/what-it-takes-to-be-productive.html</id><summary type="html">&lt;p&gt;During all your career, while working for an employer or running your own business, you will always have a manager or be managing somebody. I, as a huge fun of productivity, trying to find ways to be as productive as possible and achieve more in shortest period of time. Productivity …&lt;/p&gt;</summary><content type="html">&lt;p&gt;During all your career, while working for an employer or running your own business, you will always have a manager or be managing somebody. I, as a huge fun of productivity, trying to find ways to be as productive as possible and achieve more in shortest period of time. Productivity is always coming along with the satisfaction, the more you productive the more satisfied you feel. It works for anybody, whether you’re manager or individual contributor.&lt;/p&gt;
+&lt;p&gt;Last night (December 8th), at LeadGenius office, we had &lt;a class="reference external" href="https://twitter.com/nrrrdcore"&gt;Julie Ann Horvath&lt;/a&gt;, Designer, Developer who gave a very interesting talk about developing good working relationships and navigating difficult situations in the workplace.&lt;/p&gt;
+&lt;p&gt;And I want to share one top thing I learned about productivity and work relationships.&lt;/p&gt;
+&lt;p&gt;What will make you (manager, contributor) make the most productive:&lt;/p&gt;
+&lt;p&gt;To all: Ask your colleague what they want? How they prefer to communicate and tell how do you prefer to communicate.&lt;/p&gt;
+&lt;p&gt;To contributors:  Be proactive (share anything you learned with your manager, share some extra information that you think would be useful, that will help you to build a better relationship)&lt;/p&gt;
+&lt;p&gt;To managers: Brag about your team, share extra stats about implemented features, finished projects, productivity, it will make your team feel better and appreciated.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;em&gt;this post has been written in Emacs&lt;/em&gt;&lt;/blockquote&gt;
+</content><category term="Blog"/></entry><entry><title>10 things about 2016</title><link href="https://d1ffuz0r.com/10-things-about-2016.html" rel="alternate"/><published>2016-12-01T23:30:00+03:00</published><updated>2016-12-01T23:30:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2016-12-01:/10-things-about-2016.html</id><summary type="html">&lt;p&gt;How I spent this summ^Wyear.&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;I started this year completely burned out by working 16+ hours/day, combining daily work and a side project.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Visited Portland and San Diego for the first time with friends, 12 hours of driving San Diego-Oakland was fun but very tiring - would never do …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;How I spent this summ^Wyear.&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;I started this year completely burned out by working 16+ hours/day, combining daily work and a side project.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Visited Portland and San Diego for the first time with friends, 12 hours of driving San Diego-Oakland was fun but very tiring - would never do it again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Good news is that I sold that project shortly in February, and after that I decided to stop doing anything tech related for next for next 8 months, and instead, learn piano and some music theory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Which leads to the next big achievement for me, I learned how to play piano and read music score, now I have one more hobbie in my life: music production, even got sound cloud &lt;a class="reference external" href="https://soundcloud.com/team-roman-empire"&gt;https://soundcloud.com/team-roman-empire&lt;/a&gt; (I hope Merzbow will like it).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Finally visited Eastern-Asia and spend 2 weeks in Hong Kong, Japan, South Korea&lt;/strong&gt; during last summer. Liked South Korea the most, it reminds me Moscow, I will definitely spend there more time in the future. Ate a live octopus in S.Korea and best sushi ever in Tokyo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Now, when I feel recharged after a long break, I started another side project: &lt;a class="reference external" href="https://aipromo.online"&gt;https://aipromo.online&lt;/a&gt; a tool for personal branding on LinkedIn. It has got more users than all of my previous projects, I'm currently learning how to keep high retention, low churn and other non-technical areas of owning a SAAS product. Planning to start for a first time, another new project with 2nd cofounder instead of doing everything solo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Decided what I would like to work on for the next 10 years, figured out what mu speciality would be and stack of tools I want to be an expert in. In addition to Python, I want to become an expert in PostgreSQL, Salesforce and other CRMs, and ETL (realtime, non-realtime) in Marketing and Sales domains. With the increasing amount of data, salesforce becoming a platform, I think it is a pretty safe choice, plus I really enjoy working with these tools and domains for a next few years, and continue learning new tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Started planning my time better, put everything in calendar now. Feeling much more productive and make more things done, just like this blog post. Planning to publish 1 post per week, learned and realised a lot over last year, would like to share it with people. On technical and non-technical topics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;For my birthday this year I will go to NYC. I was going to try that $295 burger but everything was alredy booked. Currently trying to find alternative&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;This was my officially 3rd year in the US, passport is not so far away&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;this post has been written in Emacs&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content><category term="Blog"/></entry><entry><title>AIPromo - From Idea to Product</title><link href="https://d1ffuz0r.com/aipromo-from-idea-to-product.html" rel="alternate"/><published>2016-10-25T23:30:00+03:00</published><updated>2016-10-25T23:30:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2016-10-25:/aipromo-from-idea-to-product.html</id><summary type="html">&lt;p&gt;Automation is great, it makes your life easy and freeing a lot of time.&lt;/p&gt;
+&lt;p&gt;AIPromo (&lt;a class="reference external" href="https://aipromo.online"&gt;https://aipromo.online&lt;/a&gt;) is a free AI powered content management tool. AIPromo's goal is to increase your personal brand and online presence on LinkedIn without doing anything, aka personal branding for lazy.&lt;/p&gt;
+&lt;p&gt;This project started …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Automation is great, it makes your life easy and freeing a lot of time.&lt;/p&gt;
+&lt;p&gt;AIPromo (&lt;a class="reference external" href="https://aipromo.online"&gt;https://aipromo.online&lt;/a&gt;) is a free AI powered content management tool. AIPromo's goal is to increase your personal brand and online presence on LinkedIn without doing anything, aka personal branding for lazy.&lt;/p&gt;
+&lt;p&gt;This project started as a cron script that had been posting links from the Internet to my LinkedIn profile for more than a year. Over time I noticed that number of visitors and views of my profile has increased while I’ve been doing nothing, just as I wanted. After a lot of requests from friends and colleagues I decided to give an easy and, lazy, way to automate this daily routine of searching and reposting of new content to keep your followers updated.&lt;/p&gt;
+&lt;p&gt;Today I'm launching AIPromo on Product Hunt. Check it out and let me know what you think &lt;a class="reference external" href="https://www.producthunt.com/tech/aipromo"&gt;https://www.producthunt.com/tech/aipromo&lt;/a&gt;&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>2014-2015</title><link href="https://d1ffuz0r.com/2014-2015.html" rel="alternate"/><published>2015-01-01T13:30:00+03:00</published><updated>2015-01-01T13:30:00+03:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2015-01-01:/2014-2015.html</id><summary type="html">&lt;div class="section" id="summary"&gt;
+&lt;h2&gt;2014 Summary&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;1st year in the USA. Life here feels simple and sometimes boring&lt;/li&gt;
+&lt;li&gt;Silicon Valley is a cold place&lt;/li&gt;
+&lt;li&gt;Marketing is hard&lt;/li&gt;
+&lt;li&gt;Sales is hard&lt;/li&gt;
+&lt;li&gt;Mustang is awesome&lt;/li&gt;
+&lt;li&gt;Walking to the work is better than driving. Daily driving is boring&lt;/li&gt;
+&lt;li&gt;Work in the office &amp;gt; Remote work&lt;/li&gt;
+&lt;li&gt;Los Angeles is …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="summary"&gt;
+&lt;h2&gt;2014 Summary&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;1st year in the USA. Life here feels simple and sometimes boring&lt;/li&gt;
+&lt;li&gt;Silicon Valley is a cold place&lt;/li&gt;
+&lt;li&gt;Marketing is hard&lt;/li&gt;
+&lt;li&gt;Sales is hard&lt;/li&gt;
+&lt;li&gt;Mustang is awesome&lt;/li&gt;
+&lt;li&gt;Walking to the work is better than driving. Daily driving is boring&lt;/li&gt;
+&lt;li&gt;Work in the office &amp;gt; Remote work&lt;/li&gt;
+&lt;li&gt;Los Angeles is a fun place&lt;/li&gt;
+&lt;li&gt;Montreal (Canada) is a fun place&lt;/li&gt;
+&lt;li&gt;Miami is boring, like Thailand&lt;/li&gt;
+&lt;li&gt;&amp;quot;Walking Dead&amp;quot; is awesome. Will watch&lt;/li&gt;
+&lt;li&gt;&amp;quot;Breakind Bad&amp;quot; is interesting during only first 2 seasons&lt;/li&gt;
+&lt;li&gt;Erlang is a very productive language&lt;/li&gt;
+&lt;li&gt;CoffeScript need better tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="plans"&gt;
+&lt;h2&gt;2015 Plans&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Keep working on English&lt;/li&gt;
+&lt;li&gt;Go to gym again&lt;/li&gt;
+&lt;li&gt;Decide the career growth direction&lt;/li&gt;
+&lt;li&gt;Keep working on &lt;a class="reference external" href="https://crashdump.io"&gt;https://crashdump.io&lt;/a&gt;. Get more users and get user who are paying&lt;/li&gt;
+&lt;li&gt;Start one more side-project&lt;/li&gt;
+&lt;li&gt;Visit Russia&lt;/li&gt;
+&lt;li&gt;Visit Mexico&lt;/li&gt;
+&lt;li&gt;Visit Seattle&lt;/li&gt;
+&lt;li&gt;Visit US Pycon&lt;/li&gt;
+&lt;li&gt;Learn marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="Blog"/></entry><entry><title>PyCon US 2014</title><link href="https://d1ffuz0r.com/pycon-us-2014.html" rel="alternate"/><published>2014-04-29T15:33:00+04:00</published><updated>2014-04-29T15:33:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2014-04-29:/pycon-us-2014.html</id><summary type="html">&lt;p&gt;PyCon is over. This year the conference was at Montreal, Canada. The country looks pretty much as Russia from the window of airplane and city is very european. In comparison with PyCons I've visited before it was my biggest PyCon. I was impressed with how many people do use iPython …&lt;/p&gt;</summary><content type="html">&lt;p&gt;PyCon is over. This year the conference was at Montreal, Canada. The country looks pretty much as Russia from the window of airplane and city is very european. In comparison with PyCons I've visited before it was my biggest PyCon. I was impressed with how many people do use iPython[ notebook].
+I have learned a lot of new stuff there and met many new people. Hope I will visit PyCon next year again.&lt;/p&gt;
+&lt;div class="section" id="all-your-ducks-in-a-row-data-structures-in-the-standard-library-and-beyond"&gt;
+&lt;h2&gt;All Your Ducks In A Row: Data Structures in the Standard Library and Beyond&lt;/h2&gt;
+&lt;p&gt;A great talk. Brandon explained how does work and what you should expect from standard types and libraries.&lt;/p&gt;
+&lt;p&gt;There're several notes:&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;list is an array of references&lt;/p&gt;
+&lt;p&gt;class is a dict&lt;/p&gt;
+&lt;p&gt;implementation __slots__ converts an object to the struct (takes less memory)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And also provided a list of libraries what you could know but have never use:&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;heapq.PriorityQueue&lt;/p&gt;
+&lt;p&gt;sched.schdules&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Must have to watch for every pythonista&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2571/all-your-ducks-in-a-row-data-structures-in-the-s"&gt;http://www.pyvideo.org/video/2571/all-your-ducks-in-a-row-data-structures-in-the-s&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cache-me-if-you-can-memcached-caching-patterns-and-best-practices"&gt;
+&lt;h2&gt;Cache me if you can: memcached, caching patterns and best practices&lt;/h2&gt;
+&lt;p&gt;As described in title this talk has covered various cashing patterns and best practices.&lt;/p&gt;
+&lt;p&gt;Tip: use versioning for cashing you data&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2578/cache-me-if-you-can-memcached-caching-patterns"&gt;http://www.pyvideo.org/video/2578/cache-me-if-you-can-memcached-caching-patterns&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="import-ant-decisions"&gt;
+&lt;h2&gt;Import-ant Decisions&lt;/h2&gt;
+&lt;p&gt;Basic example how you can implement your own import system. Watch just for fun.&lt;/p&gt;
+&lt;p&gt;Rate: 4/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2567/import-ant-decisions"&gt;http://www.pyvideo.org/video/2567/import-ant-decisions&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="enough-machine-learning-to-make-hacker-news-readable-again"&gt;
+&lt;h2&gt;Enough Machine Learning to Make Hacker News Readable Again&lt;/h2&gt;
+&lt;p&gt;A good example how you can spend 6 months to filter HN clicking on your own &amp;quot;like&amp;quot; button.&lt;/p&gt;
+&lt;p&gt;Rate: Silicon Valley^hipster/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2612/enough-machine-learning-to-make-hacker-news-reada"&gt;http://www.pyvideo.org/video/2612/enough-machine-learning-to-make-hacker-news-reada&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-get-started-with-machine-learning"&gt;
+&lt;h2&gt;How to Get Started with Machine Learning&lt;/h2&gt;
+&lt;p&gt;Description and introduction into things you necessary to know if you want to dive into machine learning.&lt;/p&gt;
+&lt;p&gt;Rate: Silicon Valley/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2604/how-to-get-started-with-machine-learning"&gt;http://www.pyvideo.org/video/2604/how-to-get-started-with-machine-learning&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="realtime-predictive-analytics-using-scikit-learn-rabbitmq"&gt;
+&lt;h2&gt;Realtime predictive analytics using scikit-learn &amp;amp; RabbitMQ&lt;/h2&gt;
+&lt;p&gt;Explained on example how to build the system using scikit-learn and RabbitMQ. Can be useful who is joining the rabbitmq + scikit-learn world.&lt;/p&gt;
+&lt;p&gt;Rate: 8/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2606/realtime-predictive-analytics-using-scikit-learn"&gt;http://www.pyvideo.org/video/2606/realtime-predictive-analytics-using-scikit-learn&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="distributed-computing-is-hard-lets-go-shopping"&gt;
+&lt;h2&gt;Distributed Computing Is Hard, Lets Go Shopping&lt;/h2&gt;
+&lt;p&gt;Greates talk I've visited on this PyCon. Must have to watch for people is who working on distributed data processing. You will learn what issues you can meet and how to solve it, how to do proper testing and monitoring.&lt;/p&gt;
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;blockquote&gt;
+testing: test task function, test single task, test 1 process, test several processes to avoid race condition
+monitoring: celery - flower, rabbitmq - rabbitmq management&lt;/blockquote&gt;
+&lt;p&gt;Rate: 100/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2598/distributed-computing-is-hard-lets-go-shopping"&gt;http://www.pyvideo.org/video/2598/distributed-computing-is-hard-lets-go-shopping&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="fan-in-and-fan-out-the-crucial-components-of-concurrency"&gt;
+&lt;h2&gt;Fan-in and Fan-out: The crucial components of concurrency&lt;/h2&gt;
+&lt;p&gt;import asyncio&lt;/p&gt;
+&lt;p&gt;Rate: asyncio/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2572/fan-in-and-fan-out-the-crucial-components-of-con"&gt;http://www.pyvideo.org/video/2572/fan-in-and-fan-out-the-crucial-components-of-con&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="track-memory-leaks-in-python"&gt;
+&lt;h2&gt;Track memory leaks in Python&lt;/h2&gt;
+&lt;p&gt;Must have to watch every pythonista. Explained GC in python and techniques of debugging and detecting memory leaks.&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;objgraph - &lt;a class="reference external" href="http://mg.pov.lt/objgraph/"&gt;http://mg.pov.lt/objgraph/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;memory_profiler - &lt;a class="reference external" href="https://pypi.python.org/pypi/memory_profiler"&gt;https://pypi.python.org/pypi/memory_profiler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pytracemalloc - &lt;a class="reference external" href="https://github.com/wyplay/pytracemalloc"&gt;https://github.com/wyplay/pytracemalloc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;tracemallocqt - &lt;a class="reference external" href="https://bitbucket.org/haypo/tracemallocqt"&gt;https://bitbucket.org/haypo/tracemallocqt&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tip: keep eyes on object's references&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2698/track-memory-leaks-in-python"&gt;http://www.pyvideo.org/video/2698/track-memory-leaks-in-python&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="garbage-collection-in-python"&gt;
+&lt;h2&gt;Garbage Collection in Python&lt;/h2&gt;
+&lt;p&gt;If you trying to work with many objects and want to help python handle all manually this talk is good for you.&lt;/p&gt;
+&lt;p&gt;Tip: it happens rarely but when it happened, you need to be ready&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2633/garbage-collection-in-python"&gt;http://www.pyvideo.org/video/2633/garbage-collection-in-python&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="designing-poetic-apis"&gt;
+&lt;h2&gt;Designing Poetic APIs&lt;/h2&gt;
+&lt;p&gt;Explanation on example how to make your code, API, UI cleaner and better. Must have to watch&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2647/designing-poetic-apis"&gt;http://www.pyvideo.org/video/2647/designing-poetic-apis&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="introduction-to-sqlalchemy-core"&gt;
+&lt;h2&gt;Introduction to SQLAlchemy Core&lt;/h2&gt;
+&lt;p&gt;Use cases and examples how to use SQLAlchemy without using ORM.&lt;/p&gt;
+&lt;p&gt;Tip: use declarative for convinient interaction with existing databases (e.g. migrations or data extract).&lt;/p&gt;
+&lt;p&gt;Rate: 7/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2654/introduction-to-sqlalchemy-core"&gt;http://www.pyvideo.org/video/2654/introduction-to-sqlalchemy-core&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sane-schema-migrations-with-alembic-and-sqlalchemy"&gt;
+&lt;h2&gt;Sane schema migrations with Alembic and SQLAlchemy&lt;/h2&gt;
+&lt;p&gt;Migrations for SQLAlchemy.&lt;/p&gt;
+&lt;p&gt;Tip: &lt;a class="reference external" href="http://alembic.readthedocs.org/en/latest/"&gt;http://alembic.readthedocs.org/en/latest/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2693/sane-schema-migrations-with-alembic-and-sqlalchem"&gt;http://www.pyvideo.org/video/2693/sane-schema-migrations-with-alembic-and-sqlalchem&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="in-depth-pdb"&gt;
+&lt;h2&gt;In Depth PDB&lt;/h2&gt;
+&lt;p&gt;Tips &amp;amp; tricks.&lt;/p&gt;
+&lt;p&gt;Tip: install pdb++&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2673/in-depth-pdb"&gt;http://www.pyvideo.org/video/2673/in-depth-pdb&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="python-packaging-simplified-for-end-users-app-developers-and-open-source-contributors"&gt;
+&lt;h2&gt;Python packaging simplified, for end users, app developers, and open source contributors&lt;/h2&gt;
+&lt;p&gt;Described techniques and examples of packaging libraries in Python. Make your work and deploy easier. Must have.&lt;/p&gt;
+&lt;p&gt;Tip: vagrant&lt;/p&gt;
+&lt;p&gt;Rate: wheels/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2631/python-packaging-simplified-for-end-users-app-d"&gt;http://www.pyvideo.org/video/2631/python-packaging-simplified-for-end-users-app-d&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-is-coming-in-python-packaging"&gt;
+&lt;h2&gt;What is coming in Python packaging&lt;/h2&gt;
+&lt;p&gt;Explained current state and the future of Python packaging systems.&lt;/p&gt;
+&lt;p&gt;PYPI's hidden gems&lt;/p&gt;
+&lt;!--  --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.python.org/pypi"&gt;https://pypi.python.org/pypi&lt;/a&gt;/&amp;lt;name&amp;gt;/json&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.python.org/pypi"&gt;https://pypi.python.org/pypi&lt;/a&gt;/&amp;lt;name&amp;gt;/&amp;lt;ver&amp;gt;/json&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypi.python.org/pypi/requests/json"&gt;https://pypi.python.org/pypi/requests/json&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tip: do not use wheels if you have C extensions&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2677/what-is-coming-in-python-packaging"&gt;http://www.pyvideo.org/video/2677/what-is-coming-in-python-packaging&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="deliver-your-software-in-an-envelope"&gt;
+&lt;h2&gt;Deliver Your Software In An Envelope&lt;/h2&gt;
+&lt;p&gt;Good talk about designing, delivering code and how good documentation is important. Must have to watch.&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2632/deliver-your-software-in-an-envelope"&gt;http://www.pyvideo.org/video/2632/deliver-your-software-in-an-envelope&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="postgresql-is-web-scale-really"&gt;
+&lt;h2&gt;PostgreSQL is Web Scale (Really :) )&lt;/h2&gt;
+&lt;p&gt;Exaplained how to scale and use classic RDBMS.&lt;/p&gt;
+&lt;p&gt;Tip: PostgreSQL is enough for 90% of projects.&lt;/p&gt;
+&lt;p&gt;Rate: 10/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2650/postgresql-is-web-scale-really"&gt;http://www.pyvideo.org/video/2650/postgresql-is-web-scale-really&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="set-your-code-free-releasing-and-maintaining-an-open-source-python-project"&gt;
+&lt;h2&gt;Set your code free: releasing and maintaining an open-source Python project&lt;/h2&gt;
+&lt;p&gt;Deliver your stuff properly! Must have to watch.&lt;/p&gt;
+&lt;p&gt;Rate: Github/10&lt;/p&gt;
+&lt;p&gt;Link: &lt;a class="reference external" href="http://www.pyvideo.org/video/2637/set-your-code-free-releasing-and-maintaining-an"&gt;http://www.pyvideo.org/video/2637/set-your-code-free-releasing-and-maintaining-an&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="Python"/><category term="python"/><category term="pycon"/><category term="canada"/></entry><entry><title>crashkeeper</title><link href="https://d1ffuz0r.com/crashkeeper.html" rel="alternate"/><published>2014-02-21T22:35:00+04:00</published><updated>2014-02-21T22:35:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2014-02-21:/crashkeeper.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://crashkeeper.com"&gt;CrashKeeper&lt;/a&gt; is a web service for collecting exceptions, logs and other things happened in your application.&lt;/p&gt;
+&lt;p&gt;The main point of the CrashKeeper - deep understanding of your information, such like logs with custom user-based parsers for their logs, better understanding language dependents (&lt;strong&gt;WOW ERLANG, SUCH CLOJURE&lt;/strong&gt;) exceptions and messages (hello Sentry …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a class="reference external" href="http://crashkeeper.com"&gt;CrashKeeper&lt;/a&gt; is a web service for collecting exceptions, logs and other things happened in your application.&lt;/p&gt;
+&lt;p&gt;The main point of the CrashKeeper - deep understanding of your information, such like logs with custom user-based parsers for their logs, better understanding language dependents (&lt;strong&gt;WOW ERLANG, SUCH CLOJURE&lt;/strong&gt;) exceptions and messages (hello Sentry) and building statistics. There are also will be available integration with tons of task-tracker services and notification using a lot of protocols, everyone has it. And bigger messages limits per second.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://crashkeeper.com/images/logo1.png" /&gt;
+&lt;p&gt;Eventually, after 6 months of lazy development in a free time I would to say that &lt;a class="reference external" href="http://crashkeeper.com"&gt;CrashKeeper&lt;/a&gt; is going to testing stage. Lot of things done but much more I need to do.
+Started development when I've lived in Thailand after move to Califonia the process has slow down and I didn't finish a beta-version before 2014 as I expected. So now it's a time to catch up.&lt;/p&gt;
+&lt;p&gt;Little bit about project. A backend has written on &lt;a class="reference external" href="http://www.erlang.org/"&gt;Erlang&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/5HT/n2o"&gt;N2O&lt;/a&gt; web-framework, at client-side I use &lt;a class="reference external" href="http://chaplinjs.org/"&gt;Chaplin.js&lt;/a&gt;. Also there are an awesome thinks uch like RabbitMQ, PostgreSQL, Memcached, Mnesia. With all awesome thing in n2o using early versions had give some problems, like I've been forced to rewrite api to be able use &amp;quot;new ideas&amp;quot; of the framework. After 6 months using Chaplin.js I can say that It's the best thing which I have ever seen for JavaScript. Very helpful for development now is using Vagrant and Puppet. For now that's it, I will publish more information at Crashkeeper Blog later.&lt;/p&gt;
+&lt;p&gt;Apply for a beta-test now and you will get a free year &lt;a class="reference external" href="http://crashkeeper.com/pricing"&gt;Ultimate&lt;/a&gt;-subscription.&lt;/p&gt;
+</content><category term="Blog"/><category term="erlang"/><category term="projects"/><category term="dev"/></entry><entry><title>Self-taught</title><link href="https://d1ffuz0r.com/self-taught.html" rel="alternate"/><published>2013-09-11T00:30:00+04:00</published><updated>2013-09-11T00:30:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-09-11:/self-taught.html</id><summary type="html">&lt;p&gt;I don't believe that stars on stackoverflow could help you get a job, they can give you attention of recruiters, not more. Same and Github.
+Before a large count of the interviews in soon, now is a good time to refresh knowledge.
+My check list to read&amp;amp;watch&amp;amp;learn for …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I don't believe that stars on stackoverflow could help you get a job, they can give you attention of recruiters, not more. Same and Github.
+Before a large count of the interviews in soon, now is a good time to refresh knowledge.
+My check list to read&amp;amp;watch&amp;amp;learn for the next 1 - 2 months:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Get that job at Google &lt;a class="reference external" href="http://steve-yegge.blogspot.ch/2008/03/get-that-job-at-google.html"&gt;http://steve-yegge.blogspot.ch/2008/03/get-that-job-at-google.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;quot;Cracking the Coding Inverview&amp;quot; Book&lt;/li&gt;
+&lt;li&gt;&amp;quot;Data Structures And Algorithms Alfred V. Aho&amp;quot; Book&lt;/li&gt;
+&lt;li&gt;CS Berkley course &lt;a class="reference external" href="https://itunes.apple.com/us/itunes-u/computer-science-162-001-spring/id596646529?l=en&amp;amp;mt=10"&gt;https://itunes.apple.com/us/itunes-u/computer-science-162-001-spring/id596646529?l=en&amp;amp;mt=10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;quot;Analysis of Algorithms&amp;quot; at Coursera&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Blog"/><category term="education"/><category term="dev"/></entry><entry><title>Thailand summary. Spring - Autumn 2013</title><link href="https://d1ffuz0r.com/thailand-summary-spring-autumn-2013.html" rel="alternate"/><published>2013-09-10T23:01:00+04:00</published><updated>2013-09-10T23:01:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-09-10:/thailand-summary-spring-autumn-2013.html</id><summary type="html">&lt;p&gt;Let's try, it is my first big post after starting learning English in classes with the native speaker and using in real life.&lt;/p&gt;
+&lt;p&gt;My visit to Thailand comes to the end. Instead of one year that I wanted to live here, I spent only 5 months, even so I got …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Let's try, it is my first big post after starting learning English in classes with the native speaker and using in real life.&lt;/p&gt;
+&lt;p&gt;My visit to Thailand comes to the end. Instead of one year that I wanted to live here, I spent only 5 months, even so I got all what I wanted from this trip.
+English - it is my main reason to fly to Thailand. Get more experience in spoken English combining with life in the awesome country, with nice people and weather.&lt;/p&gt;
+&lt;p&gt;Now I have to leave Thailand and fly to Russia for a month, to have done some paperwork and get my an immigration visa to America (as you can read in my previous posts).&lt;/p&gt;
+&lt;p&gt;Well, about Thailand.
+I've been living in Hua Hin. In most relaxed, expensive and secure town in the country, without crowds of tourists, with the royal residence and lots of combat ships around.
+Most part of time here I spent in the &amp;quot;relaxing mode&amp;quot;. Less as possible actions, only relaxation on the beach, lots of English classes and work.
+That is exactly what I wanted, after life in Moscow and before big challenges in California (e.x. get a job in Google or Path).
+Or start my own project (soon will be available first private version).&lt;/p&gt;
+</content><category term="Blog"/><category term="Thailand"/><category term="life"/></entry><entry><title>Dash, Python</title><link href="https://d1ffuz0r.com/dash-python.html" rel="alternate"/><published>2013-08-07T16:03:00+04:00</published><updated>2013-08-07T16:03:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-08-07:/dash-python.html</id><summary type="html">&lt;p&gt;Such awesome app, Dash. I heard about it app, but my laziness has not given to try one.
+Finally I have tried it recently with &lt;cite&gt;dash-at-point&lt;/cite&gt; mode for Emacs. Easy access to help by one hot-key,
+without permanent switching to browser, support of bunch libraries and languages.  But unfortunately Dash …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Such awesome app, Dash. I heard about it app, but my laziness has not given to try one.
+Finally I have tried it recently with &lt;cite&gt;dash-at-point&lt;/cite&gt; mode for Emacs. Easy access to help by one hot-key,
+without permanent switching to browser, support of bunch libraries and languages.  But unfortunately Dash.app has documentation only several python libraries.
+So I decided to make generator for fast building docsets(this is format of library for Dash.app) from list of libraries what in any storage.
+The big lucky was to find on website of Dash developer way to publish new documentation.
+It was so easy, just archive docset and make xml file, and everyone can add this feed to app and automatically get updates without checking website.
+And I want to introduce a website where I going to publish some docsets for popular libraries
+from Python world: &lt;a class="reference external" href="http://python-dashapp.tk"&gt;http://python-dashapp.tk&lt;/a&gt;. There are already several libraries, like SQLAlchemy, WebOb, Flask, peewee, fabric.
+You can always write to me in twitter (link in footer this website) to request new libraries for support.&lt;/p&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Dash: &lt;a class="reference external" href="http://kapeli.com/dash"&gt;http://kapeli.com/dash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;doc2dash &lt;a class="reference external" href="https://github.com/hynek/doc2dash/"&gt;https://github.com/hynek/doc2dash/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Python"/><category term="python"/><category term="tools"/><category term="os x"/></entry><entry><title>Green Card. California, US</title><link href="https://d1ffuz0r.com/green-card-california-us.html" rel="alternate"/><published>2013-05-11T06:32:00+04:00</published><updated>2013-05-11T06:32:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-05-11:/green-card-california-us.html</id><summary type="html">&lt;p&gt;Before, in fall 2012, I have filled anket for the DV(Green Card) lottery.
+And recently I have got a great news, I won the green card. Green Card given me right for living and working at the US,
+with the following getting citizenship.
+Of course, I can't to lose …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Before, in fall 2012, I have filled anket for the DV(Green Card) lottery.
+And recently I have got a great news, I won the green card. Green Card given me right for living and working at the US,
+with the following getting citizenship.
+Of course, I can't to lose this chance and I started preparing to relocation (that's can be some hard, because I just came to Thailand but I some have time, my interview to getting a visa will be about November-January 2013).
+My choice is California. Me was interesting, what about job there for me, and few days ago I have sent my CV to 4 companies.
+Result is surprised, I have got 3 replies. I think it OK and my main goal for this time - improve my spoken English before the relocation (now I go to English language school, and after 3 weeks after start I feel big progress in my knowledges).&lt;/p&gt;
+</content><category term="Blog"/><category term="US"/></entry><entry><title>SQLAlchemy packages</title><link href="https://d1ffuz0r.com/sqlalchemy-packages.html" rel="alternate"/><published>2013-03-22T23:03:00+04:00</published><updated>2013-03-22T23:03:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-03-22:/sqlalchemy-packages.html</id><content type="html">&lt;p&gt;My collection of SQLAlchemy packages. Descriptions will be in the future&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://gist.github.com/d1ffuz0r/5223734"&gt;https://gist.github.com/d1ffuz0r/5223734&lt;/a&gt;&lt;/p&gt;
+</content><category term="Python"/><category term="python"/><category term="sqlalchemy"/></entry><entry><title>Djangocon EU, Pycon SG</title><link href="https://d1ffuz0r.com/djangocon-eu-pycon-sg.html" rel="alternate"/><published>2013-02-24T23:17:00+04:00</published><updated>2013-02-24T23:17:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-02-24:/djangocon-eu-pycon-sg.html</id><content type="html">&lt;p&gt;In this year I'd like to go Djangocon EU, but my unexpected early relocation to Thailand has canceled it.
+And little time ago I found first Pycon at Singapur. I'll be there. May be, I'll to do some talk. It is dependents from progress of study at English courses.&lt;/p&gt;
+</content><category term="Python"/><category term="conferences"/></entry><entry><title>SQLAlchemy managers</title><link href="https://d1ffuz0r.com/sqlalchemy-managers.html" rel="alternate"/><published>2013-02-04T22:55:00+04:00</published><updated>2013-02-04T22:55:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-02-04:/sqlalchemy-managers.html</id><summary type="html">&lt;p&gt;So, Django have "manager" for the queries https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager, that is good for creating DSL.&lt;/p&gt;
+&lt;p&gt;For example, if you want get all users from database for chosen date, you can write some query:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;objects&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;So, Django have "manager" for the queries https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager, that is good for creating DSL.&lt;/p&gt;
+&lt;p&gt;For example, if you want get all users from database for chosen date, you can write some query:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;objects&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;
+                    &lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;-birth_date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It looks informative, but hard for testing and reading, so better to write the same code with other way use Manager (in internet you can find how to prepare manager for call with many methods):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;objects&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_for_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_index&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;has_published&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That better! Managers makes our live easiest. But, come back to SQLAlchemy.
+In SQLAlchemy, previous query you can write through few methods:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;
+                           &lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Or&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;
+                              &lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That more informative than query on Django, code repeats SQL query,  complex queries write easy.
+But, let's try make it short, like example with Manager in Django. SQLAlchemy do not have that functionality.
+Exist few ways to do query is more short:&lt;/p&gt;
+&lt;p&gt;First: classmethod. People already asked on Stackoverflow about it:
+http://stackoverflow.com/questions/6606745/equivalent-of-models-manager-for-sqlalchemy
+http://stackoverflow.com/questions/4866489/is-there-something-equivalent-to-djangos-managers-in-sqlalchemy&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;User&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DateTime&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@classmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;get_for_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+            &lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;
+            &lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;
+        &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="c1"&gt;# use it&lt;/span&gt;
+&lt;span class="n"&gt;users&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_for_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Okay, looks better than raw query, but what if we are want use more filter, or use few methods in query.
+We can to do few methods for each case or pass query in method and return new query, but it's not "DRY" way.&lt;/p&gt;
+&lt;p&gt;Two: functions&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;get_for_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+              &lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;timedelta&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;
+              &lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;date&lt;/span&gt;
+          &lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;order_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;birth_date&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;desc&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+&lt;span class="n"&gt;users&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_for_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Functional guys probably must to love it. But again, more filters (e.g. we want to get only published entries and who marked for showing at home page):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;query&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;is_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;has_published&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;get_for_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Oh, no. We want Python, but no LISP.&lt;/p&gt;
+&lt;p&gt;Three: Inherite a &lt;code&gt;Query&lt;/code&gt; or &lt;code&gt;DBSession&lt;/code&gt; classes, something like a manager!
+For example, recipie for prefiltered queries http://www.sqlalchemy.org/trac/wiki/UsageRecipes/PreFilteredQuery.&lt;/p&gt;
+&lt;p&gt;You can see, method defined in FilteredQuery, will to avaible in query:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Address&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;private&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, may we must to add methods in runtime? Let's try:&lt;/p&gt;
+&lt;p&gt;Make "Manager" with staticmethods, what added to our queries new expressions, methods must to get query, add our expression and return new query.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;MainManager&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@staticmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;is_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;is_index&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@staticmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;is_public&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;is_public&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And define attribute to model, for manager. Manager will get class with methods and set their to query&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;User&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;__tablename__&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;main&amp;#39;&lt;/span&gt;
+    &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;primary_key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;birth_date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;DateTime&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;is_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;is_public&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;__manager__&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MainManager&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then create new session with the &lt;code&gt;ManagerQuery&lt;/code&gt;. Now, query each time will receive attributes of the model what passed to query, and set methods of  the class with methods to a new query:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;alchmanager&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ManagedQuery&lt;/span&gt;
+
+&lt;span class="n"&gt;engine&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;create_engine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;sqlite:///:memory:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;session&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sessionmaker&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;query_cls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ManagedQuery&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;engine&lt;/span&gt;&lt;span class="p"&gt;)()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, this session will add methods from manager each time for in time of creating query if in model which passed to query, have a manager&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;__manager__&lt;/code&gt; attribute:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_index&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;bound&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="n"&gt;ManagedQuery&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;is_index&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;alchmanager&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ManagedQuery&lt;/span&gt; &lt;span class="nb"&gt;object&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="mh"&gt;0x102853e10&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Or, if not exists&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;other_method&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="ne"&gt;AttributeError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;ManagedQuery&amp;#39;&lt;/span&gt; &lt;span class="nb"&gt;object&lt;/span&gt; &lt;span class="n"&gt;has&lt;/span&gt; &lt;span class="n"&gt;no&lt;/span&gt; &lt;span class="n"&gt;attribute&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;other_method&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;But, what if we want have managers not only for few classes? We can make base class and to inherite from him, that good idea for few classes, or who have little differences. What if we want make manager not only for query, and for all session.
+We also can to inherit &lt;code&gt;DBSession&lt;/code&gt; class and do small hack, to get query class from &lt;code&gt;DBSession._query_cls&lt;/code&gt; and define methods for all session, to add methods in Query class. That method is not pretty, because I wrote the small decorator, what in starting project loaded and adds methods to query class. See example&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;alchmanager&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ManagedSession&lt;/span&gt;
+
+&lt;span class="n"&gt;engine&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;create_engine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;sqlite:///:memory:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;session&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sessionmaker&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;class_&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ManagedSession&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;engine&lt;/span&gt;&lt;span class="p"&gt;)()&lt;/span&gt;
+
+&lt;span class="nd"&gt;@session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load_manager&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;SessionManager&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@staticmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;published&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;is_public&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@staticmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;has_index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filter_by&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;is_index&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;Test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TestModel&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;published&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;bound&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="n"&gt;Query&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;published&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;sqlalchemy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;orm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;query&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Query&lt;/span&gt; &lt;span class="nb"&gt;object&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="mh"&gt;0x109ac5750&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We have manager for session, all queries have methods defined in &lt;code&gt;SessionManager&lt;/code&gt;, query manager can to replace session methods in query instance.&lt;/p&gt;
+&lt;p&gt;So now, we have managers for SQLAlchemy for making simple DSL. Get the source code you can at &lt;a href="https://github.com/d1ffuz0r/sqlalchemy-manager"&gt;sqlalchemy-manager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;P.S.
+Currently I looking for a new remote job, contact me if you have something for me.&lt;/p&gt;
+&lt;p&gt;P.S.1
+If you're hate me and my English, send me some money for my English courses ;)&lt;/p&gt;</content><category term="Python"/><category term="sqlalchemy"/><category term="django"/></entry><entry><title>Next step</title><link href="https://d1ffuz0r.com/next-step.html" rel="alternate"/><published>2013-02-03T12:54:00+04:00</published><updated>2013-02-03T12:54:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-02-03:/next-step.html</id><summary type="html">&lt;p&gt;So, it's a time for the next step. And one year of my live in Moscow. Perhaps, that is like belated post &amp;quot;what I did in this year (2012)&amp;quot;&lt;/p&gt;
+&lt;p&gt;Moscow. City of opportunities.&lt;/p&gt;
+&lt;p&gt;Fast life, different event, different people, and the dirt (in spring, in winter, in autumn on street …&lt;/p&gt;</summary><content type="html">&lt;p&gt;So, it's a time for the next step. And one year of my live in Moscow. Perhaps, that is like belated post &amp;quot;what I did in this year (2012)&amp;quot;&lt;/p&gt;
+&lt;p&gt;Moscow. City of opportunities.&lt;/p&gt;
+&lt;p&gt;Fast life, different event, different people, and the dirt (in spring, in winter, in autumn on street so many slush).
+That had nice year, I was on many gigs my lover music groups (PSYCHEYA, P.T.V.P., Leaftrace, FEODOQ, EVO, Fail Emotions, Enter Shikari, Marilyn Manson, MSI and other).
+Worked on awesome projects e.g. &lt;a class="reference external" href="http://government.ru"&gt;http://government.ru&lt;/a&gt; with awesome peoples.
+Got driver license and was in traffic jam, perhaps, after Moscow roads with the fast and dense traffic, any other road in any city will very slower and comfortably for me.
+And the same important, I learned price of time and learned manage that.
+If you have goals for upgrade and improve your life, Moscow it right choice for you (for any province of Russia, of course) on one or two years, for do next step or come back.&lt;/p&gt;
+&lt;p&gt;Definitly, all my expectations from Moscow I was got.&lt;/p&gt;
+&lt;p&gt;Next.
+One year ago, in my plans was to live in Moscow 2 years, for get a Bachelor degree, improve English and go next. But plans is changed, slush of Moscow and my failed attempt be more socialized for time of work in office (I'm an introvert).
+I search more good places for the living and learning English till I study at Institute.
+Europe, without good English (for work) and BS degree, get the visa for long life is very hard, because my chose it Thailand. Live without visa for short time, easy getting visa for the learning (YES, I got few goals in one time, that is best choice for me, 1k$ for one year English courses (in any country in europe, that cost for one/two months of learning) and low cost life at country (2k$ for the very comfortable life), awesome weather, and sea). That best choice for me, and I decided leave Moscow and fly to Thailand for one-two years, till I finish studying at Institute. I can't to plan for longer time.&lt;/p&gt;
+&lt;p&gt;Thanks so much to all for this awesome year.&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Python, Ruby, Jobs</title><link href="https://d1ffuz0r.com/python-ruby-jobs.html" rel="alternate"/><published>2013-01-19T00:32:00+04:00</published><updated>2013-01-19T00:32:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2013-01-19:/python-ruby-jobs.html</id><content type="html">&lt;p&gt;I look, for python, usually jobs for senior level programmers to big projects, for the middle and junior programmers very little, for ruby usually that is typical CRUD project for any level skills. Ruby is the new PHP?&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Music and life</title><link href="https://d1ffuz0r.com/music-and-life.html" rel="alternate"/><published>2012-11-26T23:09:00+04:00</published><updated>2012-11-26T23:09:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-11-26:/music-and-life.html</id><content type="html">&lt;p&gt;Each big event or some part of time in my life usually have relate with new music groups in my music collection or gigs. So, latest of this year (relocation to Moscow): Candid8(punk) and Leaftrace (hardcore) with their best gigs. Very interested, what waits me for next year...&lt;/p&gt;
+</content><category term="Blog"/><category term="music"/><category term="punk"/></entry><entry><title>UA Pycon</title><link href="https://d1ffuz0r.com/ua-pycon.html" rel="alternate"/><published>2012-10-31T15:49:00+04:00</published><updated>2012-10-31T15:49:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-10-31:/ua-pycon.html</id><summary type="html">&lt;p&gt;UA Pycon is done. In that year it be at 20-21 October in Kyiv.
+It be my first Pycon and first trip to foreign country. Way to Ukraine 12 hours with cute company.&lt;/p&gt;
+&lt;p&gt;After coming to Kyiv we and some small dinner we going to venue.
+Near doors we given …&lt;/p&gt;</summary><content type="html">&lt;p&gt;UA Pycon is done. In that year it be at 20-21 October in Kyiv.
+It be my first Pycon and first trip to foreign country. Way to Ukraine 12 hours with cute company.&lt;/p&gt;
+&lt;p&gt;After coming to Kyiv we and some small dinner we going to venue.
+Near doors we given cools t-shirt and bag with some thing from sponsors of this event.&lt;/p&gt;
+&lt;p&gt;Day 1.&lt;/p&gt;
+&lt;p&gt;Keynote!
+Typicaly vivas, thanks for sponsors and other.&lt;/p&gt;
+&lt;p&gt;First talk.
+Definitly that be Andrew Godwin and his talk &amp;quot;Optimising Queries For Fun And Profit&amp;quot;.
+Andrew said how make query to database faster, make less queries per page, optimization.
+Don't forget about new methods in Django-ORM and don't limit self only simple queries, that can be important for performance.&lt;/p&gt;
+&lt;p&gt;Next.
+Vsevolod Solovyov, &amp;quot;MANAGING COMPLEXITY&amp;quot;.
+Important theme for beginners, how make complex things to simple. Less spoke about functional style in Python.&lt;/p&gt;
+&lt;p&gt;Mikhail Korobov, &amp;quot;As we all move to Python 3.x&amp;quot;.
+Very interesting talk about topical problem in Python community.
+Mikhail showed on slides a lot of examples and libraries that help to porting libraries to Python 3.
+Said about his expirience of porting to Python 3  OSS libraries.&lt;/p&gt;
+&lt;p&gt;Yay. Next talk from Python Core developer, Łukasz Langa.
+&amp;quot;Let Them Configure!&amp;quot;
+Talk about configurating. Simple and complex configs, splitting your configs to may parts (for developing, testing, production).
+A lot of about configuring Django.&lt;/p&gt;
+&lt;p&gt;Lunch.&lt;/p&gt;
+&lt;p&gt;Alexey Kachayev and his talk &amp;quot;Functional Programming with Python&amp;quot;. My the most expected talk of that day. ^_^
+Examples how write funcional code in python, some principles of functional programming, review of &amp;quot;fp&amp;quot; modules in python.&lt;/p&gt;
+&lt;p&gt;Andrey Vlasovskikh, &amp;quot;Dynamic tricks in Python&amp;quot;.
+Very impressed talk, how change behavior of code in during running. And more cool triks.&lt;/p&gt;
+&lt;p&gt;Lighing talks.&lt;/p&gt;
+&lt;p&gt;Day 2.&lt;/p&gt;
+&lt;p&gt;Igor Davydenko, &amp;quot;In Flask we Trust&amp;quot;.
+Rewiew of Flask framework. Blueprints, extensions.&lt;/p&gt;
+&lt;p&gt;Niko Skrypnik, &amp;quot;From Django to Pyramid&amp;quot;.
+Imho. That can call simple &amp;quot;how to going from Django and make Django from Pyramid&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Mikhail Korobov, &amp;quot;How to write a fast and efficient code for Python&amp;quot;
+Talk do not matched his title. More about how author use C/C++ extensions in Python and write Python modules for it.
+Also how to compress 4.000.000 words in 2mb, use any structures for saving and searching, and implementation it.&lt;/p&gt;
+&lt;p&gt;Konstantine Rybnikov, &amp;quot;Its just too easy to make a mess&amp;quot;.
+Always topical, talk about testing, using Mock. Examples, and some promotion for his library &amp;quot;mockstar&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Andrey Grygoryev, &amp;quot;Be Small and Simple&amp;quot;
+Talk about his expirience using unix tools.&lt;/p&gt;
+&lt;p&gt;Oleksii Vasiliev (Олексій Васильєв), &amp;quot;Using PostgreSQL in high load&amp;quot;.
+Impressed talk, configure and optimise database for high load, make custom types, the new json type column in PostgreSQL, how to run javascript into db (WOW).
+This talk caused biggest discussion of this UA Pycon after talk.&lt;/p&gt;
+&lt;p&gt;Vladimir Kirillov, &amp;quot;Debugging Python Applications in Production&amp;quot;.
+Also interested talk, practices debugging python applications in difficult conditions of production.
+Review of unix debuggers and profilers, some &amp;quot;easy&amp;quot; scripts on awk from 3 and more lines O_O.&lt;/p&gt;
+&lt;p&gt;And last talk.
+Andrey Zarubin, &amp;quot;Testing. A bit of everything&amp;quot;
+Talk for newbie in testing. How, when and why need write tests.&lt;/p&gt;
+&lt;p&gt;Lighting talks. Review check.io, how take involved to python core development from Andrey Svetlov and more.&lt;/p&gt;
+&lt;p&gt;Thats all. For my train to Moscow left 1 hour, i'll should left UA Pycon 2012 to next time.&lt;/p&gt;
+&lt;p&gt;Thanks to all organizer for good event.&lt;/p&gt;
+</content><category term="Python"/></entry><entry><title>Django dev</title><link href="https://d1ffuz0r.com/django-dev.html" rel="alternate"/><published>2012-10-03T15:39:00+04:00</published><updated>2012-10-03T15:39:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-10-03:/django-dev.html</id><content type="html">&lt;p&gt;Yeah! My &lt;a class="reference external" href="http://github.com/django/django/pull/410"&gt;http://github.com/django/django/pull/410&lt;/a&gt; pull request with new feature now merged into Django and be available at 1.5.1 version&lt;/p&gt;
+</content><category term="Python"/></entry><entry><title>English, learning</title><link href="https://d1ffuz0r.com/english-learning.html" rel="alternate"/><published>2012-09-12T22:18:00+04:00</published><updated>2012-09-12T22:18:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-09-12:/english-learning.html</id><summary type="html">&lt;p&gt;When i started learn english I had began it learn main words. After i had learned some words, I has felt needing to know more grammatical rules. Two months of the everyday work had given results for me. Today I have more knowledge of the grammatic rules and I again …&lt;/p&gt;</summary><content type="html">&lt;p&gt;When i started learn english I had began it learn main words. After i had learned some words, I has felt needing to know more grammatical rules. Two months of the everyday work had given results for me. Today I have more knowledge of the grammatic rules and I again felt I need know more words...&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>for developers</title><link href="https://d1ffuz0r.com/for-developers.html" rel="alternate"/><published>2012-09-08T16:36:00+04:00</published><updated>2012-09-08T16:36:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-09-08:/for-developers.html</id><content type="html">&lt;p&gt;Guys why you do not do screenshots your app or library in action? That can to save much time for other developers, they see your example and can chose need him or not your stuff. That important for to web-library or for any plugins.&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Weekend, Coffeescript, HAML, SASS</title><link href="https://d1ffuz0r.com/weekend-coffeescript-haml-sass.html" rel="alternate"/><published>2012-08-05T23:54:00+04:00</published><updated>2012-08-05T23:54:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-08-05:/weekend-coffeescript-haml-sass.html</id><summary type="html">&lt;p&gt;It's a time for to improve my English! Let's talk about HAML, SASS, Coffeescript now!&lt;/p&gt;
+&lt;p&gt;Long time i like try Coffeescript in action, and in that weekend I did it. It look better than pure JavaScript, as the mixture from Python, Ruby and Haskell of languages. Now write on the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's a time for to improve my English! Let's talk about HAML, SASS, Coffeescript now!&lt;/p&gt;
+&lt;p&gt;Long time i like try Coffeescript in action, and in that weekend I did it. It look better than pure JavaScript, as the mixture from Python, Ruby and Haskell of languages. Now write on the &amp;quot;js&amp;quot; was nice.
+Also I &lt;cite&gt;dived&lt;/cite&gt; in HAML and SASS :D With they I can write less code than css and html, with closing each tag. For example, all templates this site have been &lt;a class="reference external" href="https://github.com/d1ffuz0r/d1ffuz0r.tk/commit/116da7d2edbfb9fe6a7509d928606d0d0dd2fb72"&gt;https://github.com/d1ffuz0r/d1ffuz0r.tk/commit/116da7d2edbfb9fe6a7509d928606d0d0dd2fb72&lt;/a&gt; was rewritten on HAML, with using libraries djaml and hamlpy. for python exists good library for work with HAML -&amp;gt; hamlpy optimized for templates like Django-templates and Jinja2. But for SASS i not have found also excellent library. All of exists libraries are support only SCSS, but not SASS. And so I use native tool written on Ruby.&lt;/p&gt;
+&lt;p&gt;If code, written on JavaScript makes you angry, look at Coffescript, and your view to change.&lt;/p&gt;
+&lt;p&gt;Examples of code on &lt;a class="reference external" href="https://gist.github.com/3256440"&gt;https://gist.github.com/3256440&lt;/a&gt;&lt;/p&gt;
+</content><category term="Blog"/><category term="haml"/><category term="sass"/><category term="coffeescript"/></entry><entry><title>Ubuntu</title><link href="https://d1ffuz0r.com/ubuntu.html" rel="alternate"/><published>2012-06-28T11:38:00+04:00</published><updated>2012-06-28T11:38:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-06-28:/ubuntu.html</id><content type="html">&lt;pre class="literal-block"&gt;
+~ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be upgraded
+    libraptor1
+...
+&lt;/pre&gt;
+&lt;p&gt;Ubuntu has some dinosaur??&lt;/p&gt;
+</content><category term="Blog"/><category term="linux"/></entry><entry><title>Erlang Cheet Sheats</title><link href="https://d1ffuz0r.com/erlang-cheet-sheats.html" rel="alternate"/><published>2012-06-26T18:19:00+04:00</published><updated>2012-06-26T18:19:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-06-26:/erlang-cheet-sheats.html</id><summary type="html">&lt;p&gt;List of Erlang cheat sheets:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.cheat-sheets.org/saved-copy/Erlang.CheatSheet(1.0).pdf"&gt;http://www.cheat-sheets.org/saved-copy/Erlang.CheatSheet(1.0).pdf&lt;/a&gt; Erlang CheatSheet&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://apoie.org/Erlang%20-%20CheatSheet%20v1.0.pdf"&gt;http://apoie.org/Erlang%20-%20CheatSheet%20v1.0.pdf&lt;/a&gt; Erlang-CheatSheet v1.0&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://cheat.errtheblog.com/s/erlang/"&gt;http://cheat.errtheblog.com/s/erlang/&lt;/a&gt; Cheat Erlang&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.rustyrazorblade.com/2008/11/erlang-records-cheatsheet/"&gt;http://www.rustyrazorblade.com/2008/11/erlang-records-cheatsheet/&lt;/a&gt; erlang-records-cheatsheet&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.scribd.com/doc/58566321/Erlang-Cheat-Sheet"&gt;http://www.scribd.com/doc …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;List of Erlang cheat sheets:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.cheat-sheets.org/saved-copy/Erlang.CheatSheet(1.0).pdf"&gt;http://www.cheat-sheets.org/saved-copy/Erlang.CheatSheet(1.0).pdf&lt;/a&gt; Erlang CheatSheet&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://apoie.org/Erlang%20-%20CheatSheet%20v1.0.pdf"&gt;http://apoie.org/Erlang%20-%20CheatSheet%20v1.0.pdf&lt;/a&gt; Erlang-CheatSheet v1.0&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://cheat.errtheblog.com/s/erlang/"&gt;http://cheat.errtheblog.com/s/erlang/&lt;/a&gt; Cheat Erlang&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.rustyrazorblade.com/2008/11/erlang-records-cheatsheet/"&gt;http://www.rustyrazorblade.com/2008/11/erlang-records-cheatsheet/&lt;/a&gt; erlang-records-cheatsheet&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.scribd.com/doc/58566321/Erlang-Cheat-Sheet"&gt;http://www.scribd.com/doc/58566321/Erlang-Cheat-Sheet&lt;/a&gt; Erlang-Cheat-Sheet&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Blog"/><category term="erlang"/></entry><entry><title>PyCharm themes</title><link href="https://d1ffuz0r.com/pycharm-themes.html" rel="alternate"/><published>2012-06-10T03:21:00+04:00</published><updated>2012-06-10T03:21:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-06-10:/pycharm-themes.html</id><content type="html">&lt;p&gt;List of PyCharm themes on GIthub:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/d1ffuz0r/pycharm-themes"&gt;https://github.com/d1ffuz0r/pycharm-themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/darvin/JetBrains-ZenBurn"&gt;https://github.com/darvin/JetBrains-ZenBurn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/sevas/pycharm-color-schemes"&gt;https://github.com/sevas/pycharm-color-schemes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/nek4life/pycharm-twilight"&gt;https://github.com/nek4life/pycharm-twilight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/stantonk/alfalfa"&gt;https://github.com/stantonk/alfalfa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/silkuze/pycharm-django-scheme"&gt;https://github.com/silkuze/pycharm-django-scheme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/SilentSokolov/darkblue-schemes"&gt;https://github.com/SilentSokolov/darkblue-schemes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/mekwall/obsidian-color-scheme"&gt;https://github.com/mekwall/obsidian-color-scheme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Python"/><category term="pycharm"/><category term="color scheme"/></entry><entry><title>Macbook</title><link href="https://d1ffuz0r.com/macbook.html" rel="alternate"/><published>2012-06-05T23:17:00+04:00</published><updated>2012-06-05T23:17:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-06-05:/macbook.html</id><content type="html">&lt;p&gt;I bought Macbook Air 13&amp;quot;, hey chiks where you?&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>10 Erlang one liners to impress your friends</title><link href="https://d1ffuz0r.com/10-erlang-one-liners-to-impress-your-friends.html" rel="alternate"/><published>2012-05-28T21:20:00+04:00</published><updated>2012-05-28T21:20:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-05-28:/10-erlang-one-liners-to-impress-your-friends.html</id><summary type="html">&lt;div class="section" id="multiple-each-item-in-a-list-by-2"&gt;
+&lt;h2&gt;1. Multiple Each Item in a List by 2&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+[X * 2 || X &amp;lt;- lists:seq(1, 11)].
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sum-a-list-of-numbers"&gt;
+&lt;h2&gt;2. Sum a List of Numbers&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+lists:sum(lists:seq(1, 1001)).
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="verify-if-exists-in-a-string"&gt;
+&lt;h2&gt;3.Verify if Exists in a String&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+Wordslist = [&amp;quot;scala&amp;quot;, &amp;quot;akka&amp;quot;, &amp;quot;play framework&amp;quot;, &amp;quot;sbt&amp;quot;, &amp;quot;typesafe&amp;quot;].
+Tweet = &amp;quot;This is an example tweet talking about …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="multiple-each-item-in-a-list-by-2"&gt;
+&lt;h2&gt;1. Multiple Each Item in a List by 2&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+[X * 2 || X &amp;lt;- lists:seq(1, 11)].
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sum-a-list-of-numbers"&gt;
+&lt;h2&gt;2. Sum a List of Numbers&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+lists:sum(lists:seq(1, 1001)).
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="verify-if-exists-in-a-string"&gt;
+&lt;h2&gt;3.Verify if Exists in a String&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+Wordslist = [&amp;quot;scala&amp;quot;, &amp;quot;akka&amp;quot;, &amp;quot;play framework&amp;quot;, &amp;quot;sbt&amp;quot;, &amp;quot;typesafe&amp;quot;].
+Tweet = &amp;quot;This is an example tweet talking about scala and sbt&amp;quot;.
+[lists:member(S, Wordslist) || S &amp;lt;- string:tokens(Tweet, &amp;quot; &amp;quot;)].
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="read-in-a-file"&gt;
+&lt;h2&gt;4. Read in a File&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+file:read_file(&amp;quot;ten_one_liners.erl&amp;quot;).
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="happy-birthday-to-you"&gt;
+&lt;h2&gt;5. Happy Birthday to You&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+[&amp;quot;Happy Birthday &amp;quot; ++ case X of 2 -&amp;gt; &amp;quot;dear Robert&amp;quot;; _ -&amp;gt; &amp;quot;You&amp;quot; end || X &amp;lt;- lists:seq(1, 4)].
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="filter-list-of-nubmers"&gt;
+&lt;h2&gt;6. Filter list of nubmers&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+[X || X &amp;lt;- lists:seq(40, 60), X &amp;gt;= 50].
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="fetch-and-parse-an-xml-web-service"&gt;
+&lt;h2&gt;7. Fetch and Parse an XML web service&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+inets:start().
+xmerl_scan:string(element(3, element(2, httpc:request(&amp;quot;http://search.twitter.com/search.atom?&amp;amp;q=erlang&amp;quot;)))).
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="find-minimum-or-maximum-in-a-list"&gt;
+&lt;h2&gt;8. Find minimum (or maximum) in a List&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+lists:min(lists:seq(1, 10)).
+lists:max(lists:seq(1, 10)).
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="parralel-processing"&gt;
+&lt;h2&gt;9. Parralel Processing&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+[spawn(fun() -&amp;gt; io:format(&amp;quot;~w~n&amp;quot;, [X * 2]) end) || X &amp;lt;- lists:seq(1, 10)].
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sieve-of-eratosthenes"&gt;
+&lt;h2&gt;10. Sieve of Eratosthenes&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+N = 50.
+[X || X &amp;lt;- lists:usort(lists:seq(2, N + 1)), not lists:member(X, lists:usort([(P * F) || P &amp;lt;- lists:seq(2, round(math:pow(N, 0.5)) + 2), F &amp;lt;- lists:seq(2, round(N / P))]))].
+&lt;/pre&gt;
+&lt;p&gt;Bonus&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="error-logging-with-crashdump-io-https-crashdump-io"&gt;
+&lt;h2&gt;11. Error Logging with [CrashDump.io](&lt;a class="reference external" href="https://crashdump.io"&gt;https://crashdump.io&lt;/a&gt;)&lt;/h2&gt;
+&lt;pre class="literal-block"&gt;
+fink:add_sasl_backend().        % Enable logging
+error_logger:error_msg(&amp;quot;HELP&amp;quot;). % Send notification
+&lt;/pre&gt;
+&lt;/div&gt;
+</content><category term="Blog"/><category term="erlang"/></entry><entry><title>Virtualenv, Python, Jenkins links</title><link href="https://d1ffuz0r.com/virtualenv-python-jenkins-links.html" rel="alternate"/><published>2012-04-24T23:22:00+04:00</published><updated>2012-04-24T23:22:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-04-24:/virtualenv-python-jenkins-links.html</id><content type="html">&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.saltycrane.com/blog/2009/05/notes-using-pip-and-virtualenv-django/"&gt;http://www.saltycrane.com/blog/2009/05/notes-using-pip-and-virtualenv-django/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://jenkins-ci.org/content/python-love-story-virtualenv-and-hudson"&gt;http://jenkins-ci.org/content/python-love-story-virtualenv-and-hudson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.stevetrefethen.com/blog/Publishing-Python-unit-test-results-in-Jenkins.aspx"&gt;http://www.stevetrefethen.com/blog/Publishing-Python-unit-test-results-in-Jenkins.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.alexconrad.org/2011/10/jenkins-and-python.html"&gt;http://www.alexconrad.org/2011/10/jenkins-and-python.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Python"/><category term="tools"/><category term="jenkins"/><category term="ci"/></entry><entry><title>Selenium, Python, TinyMCE</title><link href="https://d1ffuz0r.com/selenium-python-tinymce.html" rel="alternate"/><published>2012-04-10T16:10:00+04:00</published><updated>2012-04-10T16:10:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-04-10:/selenium-python-tinymce.html</id><summary type="html">&lt;p&gt;КОСТЫЛИ-КОСТЫЛИКИ&lt;/p&gt;
+&lt;p&gt;чтобы записать текст в TinyMCE редактор, нужно найти его фрейм, перейти в него, выполнив js код записать во внутрь элемента текст, перейти обратно в главный фрейм и только тогда продолжать работу&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;lead&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;body&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find_elements_by_tag_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;iframe&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;switch_to_frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lead&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;execute_script&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;document.getElementsByTagName(&amp;quot;p&amp;quot;)[0].innerHTML=&amp;quot;test lead&amp;quot;;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;КОСТЫЛИ-КОСТЫЛИКИ&lt;/p&gt;
+&lt;p&gt;чтобы записать текст в TinyMCE редактор, нужно найти его фрейм, перейти в него, выполнив js код записать во внутрь элемента текст, перейти обратно в главный фрейм и только тогда продолжать работу&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;lead&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;body&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find_elements_by_tag_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;iframe&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;switch_to_frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;lead&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;execute_script&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;document.getElementsByTagName(&amp;quot;p&amp;quot;)[0].innerHTML=&amp;quot;test lead&amp;quot;;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;switch_to_default_content&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;switch_to_frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;body&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;execute_script&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;document.getElementsByTagName(&amp;quot;p&amp;quot;)[0].innerHTML=&amp;quot;test body&amp;quot;;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;browser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;switch_to_default_content&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</content><category term="Python"/><category term="selenium"/><category term="tools"/><category term="javascript"/></entry><entry><title>Russian Python videos</title><link href="https://d1ffuz0r.com/russian-python-videos.html" rel="alternate"/><published>2012-02-26T12:01:00+04:00</published><updated>2012-02-26T12:01:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-02-26:/russian-python-videos.html</id><content type="html">&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://video.yandex.ru/users/it-people-ekb/tag/ekbpy/"&gt;http://video.yandex.ru/users/it-people-ekb/tag/ekbpy/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://video.yandex.ru/users/ya-events/view/303/?cauthor=ya-events&amp;amp;cid=33"&gt;http://video.yandex.ru/users/ya-events/view/303/?cauthor=ya-events&amp;amp;cid=33&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://video.yandex.ru/users/ya-events/view/306/"&gt;http://video.yandex.ru/users/ya-events/view/306/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://slav0nic.org.ua/entry/145#more"&gt;http://slav0nic.org.ua/entry/145#more&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://blip.tv/pycon-ukraine"&gt;http://blip.tv/pycon-ukraine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.youtube.com/user/ShultaisEducation"&gt;http://www.youtube.com/user/ShultaisEducation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Python"/><category term="video"/></entry><entry><title>NEW</title><link href="https://d1ffuz0r.com/new.html" rel="alternate"/><published>2012-02-16T14:03:00+04:00</published><updated>2012-02-16T14:03:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-02-16:/new.html</id><content type="html">&lt;p&gt;New year. New place. New job. New life&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Soon</title><link href="https://d1ffuz0r.com/soon.html" rel="alternate"/><published>2012-01-22T23:30:00+04:00</published><updated>2012-01-22T23:30:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-01-22:/soon.html</id><content type="html">&lt;p&gt;5 days left for to relocation to Moscow&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>Identi.ca</title><link href="https://d1ffuz0r.com/identica.html" rel="alternate"/><published>2012-01-22T03:18:00+04:00</published><updated>2012-01-22T03:18:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-01-22:/identica.html</id><content type="html">&lt;p&gt;I'm registered on &lt;a class="reference external" href="http://identi.ca/d1ffuz0r"&gt;http://identi.ca/d1ffuz0r&lt;/a&gt;, where I will improving my English with native speakers.&lt;/p&gt;
+</content><category term="Blog"/><category term="identi.ca"/></entry><entry><title>Linux rule</title><link href="https://d1ffuz0r.com/linux-rule.html" rel="alternate"/><published>2012-01-12T23:23:00+04:00</published><updated>2012-01-12T23:23:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2012-01-12:/linux-rule.html</id><content type="html">&lt;p&gt;Article: &amp;quot;On the console, for complete dummies&amp;quot;&lt;/p&gt;
+&lt;p&gt;Chapter I.&lt;/p&gt;
+&lt;p&gt;Do not go on the console.&lt;/p&gt;
+&lt;p&gt;end&lt;/p&gt;
+&lt;p&gt;Contents:&lt;/p&gt;
+&lt;p&gt;Chapter I. ........... a&lt;/p&gt;
+</content><category term="Blog"/><category term="linux"/></entry><entry><title>English</title><link href="https://d1ffuz0r.com/english.html" rel="alternate"/><published>2011-11-16T23:09:00+04:00</published><updated>2011-11-16T23:09:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2011-11-16:/english.html</id><content type="html">&lt;p&gt;I started active learning english language. Good luck me :)&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>cheatsheets</title><link href="https://d1ffuz0r.com/cheatsheets.html" rel="alternate"/><published>2011-10-02T08:43:00+04:00</published><updated>2011-10-02T08:43:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2011-10-02:/cheatsheets.html</id><content type="html">&lt;p&gt;cheatsheets для дизайнеров и веб девелоперов
+&lt;a class="reference external" href="http://spyrestudios.com/mega-collection-of-cheatsheets-for-designer-developers/"&gt;http://spyrestudios.com/mega-collection-of-cheatsheets-for-designer-developers/&lt;/a&gt;&lt;/p&gt;
+</content><category term="Blog"/></entry><entry><title>тестовый почтовый сервер python</title><link href="https://d1ffuz0r.com/testovyi-pochtovyi-server-python.html" rel="alternate"/><published>2011-10-01T02:42:00+04:00</published><updated>2011-10-01T02:42:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2011-10-01:/testovyi-pochtovyi-server-python.html</id><content type="html">&lt;p&gt;тестовый почтовый сервер&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+python -m smtpd -n -c DebuggingServer localhost:1025
+&lt;/pre&gt;
+</content><category term="Python"/><category term="python"/><category term="tools"/></entry><entry><title>black-bsd mitoll</title><link href="https://d1ffuz0r.com/black-bsd-mitoll.html" rel="alternate"/><published>2011-10-01T02:37:00+04:00</published><updated>2011-10-01T02:37:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2011-10-01:/black-bsd-mitoll.html</id><content type="html">&lt;pre class="literal-block"&gt;
+&amp;lt;аццкий запил на гитарах&amp;gt;
+Демоны!
+Демоны!
+Демоны!
+Демоны упали в  Кору!
+&amp;lt;проигрыш, потом повторить еще 2 раза&amp;gt;
+Не ставь  Сендмээээйл! Еееее...!
+&amp;lt;конец&amp;gt;
+&lt;/pre&gt;
+</content><category term="Blog"/></entry><entry><title>qdbus+gajim</title><link href="https://d1ffuz0r.com/qdbusgajim.html" rel="alternate"/><published>2011-10-01T02:37:00+04:00</published><updated>2011-10-01T02:37:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2011-10-01:/qdbusgajim.html</id><content type="html">&lt;p&gt;статус aкка jabber.ru&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+qdbus org.gajim.dbus /org/gajim/dbus/RemoteObject org.gajim.dbus.RemoteInterface.get_status_message jabber.ru
+&lt;/pre&gt;
+&lt;p&gt;количество непрочитаных сообщений&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+qdbus org.gajim.dbus /org/gajim/dbus/RemoteObject org.gajim.dbus.RemoteInterface.get_unread_msgs_number
+&lt;/pre&gt;
+</content><category term="Blog"/></entry><entry><title>ports</title><link href="https://d1ffuz0r.com/ports.html" rel="alternate"/><published>2011-10-01T02:34:00+04:00</published><updated>2011-10-01T02:34:00+04:00</updated><author><name>Roman Gladkov</name></author><id>tag:d1ffuz0r.com,2011-10-01:/ports.html</id><summary type="html">&lt;ul class="simple"&gt;
+&lt;li&gt;21 порт =&amp;gt; FTP&lt;/li&gt;
+&lt;li&gt;22 порт =&amp;gt; SSH&lt;/li&gt;
+&lt;li&gt;23 порт =&amp;gt; Telnet&lt;/li&gt;
+&lt;li&gt;25 порт =&amp;gt; Порт SMTP отвечающий за передачу почты&lt;/li&gt;
+&lt;li&gt;43 порт =&amp;gt; Порт клиента WHOIS&lt;/li&gt;
+&lt;li&gt;53 порт =&amp;gt; Система преобразования имени хоста&lt;/li&gt;
+&lt;li&gt;80 порт =&amp;gt; Стандартный порт HTTP Веб севрера&lt;/li&gt;
+&lt;li&gt;110 порт =&amp;gt; Порт POP отвечает за приём почты&lt;/li&gt;
+&lt;li&gt;995 порт =&amp;gt; Защищённое SSL/TLS соединение POP …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul class="simple"&gt;
+&lt;li&gt;21 порт =&amp;gt; FTP&lt;/li&gt;
+&lt;li&gt;22 порт =&amp;gt; SSH&lt;/li&gt;
+&lt;li&gt;23 порт =&amp;gt; Telnet&lt;/li&gt;
+&lt;li&gt;25 порт =&amp;gt; Порт SMTP отвечающий за передачу почты&lt;/li&gt;
+&lt;li&gt;43 порт =&amp;gt; Порт клиента WHOIS&lt;/li&gt;
+&lt;li&gt;53 порт =&amp;gt; Система преобразования имени хоста&lt;/li&gt;
+&lt;li&gt;80 порт =&amp;gt; Стандартный порт HTTP Веб севрера&lt;/li&gt;
+&lt;li&gt;110 порт =&amp;gt; Порт POP отвечает за приём почты&lt;/li&gt;
+&lt;li&gt;995 порт =&amp;gt; Защищённое SSL/TLS соединение POP&lt;/li&gt;
+&lt;li&gt;143 порт =&amp;gt; IMAP Протокол приёма почты&lt;/li&gt;
+&lt;li&gt;993 порт =&amp;gt; Защищённое соединение IMAP&lt;/li&gt;
+&lt;li&gt;443 порт =&amp;gt; Защищённое HTTP соединение (SSL для &lt;a class="reference external" href="https://"&gt;https://&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;3306 порт =&amp;gt; MysQL Сервер&lt;/li&gt;
+&lt;li&gt;631 порт =&amp;gt; Протоколы сетевой печати&lt;/li&gt;
+&lt;li&gt;5900 порт =&amp;gt; Система удаленного доступа к компьютеру VNC (Virtual Network Computing)&lt;/li&gt;
+&lt;/ul&gt;
+</content><category term="Blog"/></entry></feed>

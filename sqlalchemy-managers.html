@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SQLAlchemy managers</title>
+        <link rel="stylesheet" href="https://d1ffuz0r.com/theme/css/main.css">
+        <link href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate" title="d1ffuz0r - python, erlang, l1f3 RSS Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+    </head>
+
+    <body id="index" class="home">
+<a href="https://github.com/d1ffuz0r">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+            <h1><a href="https://d1ffuz0r.com/">d1ffuz0r - python, erlang, l1f3 </a></h1>
+            <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/links.html">Links</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/tag/erlang.html">Erlang</a></li>
+                    <li><a href="/archives.html">Archive</a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://d1ffuz0r.com/sqlalchemy-managers.html" rel="bookmark"
+           title="Permalink to SQLAlchemy managers">SQLAlchemy managers</a></h1>
+    </header>
+
+    <div class="entry-content">
+<p>        <abbr class="published" title="2013-02-04T22:55:00+04:00">
+            Mon 04 February 2013,
+        </abbr>
+
+
+tags: <a href="https://d1ffuz0r.com/tag/sqlalchemy.html">sqlalchemy</a><a href="https://d1ffuz0r.com/tag/django.html">django</a></p>        
+</p><!-- /.post-info -->      <p>So, Django have "manager" for the queries https://docs.djangoproject.com/en/1.4/topics/db/managers/#django.db.models.Manager, that is good for creating DSL.</p>
+<p>For example, if you want get all users from database for chosen date, you can write some query:</p>
+<div class="highlight"><pre><span></span><code><span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">birth_date</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">date</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span>
+                    <span class="n">birth_date</span> <span class="o">&lt;</span> <span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;-birth_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+
+<p>It looks informative, but hard for testing and reading, so better to write the same code with other way use Manager (in internet you can find how to prepare manager for call with many methods):</p>
+<div class="highlight"><pre><span></span><code><span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get_for_date</span><span class="p">(</span><span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">is_index</span><span class="p">()</span><span class="o">.</span><span class="n">has_published</span><span class="p">()</span>
+</code></pre></div>
+
+<p>That better! Managers makes our live easiest. But, come back to SQLAlchemy.
+In SQLAlchemy, previous query you can write through few methods:</p>
+<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">birth_date</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="n">date</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span>
+                           <span class="n">User</span><span class="o">.</span><span class="n">birth_date</span> <span class="o">&lt;=</span> <span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">birth_date</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Or</p>
+<div class="highlight"><pre><span></span><code><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">birth_date</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">date</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span>
+                              <span class="n">birth_date</span> <span class="o">&lt;</span> <span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">birth_date</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+
+<p>That more informative than query on Django, code repeats SQL query,  complex queries write easy.
+But, let's try make it short, like example with Manager in Django. SQLAlchemy do not have that functionality.
+Exist few ways to do query is more short:</p>
+<p>First: classmethod. People already asked on Stackoverflow about it:
+http://stackoverflow.com/questions/6606745/equivalent-of-models-manager-for-sqlalchemy
+http://stackoverflow.com/questions/4866489/is-there-something-equivalent-to-djangos-managers-in-sqlalchemy</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="n">birth_date</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">)</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_for_date</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">date</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">birth_date</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="n">date</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">birth_date</span> <span class="o">&lt;=</span> <span class="n">date</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">birth_date</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+
+<span class="c1"># use it</span>
+<span class="n">users</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">get_for_date</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Okay, looks better than raw query, but what if we are want use more filter, or use few methods in query.
+We can to do few methods for each case or pass query in method and return new query, but it's not "DRY" way.</p>
+<p>Two: functions</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_for_date</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">date</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">query</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+              <span class="bp">cls</span><span class="o">.</span><span class="n">birth_date</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="n">date</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span>
+              <span class="bp">cls</span><span class="o">.</span><span class="n">birth_date</span> <span class="o">&lt;=</span> <span class="n">date</span>
+          <span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">birth_date</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span>
+
+<span class="n">users</span> <span class="o">=</span> <span class="n">get_for_date</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">))</span>
+</code></pre></div>
+
+<p>Functional guys probably must to love it. But again, more filters (e.g. we want to get only published entries and who marked for showing at home page):</p>
+<div class="highlight"><pre><span></span><code><span class="n">query</span> <span class="o">=</span> <span class="n">is_index</span><span class="p">(</span><span class="n">has_published</span><span class="p">(</span><span class="n">get_for_date</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">))))</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Oh, no. We want Python, but no LISP.</p>
+<p>Three: Inherite a <code>Query</code> or <code>DBSession</code> classes, something like a manager!
+For example, recipie for prefiltered queries http://www.sqlalchemy.org/trac/wiki/UsageRecipes/PreFilteredQuery.</p>
+<p>You can see, method defined in FilteredQuery, will to avaible in query:</p>
+<div class="highlight"><pre><span></span><code><span class="k">assert</span> <span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Address</span><span class="p">)</span><span class="o">.</span><span class="n">private</span>
+</code></pre></div>
+
+<p>So, may we must to add methods in runtime? Let's try:</p>
+<p>Make "Manager" with staticmethods, what added to our queries new expressions, methods must to get query, add our expression and return new query.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MainManager</span><span class="p">:</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">is_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">is_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">is_public</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">is_public</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+
+<p>And define attribute to model, for manager. Manager will get class with methods and set their to query</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;main&#39;</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">birth_date</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">DateTime</span><span class="p">)</span>
+    <span class="n">is_index</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Boolean</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">is_public</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Boolean</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">__manager__</span> <span class="o">=</span> <span class="n">MainManager</span>
+</code></pre></div>
+
+<p>Then create new session with the <code>ManagerQuery</code>. Now, query each time will receive attributes of the model what passed to query, and set methods of  the class with methods to a new query:</p>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">alchmanager</span><span class="w"> </span><span class="kn">import</span> <span class="n">ManagedQuery</span>
+
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite:///:memory:&#39;</span><span class="p">)</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">query_cls</span><span class="o">=</span><span class="n">ManagedQuery</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)()</span>
+</code></pre></div>
+
+<p>Now, this session will add methods from manager each time for in time of creating query if in model which passed to query, have a manager</p>
+<p><code>__manager__</code> attribute:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span><span class="nb">print</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">is_index</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">bound</span> <span class="n">method</span> <span class="n">ManagedQuery</span><span class="o">.</span><span class="n">is_index</span> <span class="n">of</span> <span class="o">&lt;</span><span class="n">alchmanager</span><span class="o">.</span><span class="n">ManagedQuery</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x102853e10</span><span class="o">&gt;&gt;</span>
+</code></pre></div>
+
+<p>Or, if not exists</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span><span class="nb">print</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">User</span><span class="p">)</span><span class="o">.</span><span class="n">other_method</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">&#39;ManagedQuery&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">&#39;other_method&#39;</span>
+</code></pre></div>
+
+<p>But, what if we want have managers not only for few classes? We can make base class and to inherite from him, that good idea for few classes, or who have little differences. What if we want make manager not only for query, and for all session.
+We also can to inherit <code>DBSession</code> class and do small hack, to get query class from <code>DBSession._query_cls</code> and define methods for all session, to add methods in Query class. That method is not pretty, because I wrote the small decorator, what in starting project loaded and adds methods to query class. See example</p>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">alchmanager</span><span class="w"> </span><span class="kn">import</span> <span class="n">ManagedSession</span>
+
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite:///:memory:&#39;</span><span class="p">)</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">class_</span><span class="o">=</span><span class="n">ManagedSession</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">)()</span>
+
+<span class="nd">@session</span><span class="o">.</span><span class="n">load_manager</span><span class="p">()</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SessionManager</span><span class="p">:</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">published</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">is_public</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">has_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">is_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Test</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">)</span>
+
+
+<span class="o">&gt;&gt;&gt;</span><span class="nb">print</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">TestModel</span><span class="p">)</span><span class="o">.</span><span class="n">published</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="n">bound</span> <span class="n">method</span> <span class="n">Query</span><span class="o">.</span><span class="n">published</span> <span class="n">of</span> <span class="o">&lt;</span><span class="n">sqlalchemy</span><span class="o">.</span><span class="n">orm</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">Query</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x109ac5750</span><span class="o">&gt;&gt;</span>
+</code></pre></div>
+
+<p>We have manager for session, all queries have methods defined in <code>SessionManager</code>, query manager can to replace session methods in query instance.</p>
+<p>So now, we have managers for SQLAlchemy for making simple DSL. Get the source code you can at <a href="https://github.com/d1ffuz0r/sqlalchemy-manager">sqlalchemy-manager</a></p>
+<p>P.S.
+Currently I looking for a new remote job, contact me if you have something for me.</p>
+<p>P.S.1
+If you're hate me and my English, send me some money for my English courses ;)</p>
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "sqlalchemy-managers.html";
+        var disqus_url = "https://d1ffuz0r.com/sqlalchemy-managers.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://d1ffuz0rhomesite.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+            <div class="social">
+                <h2>social</h2>
+                <ul>
+                    <li><a href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                    <li><a href="https://github.com/d1ffuz0r">GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/romangladkov">LinkedIn</a></li>
+                </ul>
+            </div><!-- /.social -->
+        </section><!-- /#extras -->
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+
+                The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+            </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'd1ffuz0rhomesite';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49239889 = new Ya.Metrika2({
+                    id: 49239889,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49239889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    </body>
+</html>

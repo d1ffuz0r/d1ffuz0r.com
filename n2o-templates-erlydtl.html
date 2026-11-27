@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>N2O templates. Erlydtl</title>
+        <link rel="stylesheet" href="https://d1ffuz0r.com/theme/css/main.css">
+        <link href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate" title="d1ffuz0r - python, erlang, l1f3 RSS Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+    </head>
+
+    <body id="index" class="home">
+<a href="https://github.com/d1ffuz0r">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+            <h1><a href="https://d1ffuz0r.com/">d1ffuz0r - python, erlang, l1f3 </a></h1>
+            <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/links.html">Links</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                    <li><a href="/category/python.html">Python</a></li>
+                    <li><a href="/tag/erlang.html">Erlang</a></li>
+                    <li><a href="/archives.html">Archive</a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="https://d1ffuz0r.com/n2o-templates-erlydtl.html" rel="bookmark"
+           title="Permalink to N2O templates. Erlydtl">N2O templates. Erlydtl</a></h1>
+    </header>
+
+    <div class="entry-content">
+<p>        <abbr class="published" title="2020-05-04T00:00:00+03:00">
+            Mon 04 May 2020,
+        </abbr>
+
+
+tags: <a href="https://d1ffuz0r.com/tag/erlang.html">Erlang</a><a href="https://d1ffuz0r.com/tag/n2o.html">N2O</a><a href="https://d1ffuz0r.com/tag/tutorial.html">Tutorial</a></p>        
+</p><!-- /.post-info -->      <p>Re-posting from 2014-09-26</p>
+<p>If you do use Django, ROR or any other modern framework, you should be familiar with templates. In N2O you can use <a class="reference external" href="https://github.com/erlydtl/erlydtl">Erlydtl</a> templates. In this part we will show how to create a view that will be rendering a simple Erlydtl template.</p>
+<p>For this step we should follow these steps</p>
+<ul class="simple">
+<li>Create a view</li>
+<li>Create a Erlydtl template</li>
+<li>Add a route to the routes.erl file</li>
+<li>Create a new rebar.config in <cite>web</cite> directory for the proper template compilation</li>
+</ul>
+<pre class="code literal-block">
+$ touch apps/web/src/erlydtl_page.erl       # create a view
+$ touch apps/web/src/rebar.config           # create rebar config
+$ mkdir apps/web/priv/templates             # create templates directory
+$ touch apps/web/priv/templates/example.dtl # create dtl template file
+</pre>
+<p>Let's start from a route</p>
+<pre class="code literal-block">
+$ vim apps/web/src/routes.erl
+</pre>
+<pre class="code literal-block">
+route(&lt;&lt;&quot;/erlydtl_page&quot;&gt;&gt;) -&gt; erlydtl_page;   % erlydtl page mapping
+route(&lt;&lt;&quot;/n2o_page&quot;&gt;&gt;)     -&gt; n2o_page;
+route(_)                   -&gt; index.
+</pre>
+<p>Next we will add a content to the dtl template. Basic template with a single variable</p>
+<pre class="code literal-block">
+$ echo &quot;Hello Erlydtl. I am {{name}}!&quot; &gt; apps/web/priv/templates/example.dtl
+</pre>
+<p>Now when template is ready, let's configure rebar.</p>
+<p>Open rebar.config in the web directory</p>
+<pre class="code literal-block">
+$ vim apps/web/rebar.config
+</pre>
+<pre class="code literal-block">
+{erlydtl_opts, [
+    {doc_root, &quot;priv/templates&quot;},                     % directory with templates
+    {out_dir, &quot;ebin&quot;},                                % output directory
+    {compiler_options, [report, return, debug_info]}, % compiler options
+    {source_ext, &quot;.dtl&quot;},                             % templates extension
+    {module_ext, &quot;_view&quot;}                             % module extension
+]}.
+</pre>
+<p>After that, during compilation you should see messages about template compilation</p>
+<img alt="" src="images/n2o_pages/erlydtl-compilation.png" style="width: 750px;" />
+<p>And finally, edit the view</p>
+<pre class="code literal-block">
+$ vim apps/web/src/erlydtl_page.erl
+</pre>
+<pre class="code literal-block">
+-module(erlydtl_page).
+-export([main/0]).
+-include_lib(&quot;n2o/include/wf.hrl&quot;).
+
+main() -&gt;
+  [
+    #dtl{file=&quot;example&quot;,     % filename
+         ext=&quot;dtl&quot;,          % extension
+         bindings=[
+           {name, &lt;&lt;&quot;N2O&quot;&gt;&gt;} % template bindings
+         ]}
+  ].
+</pre>
+<img alt="" src="images/n2o_pages/erlydtl-view.png" style="width: 750px;" />
+<p>Now we can compile, run our project and check it out in browser by  <a class="reference external" href="http://localhost:8002/erlydtl_page">http://localhost:8002/erlydtl_page</a> url.</p>
+<pre class="code literal-block">
+$ ./rebar compile
+$ erl -name &quot;web&#64;$(hostname)&quot; -pa deps/*/ebin -pa apps/*/ebin -boot start_sasl -s web_app start
+</pre>
+<img alt="" src="images/n2o_pages/erlydtl-example.png" style="width: 750px;" />
+<div class="section" id="source-code">
+<h2>Source code</h2>
+<p><a class="reference external" href="https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages">https://github.com/d1ffuz0r/n2o_tutorials/tree/master/2_n2o_pages</a></p>
+</div>
+<div class="section" id="links">
+<h2>Links</h2>
+<p>How to create a page using Nitrogen templates read in the previous part: <a class="reference external" href="/n2o-templates-nitrogen.html">N2O templates. Nitrogen</a></p>
+</div>
+
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "n2o-templates-erlydtl.html";
+        var disqus_url = "https://d1ffuz0r.com/n2o-templates-erlydtl.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://d1ffuz0rhomesite.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+
+  </article>
+</section>
+
+        <section id="extras" class="body">
+            <div class="social">
+                <h2>social</h2>
+                <ul>
+                    <li><a href="https://d1ffuz0r.com/rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                    <li><a href="https://github.com/d1ffuz0r">GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/romangladkov">LinkedIn</a></li>
+                </ul>
+            </div><!-- /.social -->
+        </section><!-- /#extras -->
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+
+                The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>.
+            </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'd1ffuz0rhomesite';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49239889 = new Ya.Metrika2({
+                    id: 49239889,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49239889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    </body>
+</html>
