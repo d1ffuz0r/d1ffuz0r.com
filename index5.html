@@ -31,28 +31,6 @@
                     <ol id="posts-list" class="hfeed" start="9">
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://d1ffuz0r.com/selenium-python-tinymce.html" rel="bookmark"
-                           title="Permalink to Selenium, Python, TinyMCE">Selenium, Python, TinyMCE</a></h1>
-                </header>
-
-                <div class="entry-content">
-<p>        <abbr class="published" title="2012-04-10T16:10:00+04:00">
-            Tue 10 April 2012,
-        </abbr>
-
-
-tags: <a href="https://d1ffuz0r.com/tag/selenium.html">selenium</a><a href="https://d1ffuz0r.com/tag/tools.html">tools</a><a href="https://d1ffuz0r.com/tag/javascript.html">javascript</a></p>        
-</p><!-- /.post-info -->                <p>КОСТЫЛИ-КОСТЫЛИКИ</p>
-<p>чтобы записать текст в TinyMCE редактор, нужно найти его фрейм, перейти в него, выполнив js код записать во внутрь элемента текст, перейти обратно в главный фрейм и только тогда продолжать работу</p>
-<div class="highlight"><pre><span></span><span class="n">lead</span><span class="p">,</span> <span class="n">body</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_elements_by_tag_name</span><span class="p">(</span><span class="s1">&#39;iframe&#39;</span><span class="p">)</span>
-<span class="n">browser</span><span class="o">.</span><span class="n">switch_to_frame</span><span class="p">(</span><span class="n">lead</span><span class="p">)</span>
-<span class="n">browser</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s1">&#39;document.getElementsByTagName(&quot;p&quot;)[0].innerHTML=&quot;test lead&quot;;&#39;</span><span class="p">)</span>
-<span class="n">browser …</span></pre></div>
-                <a class="readmore" href="https://d1ffuz0r.com/selenium-python-tinymce.html">read more</a>
-<p>There are <a href="https://d1ffuz0r.com/selenium-python-tinymce.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-            <li><article class="hentry">
-                <header>
                     <h1><a href="https://d1ffuz0r.com/russian-python-videos.html" rel="bookmark"
                            title="Permalink to Russian Python videos">Russian Python videos</a></h1>
                 </header>
@@ -237,6 +215,31 @@ python -m smtpd -n -c DebuggingServer localhost:1025
 
                 <a class="readmore" href="https://d1ffuz0r.com/black-bsd-mitoll.html">read more</a>
 <p>There are <a href="https://d1ffuz0r.com/black-bsd-mitoll.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://d1ffuz0r.com/qdbusgajim.html" rel="bookmark"
+                           title="Permalink to qdbus+gajim">qdbus+gajim</a></h1>
+                </header>
+
+                <div class="entry-content">
+<p>        <abbr class="published" title="2011-10-01T02:37:00+04:00">
+            Sat 01 October 2011,
+        </abbr>
+
+
+        
+</p><!-- /.post-info -->                <p>статус aкка jabber.ru</p>
+<pre class="literal-block">
+qdbus org.gajim.dbus /org/gajim/dbus/RemoteObject org.gajim.dbus.RemoteInterface.get_status_message jabber.ru
+</pre>
+<p>количество непрочитаных сообщений</p>
+<pre class="literal-block">
+qdbus org.gajim.dbus /org/gajim/dbus/RemoteObject org.gajim.dbus.RemoteInterface.get_unread_msgs_number
+</pre>
+
+                <a class="readmore" href="https://d1ffuz0r.com/qdbusgajim.html">read more</a>
+<p>There are <a href="https://d1ffuz0r.com/qdbusgajim.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
   <nav>
